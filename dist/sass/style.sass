@@ -1,0 +1,49 @@
+@charset "UTF-8"
+@import "variables"
+@import "reset"
+@import "header"
+@import "footer"
+
+/* Global Styles ========================================================================= */
+
+.btn-main
+  border-radius: 0
+  border: 1px solid $first-color
+  color: $main-text
+  text-transform: uppercase
+  font-size: 1rem
+  font-family: $open-sans
+  font-weight: 400
+  line-height: 1
+  padding: 1rem 2.75rem
+  background: none
+  &:hover
+    color: $main-color
+    background-color: $second-color
+    border: 1px solid $second-color
+    cursor: pointer
+
+.list-group
+  background-color: $second-color
+  .list-group-item
+    background: none
+    border: none
+    font-size: 1rem
+    font-family: $open-sans
+    font-weight: 400
+    color: $first-color
+    text-transform: uppercase
+  .list-link
+    font-size: 1rem
+    font-family: $open-sans
+    font-weight: 400
+    color: $first-color
+    &:hover, &:focus
+      color: $sixth-color
+
+      
+.counter-section
+  background-color: $fourth-color
+  padding-top: 0.2rem
+  padding-bottom: 0.2rem
+    

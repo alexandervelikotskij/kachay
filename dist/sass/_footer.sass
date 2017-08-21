@@ -1,0 +1,61 @@
+@import "reset"
+@import "variables"
+/* Footer Styles ========================================================================= */
+.footer-top
+  background-color: $second-color
+  padding-top: 3rem
+  padding-bottom: 3rem
+  .btn-main
+    width: 100%
+    &_mod
+      color: $main-color
+      &:hover
+        color: $second-color
+        background-color: $fifth-color
+        border: 1px solid $fifth-color
+        cursor: pointer
+  .list-group
+    .list-group-item
+      text-transform: uppercase
+      &_mod
+        text-transform: none
+    .list-link_mod
+      font-weight: 300
+      text-transform: none
+
+// Large devices (desktops, 992px and up)
+@include respond-to(large)
+  .footer-top
+    text-align: center
+
+.footer-bottom
+  background-color: $seventh-color
+  padding-top: 1rem
+  padding-bottom: 1rem
+  .copy
+    display: block
+    font-size: 1rem
+    line-height: 2rem
+    color: $main-color
+    font-weight: 300
+    font-family: $open-sans
+  .license
+    display: block
+    font-size: .7rem
+    color: $main-color
+    font-weight: 300
+    font-family: $open-sans
+  .navbar-brand
+    &_mod
+      margin: 0
+      padding: 0
+
+// Large devices (desktops, 992px and up)
+@include respond-to(large)
+  .footer-bottom
+    text-align: center
+    .footer-content
+      margin-bottom: 2rem
+    .navbar-brand
+      &_mod
+        margin: 0 auto

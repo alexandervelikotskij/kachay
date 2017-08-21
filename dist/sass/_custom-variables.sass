@@ -1,0 +1,27 @@
+@mixin respond-to($media)
+  @if $media == extra-small
+    @media only screen and (max-width: 320px) @content
+
+  @else if $media == small
+    @media only screen and (max-width: 576px) @content
+
+  @else if $media == medium
+    @media only screen and (max-width: 768px) @content
+
+  @else if $media == large
+    @media only screen and (max-width: 992px) @content
+
+  @else if $media == extra-large
+    @media only screen and (max-width: 1200px) @content
+
+$breakpoints: $grid-breakpoints
+
+/*COLORS*/
+$main-color: #fff
+$main-text: #424955
+$first-color: #c5c4c4
+$second-color: #3b434f
+$fourth-color: #ffd400
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic')
+$open-sans: 'Open Sans', sans-serif
