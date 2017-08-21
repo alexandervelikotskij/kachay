@@ -93,11 +93,11 @@ gulp.task('concat', function() {
 
 // собираем наш кастомный js
 gulp.task('js',function(){                
-  gulp.src('app/js/_main.sass.js')
+  gulp.src('app/js/main.js')
     .pipe(plumber())
     .pipe(gulp.dest('dist/js/'))
     .pipe(uglify()) 
-    .pipe(rename("_main.sass.min.js"))
+    .pipe(rename("main.min.js"))
     .pipe(gulp.dest('dist/js/'))
 });
 

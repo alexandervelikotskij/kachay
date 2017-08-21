@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "bootstrap-slider": "^9.8.1",
     "popper.js": "^1.12.3"
   },
   "devDependencies": {

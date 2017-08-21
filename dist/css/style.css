@@ -504,6 +504,9 @@ h2, .h2 {
       margin: 0 auto; } }
 
 /* Global Styles ========================================================================= */
+.tooltip {
+  opacity: 1; }
+
 .btn-main {
   -webkit-border-radius: 0;
   border-radius: 0;
