@@ -3,7 +3,10 @@
 @import "reset"
 
 /* Header Styles ========================================================================= */
+
 .navbar-expand-lg
+  .btn-main
+    display: none
   .navbar
     padding: 1rem 2rem
   .navbar-color
@@ -37,6 +40,42 @@
         font-size: 1rem
         font-family: $open-sans
         font-weight: 400
+  .dropdown
+    &_mod
+      .nav-link
+        color: $main-text
+        font-size: 1rem
+        line-height: 1.6rem
+        font-family: $open-sans
+        font-weight: 400
+        padding: .5rem 3rem .5rem 1rem
+        &:before
+          position: absolute
+          content: ""
+          background-image: url("../images/check.png")
+          width: 12px
+          height: 6px
+          top: 1.2rem
+          right: 0
+          z-index: 1
+        &:after
+          display: none
+        .code
+          font-size: 0.8rem
+          line-height: 1rem
+          font-family: $open-sans
+          font-weight: 300
+      .show
+        border-radius: 0
+        width: 100%
+        .dropdown-item
+          padding: .5rem
+          color: $main-text
+          font-size: 0.8rem
+          line-height: 1rem
+          font-family: $open-sans
+          font-weight: 400
+
   .navbar-toggler
     border: 1px solid $first-color
     border-radius: 0
@@ -57,6 +96,8 @@
   .navbar-collapse
     padding-top: 1rem
     padding-bottom: 1rem
+    margin-top: 1rem
+    margin-bottom: 1rem
     text-align: center
     border-bottom: 1px solid $first-color
     border-top: 1px solid $first-color
@@ -73,4 +114,18 @@
       text-align: center
       justify-content: center
       margin-bottom: 1rem!important
+    .enter
+      text-align: center
+      justify-content: center
+      margin-bottom: 1rem!important
+    .dropdown
+      &_mod
+        .nav-link
+          padding: .5rem 1rem
+          &:before
+            right: 50%
+            top: 100%
+            margin-right: -6px
+        .show
+          text-align: center
 

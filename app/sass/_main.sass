@@ -3,3 +3,220 @@
 @import "reset"
 
 /* Main page Styles ========================================================================= */
+
+//counter section
+.counter-section
+  background-color: $fourth-color
+  padding-top: 1rem
+  padding-bottom: 1rem
+
+.counter-holder
+  // Large devices (desktops, 768px and up)
+  @include respond-to(medium)
+    flex-direction: column
+//counter section
+
+//credit section
+.credit-section
+  padding-top: 5rem
+  padding-bottom: 5rem
+  background-image: url("../images/range-block-bg.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  .h2-title
+    margin-bottom: 1rem
+    text-transform: uppercase
+  .h3-title
+    margin-bottom: 4rem
+    text-transform: uppercase
+  .credit-details
+    .h3-title
+      color: $main-text
+      margin-bottom: 2rem
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        display: flex
+        justify-content: center
+        text-align: center
+    .h4-title
+      text-transform: uppercase
+      margin-bottom: 3rem
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        display: flex
+        justify-content: center
+    .quantity
+      font-size: 1rem
+      line-height: 1.2rem
+      color: $main-text
+      font-family: $open-sans
+      font-weight: 400
+      &_mod
+        font-weight: 300
+        font-size: 2rem
+        line-height: 2.2rem
+    .currency
+      color: $eleventh-color
+      font-size: 0.7rem
+      line-height: 0.9rem
+      font-family: $open-sans
+      font-weight: 300
+      &_mod
+        font-size: 1rem
+        line-height: 1.2rem
+    .left-column
+      background-color: $main-color
+      padding-top: 3rem
+      padding-bottom: 3rem
+    .right-column
+      background-color: $eighth-color
+      padding-top: 3rem
+      padding-bottom: 3rem
+//credit section
+
+//how-work section
+.how-work
+  padding-top: 4rem
+  padding-bottom: 4rem
+  background-color: $main-color
+  .h2-title
+    color: $main-text
+    text-transform: uppercase
+    margin-bottom: 2rem
+    font-weight: 300
+  .h3-title
+    color: $main-text
+  .how-work-cards
+    padding-bottom: 2rem
+    border-bottom: 1px solid $fourteenth-color
+    .card
+      position: relative
+      border: none
+      &:last-child
+        &:after
+          display: none
+      &:after
+        content: ""
+        background-image: url("../images/arrow.png")
+        position: absolute
+        width: 29px
+        height: 26px
+        top: 25%
+        right: 0
+        // Small devices (desktops, 768 and up)
+        @include respond-to(medium)
+          display: none
+    .card-body
+      // Small devices (desktops, 768 and up)
+      @include respond-to(medium)
+        padding: 1rem
+    .card-text
+      font-family: $open-sans
+      font-weight: 400
+      font-size: 1rem
+      line-height: 1.4rem
+      color: $eleventh-color
+//how-work section
+
+//need-cards section
+.need
+  padding-top: 2rem
+  padding-bottom: 2rem
+  background-color: $main-color
+  .h2-title
+    color: $main-text
+    text-transform: uppercase
+    margin-bottom: 2rem
+    font-weight: 300
+  .h3-title
+    color: $main-text
+  .need-cards
+//need-cards section
+
+//review section
+.review
+  padding-top: 3rem
+  padding-bottom: 3rem
+  background-color: $eighth-color
+  .h2-title
+    color: $main-text
+    text-transform: uppercase
+    margin-bottom: 2rem
+    font-weight: 300
+//review section
+
+
+//carousel
+.carousel
+  padding-bottom: 6rem
+  .indicator
+    width: 18px
+    height: 18px
+    border: 1px solid $sixteenth-color
+    border-radius: 50%
+    margin-right: 6px
+    margin-left: 6px
+    &.active, &:focus, &:hover
+      border: none
+      background-color: $fourth-color
+      cursor: pointer
+  .card
+    border-radius: 0
+    background: none
+    position: relative
+    &:before
+      position: absolute
+      content: ""
+      background-image: url("../images/quote.png")
+      width: 24px
+      height: 18px
+      top: 1.6rem
+      left: 1.1rem
+      z-index: 1
+  .card-text
+    color: $eleventh-color
+    font-size: 0.9rem
+    line-height: 1.6rem
+    font-family: $open-sans
+    font-weight: 400
+  .card-body
+    padding: 1.1rem 1.1rem 1.1rem 3.8rem
+    background-color: $main-color
+    margin-bottom: 3rem
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 0
+      height: 0
+      border-top: 29px solid $main-color
+      border-right: 29px solid transparent
+      bottom: -29px
+      left: 31px
+      // Large devices (desktops, 768px and up)
+      @include respond-to(medium)
+        left: 50%
+  .blockquote-footer
+    flex-direction: column
+    height: 100%
+    // Large devices (desktops, 768px and up)
+    @include respond-to(medium)
+      margin-bottom: 2rem
+      text-align: center
+    &:before
+      display: none
+  .source
+    font-style: normal
+    color: $main-text
+    font-size: 1rem
+    line-height: 2rem
+    font-family: $open-sans
+    font-weight: 400
+  .date
+    color: $fifteenth-color
+    font-size: 0.8rem
+    line-height: 1
+    font-family: $open-sans
+    font-weight: 400
+
+//carousel

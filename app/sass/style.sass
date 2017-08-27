@@ -2,11 +2,29 @@
 @import "variables"
 @import "reset"
 @import "header"
+@import "main"
 @import "footer"
 
 /* Global Styles ========================================================================= */
-.tooltip
-  opacity: 1
+.big-container
+  max-width: 1210px
+
+//btn-big
+
+//btn-big
+.btn-big
+  background-color: $fourth-color
+  text-transform: uppercase
+  font-family: $open-sans
+  font-weight: 400
+  font-size: 1rem
+  line-height: 1.2rem
+  color: $main-text
+  border-radius: 0
+  padding: 1rem 0
+  &:hover
+    cursor: pointer
+//btn-main
 
 .btn-main
   border-radius: 0
@@ -20,11 +38,12 @@
   padding: 1rem 2.75rem
   background: none
   &:hover
-    color: $main-color
-    background-color: $second-color
-    border: 1px solid $second-color
+    color: $main-text
+    background-color: $fourth-color
     cursor: pointer
+//btn-main
 
+//list
 .list-group
   background-color: $second-color
   .list-group-item
@@ -42,10 +61,182 @@
     color: $first-color
     &:hover, &:focus
       color: $sixth-color
+//list
 
-      
-.counter-section
-  background-color: $fourth-color
-  padding-top: 0.2rem
-  padding-bottom: 0.2rem
-    
+//counter
+.counter-description
+  font-size: 1rem
+  line-height: 1
+  font-family: $open-sans
+  font-weight: 400
+  color: $seventh-color
+  padding: 0 0.5rem
+  // Large devices (desktops, 768px and up)
+  @include respond-to(medium)
+    margin-bottom: 1rem
+
+.counter-amount
+  flex-direction: row
+  padding-left: 0
+  margin-bottom: 0
+  list-style: none
+  // Large devices (desktops, 768px and up)
+  @include respond-to(medium)
+    margin-bottom: 1rem
+
+.counter-deal
+  flex-direction: row
+  padding-left: 0
+  margin-bottom: 0
+  list-style: none
+  // Large devices (desktops, 768px and up)
+  @include respond-to(medium)
+    margin-bottom: 1rem
+
+.counter-item
+  position: relative
+  margin: 0 .3rem
+  background-color: $main-color
+  border-radius: 2px
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1)
+  &:before
+    content: ""
+    position: absolute
+    width: 3px
+    height: 9px
+    background-color: $main-color
+    left: -6px
+    top: 10px
+  &:last-child
+    &:after
+      content: ""
+      position: absolute
+      width: 3px
+      height: 9px
+      background-color: $main-color
+      right: -6px
+      top: 10px
+
+.counter-number
+  position: relative
+  padding: 0.01rem 0.3rem
+  display: inline-block
+  color: $main-text
+  font-size: 1.5rem
+  font-family: $open-sans
+  font-weight: 600
+  &:before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 2px
+    background-color: $fourth-color
+    left: 0
+    top: 50%
+//counter
+
+//table
+.table
+  margin-bottom: 3rem
+  // Large devices (desktops, 768px and up)
+  @include respond-to(medium)
+    display: flex
+    justify-content: center
+  .table-cell
+    border-top: 1px solid $ninth-color
+    padding: .75rem 0
+  .table-row
+    // Small devices (desktops, 576 and up)
+    @include respond-to(small)
+      display: flex
+      flex-direction: column
+      align-items: center
+  .info-details
+    text-transform: uppercase
+    color: $tenth-color
+    font-size: 0.9rem
+    line-height: 1.1rem
+    font-family: $open-sans
+    font-weight: 400
+//table
+
+//range-slider
+.slider-holder
+  &_mod
+    .slider
+      &.slider-horizontal
+        background-image: none
+
+.slider-details-holder
+  margin-bottom: 1rem
+
+.slider
+  .tooltip-inner
+    border-radius: 0
+    border: 1px solid $thirteenth-color
+    background-color: $eighth-color
+    padding: 0.22rem 1rem
+    color: $eleventh-color
+    font-size: 0.6rem
+    line-height: 0.8rem
+    font-family: $open-sans
+    font-weight: 300
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      bottom: -10px
+      left: 18px
+      width: 17px
+      height: 16px
+      -webkit-transform: rotate(57deg) skewX(24deg)
+      -moz-transform: rotate(57deg) skewX(24deg)
+      -o-transform: rotate(57deg) skewX(24deg)
+      -ms-transform: rotate(57deg) skewX(24deg)
+      background-color: $eighth-color
+      z-index: -1
+      border: 1px solid $thirteenth-color
+    &:after
+      content: ''
+      position: absolute
+      left: 18px
+      bottom: -1px
+      width: 18px
+      height: 1px
+      background-color: $eighth-color
+  &.slider-horizontal
+    margin-bottom: 1rem
+    border-left: 1px solid $twelfth-color
+    border-right: 1px solid $twelfth-color
+    background-image: linear-gradient(99deg, rgba(73, 73, 73, 0.5) 0, rgba(73, 73, 73, 0.5) 2%, transparent 2%)
+    background-size: 69px 15px
+    background-position: 67px 8px
+    height: 14px
+    width: 100%
+    // Large devices (desktops, 1200px and up)
+    @include respond-to(extra-large)
+      background-image: none
+    .slider-selection
+      background: $fourth-color  none 0 0 no-repeat
+      border-radius: 0
+      box-shadow: none
+    .slider-track
+      margin-top: -1px
+      height: 3px
+      border-radius: 0
+      box-shadow: none
+    .slider-track-high
+      background-color: $twelfth-color
+      border-radius: 0
+      height: 3px
+    .slider-handle
+      &.triangle
+        border-width: 0 11px 15px
+        border-bottom-color: $fourth-color
+        top: 95%
+
+//range-slider
+
+//title-block
+
+//title-block

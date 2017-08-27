@@ -1,20 +1,19 @@
-@mixin respond-to($media)
+=respond-to($media)
   @if $media == extra-small
-    @media only screen and (max-width: 320px) @content
-
+    @media only screen and (max-width: 320px)
+      @content
   @else if $media == small
-    @media only screen and (max-width: 576px) @content
-
+    @media only screen and (max-width: 576px)
+      @content
   @else if $media == medium
-    @media only screen and (max-width: 768px) @content
-
+    @media only screen and (max-width: 768px)
+      @content
   @else if $media == large
-    @media only screen and (max-width: 992px) @content
-
+    @media only screen and (max-width: 992px)
+      @content
   @else if $media == extra-large
-    @media only screen and (max-width: 1200px) @content
-
-$breakpoints: $grid-breakpoints
+    @media only screen and (max-width: 1200px)
+      @content
 
 /*COLORS*/
 $main-color: #fff
@@ -22,6 +21,19 @@ $main-text: #424955
 $first-color: #c5c4c4
 $second-color: #3b434f
 $fourth-color: #ffd400
+$fifth-color: #ffee3b
+$sixth-color: #ffe42f
+$seventh-color: #272c35
+$eighth-color: #f5f6f6
+$ninth-color: #e0e1e1
+$tenth-color: #757575
+$eleventh-color: #656565
+$twelfth-color: #ccc
+$thirteenth-color: #d1d1d1
+$fourteenth-color: #d0d0d0
+$fifteenth-color: #858585
+$sixteenth-color: #afb4ba
+
 /*FONTS*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic')
 $open-sans: 'Open Sans', sans-serif
