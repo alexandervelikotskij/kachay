@@ -6,10 +6,32 @@
 @import "footer"
 
 /* Global Styles ========================================================================= */
+
+//big-container
 .big-container
   max-width: 1210px
+//big-container
 
-//btn-big
+//h3-title mod
+.h3-title
+  &_mod
+    color: $main-text
+    font-size: 1.9rem
+    line-height: 2.1rem
+    font-weight: 400
+    padding-bottom: 4rem
+    position: relative
+    &:after
+      content: ""
+      background-color: $fourth-color
+      position: absolute
+      width: 90px
+      height: 1px
+      top: 56%
+      left: 50%
+      margin-left: -45px
+
+//h3-title mod
 
 //btn-big
 .btn-big
@@ -24,8 +46,29 @@
   padding: 1rem 0
   &:hover
     cursor: pointer
-//btn-main
+  &_mod
+    text-transform: none
+    border: 3px solid $fourth-color
+//btn-big
 
+//btn-save
+.btn-save
+  background-color: $main-color
+  border: 3px solid $fourth-color
+  font-family: $open-sans
+  font-weight: 400
+  font-size: 1rem
+  line-height: 1.2rem
+  color: $eleventh-color
+  border-radius: 0
+  padding: 1rem 0
+  &:hover
+    cursor: pointer
+    background-color: $fifth-color
+    border: 3px solid $fifth-color
+//btn-save
+
+//btn-main
 .btn-main
   border-radius: 0
   border: 1px solid $first-color
@@ -42,6 +85,61 @@
     background-color: $fourth-color
     cursor: pointer
 //btn-main
+
+//btn-info
+.btn-info
+  background-color: $main-color
+  border: 1px solid $eighteenth-color
+  border-radius: 50%
+  width: 24px
+  height: 24px
+  color: $eleventh-color
+  font-size: 1rem
+  line-height: 1
+  font-family: $open-sans
+  font-weight: 300
+  padding: 0
+  &:hover
+    background-color: $fifth-color
+    border: 1px solid $eighteenth-color
+    color: $eleventh-color
+//btn-info
+
+//popover
+.popover
+  min-width: 236px
+  border-radius: 0
+  border: 1px solid $eighteenth-color
+  background-color: $eighth-color
+  left: 5.7%!important
+  .arrow
+    display: none
+  &:after,
+  &:before
+    content: ''
+    border: solid transparent
+    position: absolute
+    left: 12%
+    margin-left: -12px
+    bottom: -24px
+    width: 0
+  &:before
+    border-top-color: $eighteenth-color
+    border-width: 12px
+  &:after
+    border-top-color: $eighth-color
+    border-width: 13px
+    margin-left: -13px
+
+.popover-body
+  color: $twenty-third-color
+  font-size: 0.9rem
+  line-height: 1.1rem
+  font-family: $open-sans
+  font-weight: 300
+  padding: 0.8rem
+//popover
+
 
 //list
 .list-group
@@ -170,6 +268,9 @@
 .slider-details-holder
   margin-bottom: 1rem
 
+.tooltip-text
+  .tooltip
+    opacity: 1
 .slider
   .tooltip-inner
     border-radius: 0
@@ -238,5 +339,295 @@
 //range-slider
 
 //title-block
-
+.title-section
+  background-color: $eighth-color
+  border-top: 1px solid $seventeen-color
+  padding-top: 1rem
+  padding-bottom: 2rem
+  .h2-title
+    text-transform: uppercase
+    color: $main-text
+    font-size: 2rem
+    line-height: 4rem
+    font-family: $open-sans
+    font-weight: 300
+    // Small devices (desktops, 576 and up)
+    @include respond-to(small)
+      display: flex
+      justify-content: center
+  .h4-title
+    color: $eleventh-color
+    font-size: 1rem
+    line-height: 2rem
+    font-family: $open-sans
+    font-weight: 300
+    // Small devices (desktops, 576 and up)
+    @include respond-to(small)
+      display: flex
+      justify-content: center
 //title-block
+
+//steps-block
+.steps-section
+  padding-top: 2rem
+  padding-bottom: 2rem
+.steps-cards
+  // Medium devices (desktops, 768 and up)
+  @include respond-to(medium)
+    flex-flow: column wrap
+  .card
+    position: relative
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      flex-flow: wrap
+      padding: 1rem
+      border-bottom: 1px solid $nineteenth-color!important
+      border-radius: 0
+    &:last-child
+      &:after
+        display: none
+    &:after
+      content: ""
+      background-image: url("../images/arrow.png")
+      position: absolute
+      width: 29px
+      height: 26px
+      top: 16%
+      right: -11%
+      // Medium devices (desktops, 768 and up)
+      @include respond-to(medium)
+        display: none
+  .number
+    border-radius: 50%
+    color: $main-text
+    font-size: 1.5rem
+    line-height: 1
+    font-weight: 400
+    background-color: $main-color
+    border: 1px solid $nineteenth-color
+    width: 3rem
+    height: 3rem
+    &.active
+      background-color: $eighteenth-color
+      border: 1px solid $eighteenth-color
+  .card-body
+    padding: 1rem
+//steps-block
+
+//alert-block
+.alert-danger
+  font-family: $open-sans
+  color: $twentieth-color
+  font-size: 0.9em
+  line-height: 1.1rem
+  font-weight: 400
+  background-color: $twenty-first-color
+  border: 1px solid $twenty-second-color
+  border-radius: 0
+  padding: 1rem
+  margin-bottom: 3rem
+
+//alert-block
+
+//forms
+.invalid-feedback
+  margin-top: 1rem
+  margin-bottom: 1rem
+  font-size: 1.1rem
+  line-height: 1.3rem
+  padding-left: 1.7rem
+  font-family: $open-sans
+  font-weight: 400
+
+.form-group
+  margin-bottom: 1.8rem
+
+.form-control-lg
+  border-radius: 0
+  border: 1px solid $seventeen-color
+  padding: .9rem 1.2rem
+  font-family: $open-sans
+  font-weight: 300
+  font-size: 1.2rem
+  line-height: 1
+  color: $eleventh-color
+
+.col-form-label
+  color: $main-text
+  font-size: 1.1rem
+  line-height: 1.3rem
+  font-family: $open-sans
+  font-weight: 400
+//forms
+
+//datepicker
+.datepicker-img
+  background: url("../images/datepicker.png") 95% center no-repeat
+
+//datepicker
+
+//radiobutton
+.custom-control-description
+  padding-left: 1.5rem
+
+.custom-controls-stacked
+  .custom-control
+    margin-bottom: 1rem
+.custom-radio
+  &:hover
+    cursor: pointer
+  .custom-control-indicator
+    top: 0.1rem
+    left: 0
+    display: block
+    width: 1.4rem
+    height: 1.4rem
+    pointer-events: none
+    background-color: $main-color
+    padding: 3px
+    border: 1px solid $seventeen-color
+  .custom-control-input:checked ~ .custom-control-indicator
+    background-color: $fourth-color
+    box-shadow: inset 0 0 0 4px #fff
+    border-radius: 50%
+
+//radiobutton
+
+//select
+.select-mod
+  padding: 0 1.2rem
+  font-family: $open-sans
+  font-weight: 300
+  font-size: 1.2rem
+  line-height: 1.4rem
+  color: $eleventh-color
+  min-height: 3.6rem
+//select
+
+//select
+.children
+  max-width: 8rem
+//select
+
+//switch
+.switch
+  margin-bottom: 2rem
+
+  .switch-title
+    font-family: $open-sans
+    font-weight: 400
+    font-size: 1.2rem
+    line-height: 1
+    color: $eleventh-color
+    &_mod
+      color: $twenty-fourth-color
+
+  .c-switch
+    position: relative
+    display: inline-block
+    cursor: pointer
+    width: 40px
+    height: 22px
+    margin: 5px 19px 0
+    .c-box
+      opacity: 0
+      height: 100%
+      width: 100%
+      position: absolute
+      z-index: 1
+      cursor: pointer
+      &:checked
+        & + .c-switch-toggle
+          transform: translate(85%, 0)
+    .c-switch-bg, .c-switch-toggle
+      position: absolute
+    .c-switch-bg
+      left: 0
+      top: 0
+      height: 100%
+      width: 100%
+      background-color: $fourth-color
+      border-radius: 30px
+      transition: all .25s ease-in-out
+    .c-switch-toggle
+      left: 0
+      top: 0
+      width: 18px
+      height: 18px
+      margin-top: 2px
+      margin-left: 4px
+      background-color: $main-color
+      border-radius: 30px
+      transform: translate(-5%, 0)
+      transition: all .25s ease-in-out
+//switch
+
+//checkbox
+.custom-checkbox
+  &:hover
+    cursor: pointer
+  .custom-control-indicator
+    border-radius: 0
+    top: 0.1rem
+    left: 0
+    display: block
+    width: 1.4rem
+    height: 1.4rem
+    pointer-events: none
+    background-color: $main-color
+    padding: 3px
+    border: 1px solid $seventeen-color
+  .custom-control-input
+    &.active, &:focus, &:hover
+      border: none
+
+  .custom-control-input:checked ~ .custom-control-indicator
+    background-color: $fourth-color
+    box-shadow: inset 0 0 0 4px #fff
+    border-radius: 0
+  .custom-checkbox .custom-control-input.active,
+  .custom-checkbox .custom-control-input:focus,
+  .custom-checkbox .custom-control-input:hover
+    border: none
+    outline: none
+    pointer-events: none
+//checkbox
+
+//custom-file
+.image-upload-holder
+  margin-bottom: 4rem
+
+.custom-file
+  height: 3.4rem
+  padding: 0
+
+.custom-file-label
+  position: absolute
+  bottom: -100%
+
+.custom-file-control
+  border: none
+
+.inputfile
+  width: 100%
+  height: 100%
+
+.custom-file-control:lang(en)
+  height: 100%
+  padding: .7rem 1rem
+  &:before
+    content: ''
+    background: url("../images/file.png") 0 0 no-repeat
+    height: 22px
+    width: 24px
+    border: none
+    top: 16px
+    right: 20px
+    padding: 0
+    margin-bottom: -11px
+
+.custom-file-control:lang(en):empty
+  &:after
+    content: "Виберіть файл"
+
+//custom-file
