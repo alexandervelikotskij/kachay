@@ -7,8 +7,8 @@
 //counter section
 .counter-section
   background-color: $fourth-color
-  padding-top: 1rem
-  padding-bottom: 1rem
+  padding-top: 0.75rem
+  padding-bottom: 0.75rem
 
 .counter-holder
   // Large devices (desktops, 768px and up)
@@ -18,21 +18,22 @@
 
 //credit section
 .credit-section
-  padding-top: 5rem
+  padding-top: 3.6rem
   padding-bottom: 5rem
   background-image: url("../images/range-block-bg.jpg")
   background-repeat: no-repeat
   background-size: cover
   .h2-title
-    margin-bottom: 1rem
+    margin-bottom: 1.2rem
     text-transform: uppercase
   .h3-title
-    margin-bottom: 4rem
+    margin-bottom: 3.2rem
     text-transform: uppercase
   .credit-details
     .h3-title
       color: $main-text
-      margin-bottom: 2rem
+      font-weight: 400
+      margin-bottom: 3.1rem
       // Small devices (desktops, 576 and up)
       @include respond-to(small)
         display: flex
@@ -40,14 +41,13 @@
         text-align: center
     .h4-title
       text-transform: uppercase
-      margin-bottom: 3rem
+      margin-bottom: 1.2rem
       // Small devices (desktops, 576 and up)
       @include respond-to(small)
         display: flex
         justify-content: center
     .quantity
-      font-size: 1rem
-      line-height: 1.2rem
+      font-size: 1.1rem
       color: $main-text
       font-family: $open-sans
       font-weight: 400
@@ -57,40 +57,65 @@
         line-height: 2.2rem
     .currency
       color: $eleventh-color
-      font-size: 0.7rem
-      line-height: 0.9rem
+      font-size: 0.9rem
       font-family: $open-sans
       font-weight: 300
+      padding-left: 0.5rem
       &_mod
-        font-size: 1rem
-        line-height: 1.2rem
+        font-size: 0.8rem
+        line-height: 1rem
+        padding: 0 0.3rem
     .left-column
+      flex: 0 0 54%
+      max-width: 54%
       background-color: $main-color
       padding-top: 3rem
       padding-bottom: 3rem
+      // extra Large devices (desktops, 1200 and up)
+      @include respond-to(extra-large)
+        flex: 0 0 50%
+        max-width: 50%
+      // Large devices (desktops, 768 and up)
+      @include respond-to(medium)
+        flex: 0 0 100%
+        max-width: 100%
     .right-column
+      flex: 0 0 46%
+      max-width: 46%
       background-color: $eighth-color
       padding-top: 3rem
       padding-bottom: 3rem
+      // extra Large devices (desktops, 1200 and up)
+      @include respond-to(extra-large)
+        flex: 0 0 50%
+        max-width: 50%
+      // Large devices (desktops, 768 and up)
+      @include respond-to(medium)
+        flex: 0 0 100%
+        max-width: 100%
 //credit section
 
 //how-work section
 .how-work
   padding-top: 4rem
-  padding-bottom: 4rem
+  padding-bottom: 2rem
   background-color: $main-color
   .h2-title
     color: $main-text
     text-transform: uppercase
-    margin-bottom: 2rem
+    margin-bottom: 3rem
     font-weight: 300
   .h3-title
     color: $main-text
+    font-weight: 400
+    margin-bottom: 1.1rem
   .how-work-cards
-    padding-bottom: 2rem
+    padding-bottom: 2.4rem
     border-bottom: 1px solid $fourteenth-color
     .card
       position: relative
+      .card-body
+        padding: 2.2rem 1.25rem
       &:last-child
         &:after
           display: none
@@ -113,7 +138,7 @@
       font-family: $open-sans
       font-weight: 400
       font-size: 1rem
-      line-height: 1.4rem
+      line-height: 1.8rem
       color: $eleventh-color
 //how-work section
 
@@ -122,13 +147,21 @@
   padding-top: 2rem
   padding-bottom: 2rem
   background-color: $main-color
+  .need-card
+    width: 160px
+    height: 160px
+    // Large devices (desktops, 768 and up)
+    @include respond-to(medium)
+      width: auto
+      height: auto
   .h2-title
     color: $main-text
     text-transform: uppercase
-    margin-bottom: 2rem
+    margin-bottom: 3.3rem
     font-weight: 300
   .h3-title
     color: $main-text
+
 //need-cards section
 
 //review section
@@ -227,7 +260,7 @@
   padding-bottom: 6rem
 
 /* ===============================Personal Data page Styles ===================================== */
-/* ===============================Personal Data page Styles ===================================== */
+
 
 /* ===============================Income Data page Styles ===================================== */
 .expenses-data
@@ -252,3 +285,79 @@
   padding-top: 2rem
   padding-bottom: 6rem
 /* ===============================Documents page Styles ===================================== */
+
+/* ===============================FAQ page Styles ===================================== */
+.general-section
+  padding-bottom: 4rem
+
+.prolongation-section
+  padding-bottom: 4rem
+
+.loan-section
+  padding-bottom: 4rem
+/* ===============================FAQ page Styles ===================================== */
+
+/* ===============================About page Styles ===================================== */
+.info-holder
+  padding-top: 3rem
+  padding-bottom: 3rem
+  border-bottom: 1px solid $fourteenth-color
+  .img-holder
+    // Large devices (desktops, 992 and up)
+    @include respond-to(large)
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-bottom: 2rem
+  .text-holder
+    // Large devices (desktops, 992 and up)
+    @include respond-to(large)
+     display: flex
+     flex-direction: column
+     align-items: center
+
+  .card-img
+    width: 196px
+    height: 196px
+    display: block
+    margin: 0 auto
+    // Large devices (desktops, 992 and up)
+    @include respond-to(large)
+      height: auto
+      width: auto
+  .h4-title
+    color: $main-text
+    font-size: 1.6rem
+    line-height: 1.8rem
+  .paragraph
+    color: $eleventh-color
+    font-size: 1rem
+    line-height: 1.6rem
+    // Large devices (desktops, 992 and up)
+    @include respond-to(large)
+      text-align: justify
+
+/* ===============================About page Styles ===================================== */
+
+/* ===============================Enter page Styles ===================================== */
+.enter-section
+  padding-top: 3rem
+  padding-bottom: 3rem
+
+/* ===============================Enter page Styles ===================================== */
+
+/* ===============================Register page Styles ===================================== */
+.registration-section
+  padding-top: 3rem
+  padding-bottom: 3rem
+/* ===============================Register page Styles ===================================== */
+
+/* ===============================Register step 2 page Styles ===================================== */
+
+/* ===============================Register step 2 page Styles ===================================== */
+/* ===============================Register step 3 page Styles ===================================== */
+/* ===============================Register step 3 page Styles ===================================== */
+
+/* ===============================Order sms page Styles ===================================== */
+
+/* ===============================Order sms page Styles ===================================== */

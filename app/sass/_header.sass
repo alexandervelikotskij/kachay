@@ -4,7 +4,15 @@
 
 /* Header Styles ========================================================================= */
 
+.header
+  padding: 1.05rem 1rem 1.6rem
+
+.navbar-brand
+  margin-right: 0
+  width: 25%
+
 .navbar-expand-lg
+  padding: 0
   .btn-main
     display: none
   .navbar
@@ -22,7 +30,8 @@
         padding: .5rem 0
         color: $main-text
         text-transform: uppercase
-        font-size: 1rem
+        font-size: 0.85rem
+        line-height: 1
         font-family: $open-sans
         font-weight: 400
   .menu-languages
@@ -37,7 +46,7 @@
       &_mod
         color: $main-text
         text-transform: uppercase
-        font-size: 1rem
+        font-size: 0.85rem
         font-family: $open-sans
         font-weight: 400
   .dropdown
@@ -90,9 +99,8 @@
 
 
 //  ============================================= MEDIA ======================================
-
-// Large devices (desktops, 992px and up)
-@include respond-to(large)
+// Large devices (desktops, 991px and up)
+@include respond-to(custom-large)
   .navbar-collapse
     padding-top: 1rem
     padding-bottom: 1rem
@@ -129,3 +137,7 @@
         .show
           text-align: center
 
+// medium devices (desktops, 768px and up)
+@include respond-to(medium)
+  .navbar-brand
+    width: 40%

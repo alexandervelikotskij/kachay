@@ -19,6 +19,7 @@
     font-size: 1.9rem
     line-height: 2.1rem
     font-weight: 400
+    padding-top: 2rem
     padding-bottom: 4rem
     position: relative
     &:after
@@ -39,11 +40,11 @@
   text-transform: uppercase
   font-family: $open-sans
   font-weight: 400
-  font-size: 1rem
-  line-height: 1.2rem
+  font-size: 1.1rem
+  line-height: 1
   color: $main-text
   border-radius: 0
-  padding: 1rem 0
+  padding: 1.7rem 0
   &:hover
     cursor: pointer
   &_mod
@@ -78,7 +79,7 @@
   font-family: $open-sans
   font-weight: 400
   line-height: 1
-  padding: 1rem 2.75rem
+  padding: 1.2rem 3.5rem
   background: none
   &:hover
     color: $main-text
@@ -104,6 +105,43 @@
     border: 1px solid $eighteenth-color
     color: $eleventh-color
 //btn-info
+
+//social-buttons
+.fb-login-button, .google-login-button, .linkedin-login-button
+  background-color: $twenty-sixth-color
+  color: $main-color
+  font-size: 1rem
+  line-height: 1
+  font-weight: 300
+  border-radius: 0
+  display: flex
+  align-items: center
+  padding: 0.7rem  2rem
+  // small devices (desktops, 572 and up)
+  @include respond-to(small)
+    font-size: 0.8rem
+    padding: 1rem
+  &:hover
+    cursor: pointer
+  img
+    padding-right: 5%
+.google-login-button
+  background-color: $twenty-seventh-color
+.linkedin-login-button
+  background-color: $twenty-eighth-color
+//social-buttons
+
+//small-info
+.small-info
+  font-size: 0.8rem
+  font-weight: 300
+  color: $eleventh-color
+  margin-bottom: 2rem
+  text-align: center
+  &_mod
+    font-size: 1rem
+    line-height: 1.2rem
+//small-info
 
 //popover
 .popover
@@ -163,13 +201,13 @@
 
 //counter
 .counter-description
-  font-size: 1rem
+  font-size: 1.2rem
   line-height: 1
   font-family: $open-sans
   font-weight: 400
   color: $seventh-color
-  padding: 0 0.5rem
-  // Large devices (desktops, 768px and up)
+  padding: 0 0.7rem
+  // Medium devices (desktops, 768px and up)
   @include respond-to(medium)
     margin-bottom: 1rem
 
@@ -187,42 +225,44 @@
   padding-left: 0
   margin-bottom: 0
   list-style: none
-  // Large devices (desktops, 768px and up)
+  // Medium devices (desktops, 768px and up)
   @include respond-to(medium)
     margin-bottom: 1rem
 
 .counter-item
   position: relative
-  margin: 0 .3rem
+  margin: 0 .16rem
   background-color: $main-color
   border-radius: 2px
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1)
   &:before
     content: ""
     position: absolute
-    width: 3px
-    height: 9px
+    width: 2px
+    height: 10px
     background-color: $main-color
-    left: -6px
-    top: 10px
+    top: 50%
+    margin-top: -5px
+    left: -4px
   &:last-child
     &:after
       content: ""
       position: absolute
-      width: 3px
-      height: 9px
+      width: 2px
+      height: 10px
       background-color: $main-color
-      right: -6px
-      top: 10px
+      right: -4px
+      top: 50%
+      margin-top: -5px
 
 .counter-number
   position: relative
   padding: 0.01rem 0.3rem
   display: inline-block
   color: $main-text
-  font-size: 1.5rem
+  font-size: 1.85rem
   font-family: $open-sans
-  font-weight: 600
+  font-weight: 700
   &:before
     content: ""
     position: absolute
@@ -235,14 +275,14 @@
 
 //table
 .table
-  margin-bottom: 3rem
-  // Large devices (desktops, 768px and up)
+  margin-bottom: 2.2rem
+  // Medium devices (desktops, 768px and up)
   @include respond-to(medium)
     display: flex
     justify-content: center
   .table-cell
     border-top: 1px solid $ninth-color
-    padding: .75rem 0
+    padding: 1rem 0 .6rem 0
   .table-row
     // Small devices (desktops, 576 and up)
     @include respond-to(small)
@@ -260,6 +300,7 @@
 
 //range-slider
 .slider-holder
+  margin-bottom: 2.8rem
   &_mod
     .slider
       &.slider-horizontal
@@ -273,23 +314,28 @@
     opacity: 1
 .slider
   .tooltip-inner
+    width: 117px
+    left: 1px
+    padding: 0.25rem 0.6rem
+    font-size: 0.8rem
+    line-height: 1rem
+    bottom: 15px
+    white-space: normal
     border-radius: 0
     border: 1px solid $thirteenth-color
     background-color: $eighth-color
-    padding: 0.22rem 1rem
     color: $eleventh-color
-    font-size: 0.6rem
-    line-height: 0.8rem
     font-family: $open-sans
     font-weight: 300
     position: relative
     &:before
       content: ''
       position: absolute
-      bottom: -10px
-      left: 18px
+      bottom: -9px
       width: 17px
       height: 16px
+      left: 50%
+      margin-left: -9px
       -webkit-transform: rotate(57deg) skewX(24deg)
       -moz-transform: rotate(57deg) skewX(24deg)
       -o-transform: rotate(57deg) skewX(24deg)
@@ -300,18 +346,19 @@
     &:after
       content: ''
       position: absolute
-      left: 18px
+      left: 50%
       bottom: -1px
       width: 18px
       height: 1px
       background-color: $eighth-color
+      margin-left: -9px
   &.slider-horizontal
-    margin-bottom: 1rem
+    margin-bottom: 0.75rem
     border-left: 1px solid $twelfth-color
     border-right: 1px solid $twelfth-color
     background-image: linear-gradient(99deg, rgba(73, 73, 73, 0.5) 0, rgba(73, 73, 73, 0.5) 2%, transparent 2%)
-    background-size: 69px 15px
-    background-position: 67px 8px
+    background-size: 64px 15px
+    background-position: 60px 8px
     height: 14px
     width: 100%
     // Large devices (desktops, 1200px and up)
@@ -631,3 +678,138 @@
     content: "Виберіть файл"
 
 //custom-file
+
+//accordion
+.card
+  border: none
+.card-header
+  border: none
+  padding: 0
+  background: none
+
+.card-link
+  display: block
+  position: relative
+  color: $main-text
+  text-decoration: none
+  padding: 1rem
+  border-bottom: 1px solid $first-color
+  // Medium devices (desktops, 768 and up)
+  @include respond-to(medium)
+    display: flex
+    justify-content: center
+    text-align: center
+  &:hover, &:focus
+    background-color: $eighth-color
+    border-bottom: 1px solid $fourth-color
+    color: $main-text
+    text-decoration: none
+  &[aria-expanded="true"]
+    background-color: $eighth-color
+    border-bottom: none
+    transition: width 2s, height 2s, background-color 2s, transform 3s
+    &:before
+      content: ""
+      background: $eighteenth-color url("../images/check3.png") center center no-repeat
+      background-size: 1rem
+      position: absolute
+      width: 35px
+      height: 35px
+      border-radius: 50%
+      top: 22%
+      right: 20px
+      margin-top: -17
+    &:after
+      display: none
+  &:after
+    content: ""
+    background-image: url("../images/check2.png")
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 1rem
+    position: absolute
+    width: 35px
+    height: 35px
+    border: 1px solid $eighteenth-color
+    border-radius: 50%
+    top: 50%
+    right: 20px
+    margin-top: -17px
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      display: none
+  &.mod
+    border-bottom: none
+    background-color: $eighth-color
+
+.card-body
+  &_mod
+    color: $eleventh-color
+    font-size: 0.8rem
+    line-height: 1rem
+    padding: 1.25rem 2.5rem
+    border-bottom: 1px solid $first-color
+    background-color: $eighth-color
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      text-align: center
+
+//accordion
+
+//colums
+.colums-holder
+  padding-bottom: 4rem
+  border-bottom: 1px solid $fourteenth-color
+  margin-bottom: 3rem
+  .left-column
+    border-right: 1px solid $fourteenth-color
+    // Large devices (desktops, 992 and up)
+    @include respond-to(large)
+      border-right: none
+      margin-bottom: 3rem
+    .custom-control-description
+      &_mod
+        color: $eleventh-color
+        font-weight: 300
+        font-size: 0.8rem
+        line-height: 1rem
+        padding-left: 1rem
+      a
+        color: $main-text
+        text-decoration: underline
+//colums
+
+//message
+.message-holder
+  padding-bottom: 3rem
+  text-align: center
+  &_mod
+    border-bottom: 1px solid $fourteenth-color
+    margin-bottom: 3rem
+  .img-holder
+    margin-bottom: 2rem
+  .card-img
+    width: 160px
+    height: 160px
+  .h4-title
+    color: $main-text
+    text-transform: uppercase
+  .sub-text
+    font-size: 1rem
+    line-height: 1.2rem
+    font-weight: 300
+    color: $eleventh-color
+  .sub-text-calc
+    font-weight: 400
+    border-bottom: 3px solid $fourth-color
+    color: $main-text
+    font-size: 1.8rem
+    line-height: 2rem
+    &_mod
+      font-size: 1rem
+      line-height: 1.2rem
+      border-bottom: none
+
+//message
+
+

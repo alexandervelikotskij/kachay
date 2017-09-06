@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		var slider = new Slider("#ex6", {
 			tooltip: 'always',
 			formatter: function(value) {
-				return 'Перший кредит — до ' + value + ' грн.';
+				return 'Перший кредит <br> — до' + value + ' грн.';
 			}
 		});
 		slider.on("slide", function(sliderValue) {
@@ -86,3 +86,9 @@ $('#datepicker4').datepicker();
 $('input[data-validate="phone"]').mask("+380 (99) 999 99 99");
 $('input[data-validate="phone2"]').mask("+380 (99) 999 99 99");
 $('input[data-validate="phone3"]').mask("+380 (99) 999 99 99");
+
+/*
+var a = $('.collapse.show').prev();
+var b = a.find('.thislink');
+if(b)
+	b.addClass('mod');*/
