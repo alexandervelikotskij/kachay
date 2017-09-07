@@ -5,13 +5,11 @@
   position: absolute
   bottom: 0
   width: 100%
-  height: 70px
-  line-height: 20px
 
 .footer-top
+  padding-top: 2.5rem
   background-color: $second-color
-  padding-top: 3rem
-  padding-bottom: 3rem
+  padding-bottom: 2.3rem
   .btn-main
     width: 100%
     &_mod
@@ -21,14 +19,34 @@
         background-color: $fifth-color
         border: 1px solid $fifth-color
         cursor: pointer
-  .list-group
-    .list-group-item
-      text-transform: uppercase
-      &_mod
-        text-transform: none
-    .list-link_mod
+
+.list-group
+  background-color: $second-color
+  .list-group-item
+    text-transform: uppercase
+    background: none
+    border: none
+    color: $first-color
+    padding: 0.65rem 1.4rem
+    &_mod
+      text-transform: none
+    &_size
+      padding: 0.15rem 1rem
+    // custom-large devices (desktops, 991 and up)
+    @include respond-to(custom-large)
+      padding: 0.5rem 1rem
+  .list-link
+    font-size: 0.875rem
+    font-family: $open-sans
+    font-weight: 400
+    color: $first-color
+    &:hover, &:focus
+      color: $sixth-color
+    &_mod
       font-weight: 300
       text-transform: none
+    &_size
+      font-size: 1.375rem
 
 // Large devices (desktops, 992px and up)
 @include respond-to(large)
@@ -41,21 +59,25 @@
   padding-bottom: 1rem
   .copy
     display: block
-    font-size: 1rem
-    line-height: 2rem
+    font-size: 0.9rem
+    line-height: 2.2em
     color: $main-color
     font-weight: 300
     font-family: $open-sans
+    padding: 0 0.3rem
   .license
     display: block
-    font-size: .7rem
+    font-size: .75rem
+    line-height: 1.2rem
     color: $main-color
     font-weight: 300
     font-family: $open-sans
+    padding: 0 0.3rem
   .navbar-brand
     &_mod
       margin: 0
       padding: 0
+      width: 100%
 
 // Large devices (desktops, 992px and up)
 @include respond-to(large)

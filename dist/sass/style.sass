@@ -16,23 +16,29 @@
 .h3-title
   &_mod
     color: $main-text
-    font-size: 1.9rem
-    line-height: 2.1rem
+    font-size: 2rem
+    line-height: 2.2rem
     font-weight: 400
-    padding-top: 2rem
-    padding-bottom: 4rem
     position: relative
+    padding-bottom: 4.2rem
+    padding-left: 15px
+    padding-right: 15px
     &:after
       content: ""
       background-color: $fourth-color
       position: absolute
       width: 90px
-      height: 1px
-      top: 56%
+      height: 2px
+      top: 60%
       left: 50%
-      margin-left: -45px
+      margin-left: -51px
 
 //h3-title mod
+
+//buttons-group
+.buttons-group
+  margin-top: 3rem
+//buttons-group
 
 //btn-big
 .btn-big
@@ -40,13 +46,17 @@
   text-transform: uppercase
   font-family: $open-sans
   font-weight: 400
-  font-size: 1.1rem
+  font-size: 1.5rem
   line-height: 1
-  color: $main-text
+  color: $eleventh-color
   border-radius: 0
   padding: 1.7rem 0
+  // Medium devices (desktops, 768px and up)
+  @include respond-to(medium)
+    font-size: 1rem
   &:hover
     cursor: pointer
+    opacity: .8
   &_mod
     text-transform: none
     border: 3px solid $fourth-color
@@ -58,15 +68,19 @@
   border: 3px solid $fourth-color
   font-family: $open-sans
   font-weight: 400
-  font-size: 1rem
-  line-height: 1.2rem
+  font-size: 1.5rem
+  line-height: 1
   color: $eleventh-color
   border-radius: 0
-  padding: 1rem 0
+  padding: 1.7rem 0
+  // Medium devices (desktops, 768px and up)
+  @include respond-to(medium)
+    font-size: 1rem
   &:hover
     cursor: pointer
     background-color: $fifth-color
     border: 3px solid $fifth-color
+    opacity: .8
 //btn-save
 
 //btn-main
@@ -100,6 +114,12 @@
   font-family: $open-sans
   font-weight: 300
   padding: 0
+  // custom-medium devices (desktops, 767px and up)
+  @include respond-to(custom-medium)
+    width: 44px
+    height: 44px
+    display: block
+    margin: 1rem auto
   &:hover
     background-color: $fifth-color
     border: 1px solid $eighteenth-color
@@ -110,19 +130,20 @@
 .fb-login-button, .google-login-button, .linkedin-login-button
   background-color: $twenty-sixth-color
   color: $main-color
-  font-size: 1rem
+  font-size: 1.25rem
   line-height: 1
   font-weight: 300
   border-radius: 0
   display: flex
   align-items: center
-  padding: 0.7rem  2rem
+  padding: 0.9rem  2rem
   // small devices (desktops, 572 and up)
   @include respond-to(small)
     font-size: 0.8rem
     padding: 1rem
   &:hover
     cursor: pointer
+    opacity: .8
   img
     padding-right: 5%
 .google-login-button
@@ -133,10 +154,11 @@
 
 //small-info
 .small-info
-  font-size: 0.8rem
+  font-size: 1rem
+  line-height: 1.6rem
   font-weight: 300
   color: $eleventh-color
-  margin-bottom: 2rem
+  margin-bottom: 1.3rem
   text-align: center
   &_mod
     font-size: 1rem
@@ -145,11 +167,19 @@
 
 //popover
 .popover
-  min-width: 236px
+  width: 238px
   border-radius: 0
   border: 1px solid $eighteenth-color
   background-color: $eighth-color
-  left: 5.7%!important
+  top: -2px!important
+  left: 90px!important
+  // Medium devices (desktops, 768px and up)
+  @include respond-to(medium)
+    left: 0!important
+    &:after
+      left: 50%!important
+    &:before
+      left: 50%!important
   .arrow
     display: none
   &:after,
@@ -171,33 +201,12 @@
 
 .popover-body
   color: $twenty-third-color
-  font-size: 0.9rem
-  line-height: 1.1rem
+  font-size: 0.75rem
+  line-height: 1rem
   font-family: $open-sans
   font-weight: 300
-  padding: 0.8rem
+  padding: 1.12rem
 //popover
-
-
-//list
-.list-group
-  background-color: $second-color
-  .list-group-item
-    background: none
-    border: none
-    font-size: 1rem
-    font-family: $open-sans
-    font-weight: 400
-    color: $first-color
-    text-transform: uppercase
-  .list-link
-    font-size: 1rem
-    font-family: $open-sans
-    font-weight: 400
-    color: $first-color
-    &:hover, &:focus
-      color: $sixth-color
-//list
 
 //counter
 .counter-description
@@ -283,6 +292,9 @@
   .table-cell
     border-top: 1px solid $ninth-color
     padding: 1rem 0 .6rem 0
+    // Small devices (desktops, 576 and up)
+    @include respond-to(small)
+      border: none
   .table-row
     // Small devices (desktops, 576 and up)
     @include respond-to(small)
@@ -389,13 +401,12 @@
 .title-section
   background-color: $eighth-color
   border-top: 1px solid $seventeen-color
-  padding-top: 1rem
-  padding-bottom: 2rem
+  padding: 0.8rem 0.5rem 2.2rem
   .h2-title
     text-transform: uppercase
     color: $main-text
-    font-size: 2rem
-    line-height: 4rem
+    font-size: 2.25rem
+    line-height: 4.6rem
     font-family: $open-sans
     font-weight: 300
     // Small devices (desktops, 576 and up)
@@ -404,8 +415,8 @@
       justify-content: center
   .h4-title
     color: $eleventh-color
-    font-size: 1rem
-    line-height: 2rem
+    font-size: 1.125rem
+    line-height: 1.5rem
     font-family: $open-sans
     font-weight: 300
     // Small devices (desktops, 576 and up)
@@ -416,8 +427,8 @@
 
 //steps-block
 .steps-section
-  padding-top: 2rem
-  padding-bottom: 2rem
+  padding-top: 3.6rem
+  padding-bottom: 1.9rem
 .steps-cards
   // Medium devices (desktops, 768 and up)
   @include respond-to(medium)
@@ -451,28 +462,28 @@
     line-height: 1
     font-weight: 400
     background-color: $main-color
-    border: 1px solid $nineteenth-color
-    width: 3rem
-    height: 3rem
+    border: 2px solid $nineteenth-color
+    width: 3.25rem
+    height: 3.25rem
     &.active
       background-color: $eighteenth-color
       border: 1px solid $eighteenth-color
   .card-body
-    padding: 1rem
+    padding: 1.2rem 1rem
 //steps-block
 
 //alert-block
 .alert-danger
   font-family: $open-sans
   color: $twentieth-color
-  font-size: 0.9em
-  line-height: 1.1rem
+  font-size: 1.125rem
+  line-height: 1.5rem
   font-weight: 400
   background-color: $twenty-first-color
   border: 1px solid $twenty-second-color
   border-radius: 0
-  padding: 1rem
-  margin-bottom: 3rem
+  padding: 1.4rem 1rem
+  margin-bottom: 2.9rem
 
 //alert-block
 
@@ -487,7 +498,7 @@
   font-weight: 400
 
 .form-group
-  margin-bottom: 1.8rem
+  margin-bottom: 2rem
 
 .form-control-lg
   border-radius: 0
@@ -501,10 +512,14 @@
 
 .col-form-label
   color: $main-text
-  font-size: 1.1rem
-  line-height: 1.3rem
+  font-size: 1.2rem
+  line-height: 1.5rem
   font-family: $open-sans
   font-weight: 400
+  padding-right: 0
+  // Medium devices (desktops, 768 and up)
+  @include respond-to(medium)
+    margin-bottom: 1rem
 //forms
 
 //datepicker
@@ -515,27 +530,28 @@
 
 //radiobutton
 .custom-control-description
-  padding-left: 1.5rem
+  padding-left: 1.8rem
+
 
 .custom-controls-stacked
   .custom-control
-    margin-bottom: 1rem
+    margin-bottom: 1.5rem
 .custom-radio
   &:hover
     cursor: pointer
   .custom-control-indicator
-    top: 0.1rem
-    left: 0
+    top: -0.2rem
+    left: 0.1rem
     display: block
-    width: 1.4rem
-    height: 1.4rem
+    width: 2rem
+    height: 2rem
     pointer-events: none
     background-color: $main-color
     padding: 3px
     border: 1px solid $seventeen-color
   .custom-control-input:checked ~ .custom-control-indicator
     background-color: $fourth-color
-    box-shadow: inset 0 0 0 4px #fff
+    box-shadow: inset 0 0 0 6px #fff
     border-radius: 50%
 
 //radiobutton
@@ -551,11 +567,6 @@
   min-height: 3.6rem
 //select
 
-//select
-.children
-  max-width: 8rem
-//select
-
 //switch
 .switch
   margin-bottom: 2rem
@@ -563,8 +574,8 @@
   .switch-title
     font-family: $open-sans
     font-weight: 400
-    font-size: 1.2rem
-    line-height: 1
+    font-size: 1.5rem
+    line-height: 2.5rem
     color: $eleventh-color
     &_mod
       color: $twenty-fourth-color
@@ -573,9 +584,10 @@
     position: relative
     display: inline-block
     cursor: pointer
-    width: 40px
-    height: 22px
-    margin: 5px 19px 0
+    width: 50px
+    height: 28px
+    top: 6px
+    margin: 0 19px 0
     .c-box
       opacity: 0
       height: 100%
@@ -599,8 +611,8 @@
     .c-switch-toggle
       left: 0
       top: 0
-      width: 18px
-      height: 18px
+      width: 24px
+      height: 24px
       margin-top: 2px
       margin-left: 4px
       background-color: $main-color
@@ -618,8 +630,8 @@
     top: 0.1rem
     left: 0
     display: block
-    width: 1.4rem
-    height: 1.4rem
+    width: 2rem
+    height: 2rem
     pointer-events: none
     background-color: $main-color
     padding: 3px
@@ -630,7 +642,7 @@
 
   .custom-control-input:checked ~ .custom-control-indicator
     background-color: $fourth-color
-    box-shadow: inset 0 0 0 4px #fff
+    box-shadow: inset 0 0 0 6px #fff
     border-radius: 0
   .custom-checkbox .custom-control-input.active,
   .custom-checkbox .custom-control-input:focus,
@@ -642,26 +654,52 @@
 
 //custom-file
 .image-upload-holder
-  margin-bottom: 4rem
+  margin-bottom: 2rem
 
 .custom-file
-  height: 3.4rem
+  height: 3.6rem
   padding: 0
 
 .custom-file-label
-  position: absolute
-  bottom: -100%
+  font-size: 1rem
+  line-height: 1.5rem
+  color: $eleventh-color
+  margin: 0
+  padding-top: 0.5rem
+  // Large devices (desktops, 992 and up)
+  @include respond-to(large)
+    display: none
+
+.image-upload
+  text-align: center
+
+.remove
+  display: block
+  text-align: center
+  font-size: 1rem
+  line-height: 1
+  margin-bottom: 0.4rem
+  color: $eleventh-color
+  // Medium devices (desktops, 768 and up)
+  @include respond-to(medium)
+    margin-bottom: 1rem
+    line-height: 1.5rem
+  &:hover
+    cursor: pointer
 
 .custom-file-control
   border: none
+  &:hover
+    cursor: pointer
 
 .inputfile
-  width: 100%
   height: 100%
+  width: 100%
 
 .custom-file-control:lang(en)
   height: 100%
-  padding: .7rem 1rem
+  padding: 1rem
+  line-height: 1
   &:before
     content: ''
     background: url("../images/file.png") 0 0 no-repeat
@@ -692,7 +730,7 @@
   position: relative
   color: $main-text
   text-decoration: none
-  padding: 1rem
+  padding: 0.94rem 1.2rem
   border-bottom: 1px solid $first-color
   // Medium devices (desktops, 768 and up)
   @include respond-to(medium)
@@ -717,8 +755,11 @@
       height: 35px
       border-radius: 50%
       top: 22%
-      right: 20px
-      margin-top: -17
+      right: 23px
+      margin-top: 7px
+      // Medium devices (desktops, 768 and up)
+      @include respond-to(medium)
+        display: none
     &:after
       display: none
   &:after
@@ -733,8 +774,8 @@
     border: 1px solid $eighteenth-color
     border-radius: 50%
     top: 50%
-    right: 20px
-    margin-top: -17px
+    right: 23px
+    margin-top: -13px
     // Medium devices (desktops, 768 and up)
     @include respond-to(medium)
       display: none
@@ -745,9 +786,9 @@
 .card-body
   &_mod
     color: $eleventh-color
-    font-size: 0.8rem
-    line-height: 1rem
-    padding: 1.25rem 2.5rem
+    font-size: 1rem
+    line-height: 1.75rem
+    padding: 0 3.2rem 2rem
     border-bottom: 1px solid $first-color
     background-color: $eighth-color
     // Medium devices (desktops, 768 and up)
@@ -760,7 +801,7 @@
 .colums-holder
   padding-bottom: 4rem
   border-bottom: 1px solid $fourteenth-color
-  margin-bottom: 3rem
+  margin-bottom: 4rem
   .left-column
     border-right: 1px solid $fourteenth-color
     // Large devices (desktops, 992 and up)
@@ -771,45 +812,19 @@
       &_mod
         color: $eleventh-color
         font-weight: 300
-        font-size: 0.8rem
-        line-height: 1rem
+        font-size: 1.125rem
+        line-height: 1.6rem
         padding-left: 1rem
       a
         color: $main-text
         text-decoration: underline
+        font-size: 1.125rem
+        line-height: 1.6rem
+        &:hover
+          text-decoration: none
+    .custom-control-indicator
+      top: -0.18rem
 //colums
 
-//message
-.message-holder
-  padding-bottom: 3rem
-  text-align: center
-  &_mod
-    border-bottom: 1px solid $fourteenth-color
-    margin-bottom: 3rem
-  .img-holder
-    margin-bottom: 2rem
-  .card-img
-    width: 160px
-    height: 160px
-  .h4-title
-    color: $main-text
-    text-transform: uppercase
-  .sub-text
-    font-size: 1rem
-    line-height: 1.2rem
-    font-weight: 300
-    color: $eleventh-color
-  .sub-text-calc
-    font-weight: 400
-    border-bottom: 3px solid $fourth-color
-    color: $main-text
-    font-size: 1.8rem
-    line-height: 2rem
-    &_mod
-      font-size: 1rem
-      line-height: 1.2rem
-      border-bottom: none
-
-//message
 
 

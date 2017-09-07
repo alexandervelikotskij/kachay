@@ -26,6 +26,10 @@
   .h2-title
     margin-bottom: 1.2rem
     text-transform: uppercase
+    // medium devices (desktops, 768px and up)
+    @include respond-to(medium)
+      font-size: 1.8rem
+      line-height: 2rem
   .h3-title
     margin-bottom: 3.2rem
     text-transform: uppercase
@@ -50,7 +54,10 @@
       font-size: 1.1rem
       color: $main-text
       font-family: $open-sans
-      font-weight: 400
+      font-weight:
+      // Large devices (desktops, 992px and up)
+      @include respond-to(large)
+        font-size: 0.9rem
       &_mod
         font-weight: 300
         font-size: 2rem
@@ -110,12 +117,12 @@
     font-weight: 400
     margin-bottom: 1.1rem
   .how-work-cards
-    padding-bottom: 2.4rem
+    padding-bottom: 3.3rem
     border-bottom: 1px solid $fourteenth-color
     .card
       position: relative
       .card-body
-        padding: 2.2rem 1.25rem
+        padding: 2.6rem 1.25rem 1.25rem
       &:last-child
         &:after
           display: none
@@ -143,10 +150,15 @@
 //how-work section
 
 //need-cards section
+.need-cards
+  .card-body
+    padding: 3.6rem 1.25rem 1.25rem
 .need
   padding-top: 2rem
-  padding-bottom: 2rem
+  padding-bottom: 3rem
   background-color: $main-color
+  .h4-title
+    font-size: 1.16rem
   .need-card
     width: 160px
     height: 160px
@@ -166,19 +178,19 @@
 
 //review section
 .review
-  padding-top: 3rem
-  padding-bottom: 3rem
+  padding-top: 4rem
+  padding-bottom: 4.1rem
   background-color: $eighth-color
   .h2-title
     color: $main-text
     text-transform: uppercase
-    margin-bottom: 2rem
+    margin-bottom: 3.2rem
     font-weight: 300
 //review section
 
 //carousel
 .carousel
-  padding-bottom: 6rem
+  padding-bottom: 6.35rem
   .indicator
     width: 18px
     height: 18px
@@ -200,8 +212,8 @@
       background-image: url("../images/quote.png")
       width: 24px
       height: 18px
-      top: 1.6rem
-      left: 1.1rem
+      top: 1.5rem
+      left: 1.3rem
       z-index: 1
   .card-text
     color: $eleventh-color
@@ -212,7 +224,7 @@
   .card-body
     padding: 1.1rem 1.1rem 1.1rem 3.8rem
     background-color: $main-color
-    margin-bottom: 3rem
+    margin-bottom: 2.5rem
     position: relative
     &:before
       content: ''
@@ -229,6 +241,7 @@
   .blockquote-footer
     flex-direction: column
     height: 100%
+    padding-left: 0.3rem
     // Large devices (desktops, 768px and up)
     @include respond-to(medium)
       margin-bottom: 2rem
@@ -244,28 +257,55 @@
     font-weight: 400
   .date
     color: $fifteenth-color
-    font-size: 0.8rem
+    font-size: 0.9rem
     line-height: 1
     font-family: $open-sans
     font-weight: 400
+  .carousel-indicators
+    bottom: 0
 
 //carousel
 
 /* ===============================Main page Styles ========================================== */
 
 /* ===============================Personal Data page Styles ===================================== */
-
+.passport-data
+  padding-bottom: 1.7rem
+  .custom-form-width
+    // Large devices (desktops, 768 and up)
+    @include respond-to(medium)
+      margin-bottom: 1rem
 
 .contacts-data
-  padding-bottom: 6rem
-
+  padding-bottom: 8rem
+  .phone-form-form-group
+    margin-bottom: 4.6rem
+  .custom-control-description
+    font-size: 1.2rem
+    line-height: 1.5rem
+    color: $eleventh-color
+    .custom-control-description-link
+      text-decoration: underline
 /* ===============================Personal Data page Styles ===================================== */
 
 
 /* ===============================Income Data page Styles ===================================== */
+.third-data
+  padding-bottom: 2rem
+
 .expenses-data
   padding-top: 2rem
   padding-bottom: 6rem
+  .currency-info
+    font-weight: 300
+    font-size: 1.2rem
+    line-height: 1.5rem
+    color: $eleventh-color
+    // custom-medium devices (desktops, 767px and up)
+    @include respond-to(custom-medium)
+      display: block
+      margin: 1rem 0
+      text-align: center
 /* ===============================Income Data page Styles ===================================== */
 
 /* ===============================Address Data page Styles ===================================== */
@@ -275,23 +315,25 @@
 /* ===============================Address Data page Styles ===================================== */
 
 /* ===============================Work Place page Styles ===================================== */
+.work-place
+  padding-bottom:  1.6rem
+
 .work-address-data
-  padding-top: 2rem
   padding-bottom: 6rem
 /* ===============================Work Place page Styles ===================================== */
 
 /* ===============================Documents page Styles ===================================== */
 .documents
-  padding-top: 2rem
   padding-bottom: 6rem
 /* ===============================Documents page Styles ===================================== */
 
 /* ===============================FAQ page Styles ===================================== */
 .general-section
+  padding-top: 3rem
   padding-bottom: 4rem
 
 .prolongation-section
-  padding-bottom: 4rem
+  padding-bottom: 6rem
 
 .loan-section
   padding-bottom: 4rem
@@ -299,8 +341,8 @@
 
 /* ===============================About page Styles ===================================== */
 .info-holder
-  padding-top: 3rem
-  padding-bottom: 3rem
+  padding-top: 2rem
+  padding-bottom: 3.2rem
   border-bottom: 1px solid $fourteenth-color
   .img-holder
     // Large devices (desktops, 992 and up)
@@ -315,7 +357,6 @@
      display: flex
      flex-direction: column
      align-items: center
-
   .card-img
     width: 196px
     height: 196px
@@ -327,12 +368,14 @@
       width: auto
   .h4-title
     color: $main-text
-    font-size: 1.6rem
-    line-height: 1.8rem
+    font-size: 1.8rem
+    line-height: 2rem
+    margin-bottom: 2rem
   .paragraph
     color: $eleventh-color
-    font-size: 1rem
-    line-height: 1.6rem
+    font-size: 1.15rem
+    line-height: 1.9rem
+    margin-bottom: 0.6rem
     // Large devices (desktops, 992 and up)
     @include respond-to(large)
       text-align: justify
@@ -342,14 +385,14 @@
 /* ===============================Enter page Styles ===================================== */
 .enter-section
   padding-top: 3rem
-  padding-bottom: 3rem
+  padding-bottom: 6.6rem
 
 /* ===============================Enter page Styles ===================================== */
 
 /* ===============================Register page Styles ===================================== */
 .registration-section
-  padding-top: 3rem
-  padding-bottom: 3rem
+  padding-top: 5rem
+  padding-bottom: 9rem
 /* ===============================Register page Styles ===================================== */
 
 /* ===============================Register step 2 page Styles ===================================== */
@@ -357,6 +400,41 @@
 /* ===============================Register step 2 page Styles ===================================== */
 /* ===============================Register step 3 page Styles ===================================== */
 /* ===============================Register step 3 page Styles ===================================== */
+
+/* ===============================Order result page Styles ===================================== */
+.message-holder
+  padding-bottom: 3.6rem
+  text-align: center
+  &_mod
+    border-bottom: 1px solid $fourteenth-color
+    margin-bottom: 3rem
+  .img-holder
+    margin-bottom: 2rem
+  .card-img
+    width: 160px
+    height: 160px
+  .h4-title
+    color: $main-text
+    text-transform: uppercase
+    margin-bottom: 2rem
+  .sub-text
+    font-size: 1.4rem
+    line-height: 3rem
+    font-weight: 300
+    color: $eleventh-color
+
+  .sub-text-calc
+    font-weight: 400
+    border-bottom: 3px solid $fourth-color
+    color: $main-text
+    font-size: 2rem
+    line-height: 1
+    &_mod
+      font-size: 1rem
+      line-height: 1.2rem
+      border-bottom: none
+
+/* ===============================Order result page Styles ===================================== */
 
 /* ===============================Order sms page Styles ===================================== */
 
