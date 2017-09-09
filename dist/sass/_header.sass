@@ -39,7 +39,7 @@
       &:first-child
         border-right: 1px solid $first-color
     .nav-link
-      &:hover, &.active, &:focus
+      &.active, &:focus
         font-weight: 600
         background: none
         color: $main-text
@@ -141,3 +141,7 @@
 @include respond-to(medium)
   .navbar-brand
     width: 40%
+// small devices (desktops,576px and up)
+@include respond-to(small)
+  .navbar-brand
+    width: 60%
