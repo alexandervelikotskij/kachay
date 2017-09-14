@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		var slider = new Slider("#ex6", {
 			tooltip: 'always',
 			formatter: function(value) {
-				return 'Перший кредит <br> — до' + value + ' грн.';
+				return 'Перший кредит <br> — до ' + value + ' грн.';
 			}
 		});
 		slider.on("slide", function(sliderValue) {

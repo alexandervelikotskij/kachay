@@ -46,7 +46,7 @@
   text-transform: uppercase
   font-family: $open-sans
   font-weight: 400
-  font-size: 1.5rem
+  font-size: 1.2rem
   line-height: 1
   color: $eleventh-color
   border-radius: 0
@@ -284,7 +284,7 @@
 
 //table
 .table
-  margin-bottom: 2.2rem
+  margin-bottom: 4.2rem
   // Medium devices (desktops, 768px and up)
   @include respond-to(medium)
     display: flex
@@ -327,11 +327,11 @@
 .slider
   .tooltip-inner
     width: 117px
-    left: 1px
+    left: 5px
     padding: 0.25rem 0.6rem
     font-size: 0.8rem
     line-height: 1rem
-    bottom: 15px
+    top: 72px
     white-space: normal
     border-radius: 0
     border: 1px solid $thirteenth-color
@@ -343,7 +343,7 @@
     &:before
       content: ''
       position: absolute
-      bottom: -9px
+      bottom: 33px
       width: 17px
       height: 16px
       left: 50%
@@ -359,7 +359,7 @@
       content: ''
       position: absolute
       left: 50%
-      bottom: -1px
+      bottom: 40px
       width: 18px
       height: 1px
       background-color: $eighth-color
@@ -390,10 +390,14 @@
       border-radius: 0
       height: 3px
     .slider-handle
-      &.triangle
-        border-width: 0 11px 15px
-        border-bottom-color: $fourth-color
-        top: 95%
+      background-color: $main-color
+      background-image: none
+      &.round
+        border-radius: 50%
+        border: 2px solid $fourth-color
+        top: -7px
+        width: 29px
+        height: 29px
 
 //range-slider
 

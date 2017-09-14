@@ -48,6 +48,7 @@
       margin-bottom: 1.2rem
       // Small devices (desktops, 576 and up)
       @include respond-to(small)
+        text-align: center
         display: flex
         justify-content: center
     .quantity
@@ -157,6 +158,8 @@
   padding-top: 2rem
   padding-bottom: 3rem
   background-color: $main-color
+  .h2-title
+    text-align: center
   .h4-title
     font-size: 1.16rem
   .need-card
@@ -186,6 +189,9 @@
     text-transform: uppercase
     margin-bottom: 3.2rem
     font-weight: 300
+    // Large devices (desktops, 768 and up)
+    @include respond-to(medium)
+      text-align: center
 //review section
 
 //carousel
