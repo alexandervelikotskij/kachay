@@ -34,16 +34,19 @@
     margin-bottom: 3.2rem
     text-transform: uppercase
   .credit-details
+    overflow: hidden
     .h3-title
       color: $main-text
       font-weight: 400
       margin-bottom: 3.1rem
+      font-size: 1.7rem
       // Small devices (desktops, 576 and up)
       @include respond-to(small)
         display: flex
         justify-content: center
         text-align: center
     .h4-title
+      font-size: 1.15rem
       text-transform: uppercase
       margin-bottom: 1.2rem
       // Small devices (desktops, 576 and up)
@@ -55,14 +58,12 @@
       font-size: 1.1rem
       color: $main-text
       font-family: $open-sans
-      font-weight:
-      // Large devices (desktops, 992px and up)
-      @include respond-to(large)
-        font-size: 0.9rem
+      padding-left: 0.5rem
       &_mod
         font-weight: 300
         font-size: 2rem
         line-height: 2.2rem
+        padding-left: 0
     .currency
       color: $eleventh-color
       font-size: 0.9rem
@@ -70,37 +71,39 @@
       font-weight: 300
       padding-left: 0.5rem
       &_mod
-        font-size: 0.8rem
-        line-height: 1rem
-        padding: 0 0.3rem
+        font-size: 1.15rem
+        padding: 0 0.8rem
+    .left-column-bg
+      background-color: $main-color
+    .right-column-bg
+      background-color: $eighth-color
     .left-column
-      flex: 0 0 54%
-      max-width: 54%
       background-color: $main-color
       padding-top: 3rem
       padding-bottom: 3rem
-      // extra Large devices (desktops, 1200 and up)
+      // Large devices (desktops, 1200px and up)
       @include respond-to(extra-large)
-        flex: 0 0 50%
-        max-width: 50%
-      // Large devices (desktops, 768 and up)
-      @include respond-to(medium)
-        flex: 0 0 100%
-        max-width: 100%
+        padding-left: 0
+        padding-right: 0
     .right-column
-      flex: 0 0 46%
-      max-width: 46%
       background-color: $eighth-color
       padding-top: 3rem
       padding-bottom: 3rem
-      // extra Large devices (desktops, 1200 and up)
+      // Large devices (desktops, 1200px and up)
       @include respond-to(extra-large)
-        flex: 0 0 50%
-        max-width: 50%
-      // Large devices (desktops, 768 and up)
-      @include respond-to(medium)
-        flex: 0 0 100%
-        max-width: 100%
+        padding-left: 0
+        padding-right: 0
+        text-align: center
+    .column-width
+      width: 540px
+      // Large devices (desktops, 1200px and up)
+      @include respond-to(extra-large)
+        width: 100%
+      // Large devices (desktops, 991px and up)
+      @include respond-to(custom-large)
+        width: 90%
+        margin: 0 auto
+
 //credit section
 
 //how-work section

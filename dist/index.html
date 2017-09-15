@@ -6,7 +6,7 @@
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
         <meta name="format-detection" content="telephone=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Tinkoff</title>
+        <title>Качай Гроші</title>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/all-plugins.css" />
         <link rel="stylesheet" href="css/style.css">
@@ -23,14 +23,14 @@
             <nav class="navbar navbar-expand-lg navbar-color">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img class="d-inline-block align-top" src="images/logo.png" width="201" height="64" alt="logo">
+                        <img class="d-inline-block align-top" src="images/logo.svg" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>  Menu</title><path d="M4 7h22M4 15h22M4 23h22" style="stroke-width:2;stroke:currentColor"/></svg>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarsExample07">
                         <ul class="navbar-nav m-auto menu-links">
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link nav-link_mod" href="#">Про нас <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
@@ -40,7 +40,7 @@
                                 <a class="nav-link nav-link_mod" href="#">Довідка</a>
                             </li>
                         </ul>
-                        <ul class="nav nav-pills m-auto menu-languages" id="pills-tab" role="tablist">
+                        <ul class="nav nav-pills mt-auto mb-auto menu-languages" id="pills-tab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link nav-link_mod active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-expanded="true">Укр</a>
                             </li>
@@ -73,6 +73,7 @@
             <div class="counter-holder row align-items-center justify-content-center">
                 <span class="counter-description">Укладено</span>
                 <ul class="d-flex counter-deal">
+                    <li class="counter-item"><span class="counter-number">1</span></li>
                     <li class="counter-item"><span class="counter-number">5</span></li>
                     <li class="counter-item"><span class="counter-number">0</span></li>
                     <li class="counter-item"><span class="counter-number">2</span></li>
@@ -102,19 +103,19 @@
                 <h3 class="h3-title">Перший кредит — до 1500 грн під 0,01%</h3>
             </div>
         </div>
-        <div class="container big-container">
-            <div class="credit-details row justify-content-center">
-               <div class="left-column col-xs-12 col-md-6 col-lg-7">
-                   <div class="row justify-content-center">
-                       <div class="col-11">
-                           <h3 class="h3-title text-md-left text-sm-center">Онлайн кредити на ВАШУ КАРТУ</h3>
-                           <h4 class="h4-title text-md-left text-sm-center">Оберіть суму до отримання</h4>
+        <div class="credit-details container-fluid">
+           <div class="row flex-row">
+               <div class="col-lg-6 col-sm-12 d-flex left-column-bg">
+                   <div class="left-column col-xs-12 col-md-12 d-flex justify-content-end">
+                       <div class="column-width">
+                           <h3 class="h3-title text-sm-center">Онлайн кредити на ВАШУ КАРТУ</h3>
+                           <h4 class="h4-title text-sm-left">Оберіть суму до отримання</h4>
                            <div class="slider-holder tooltip-text">
                                <div class="slider-details-holder">
                                    <span class="quantity quantity_mod" id="ex6SliderVal">500</span>
                                    <span class="currency currency_mod" id="ex6CurrentSliderValLabel"> грн.</span>
                                </div>
-                               <input id="ex6" type="text" data-slider-min="500" data-slider-max="5000" data-slider-step="500" data-slider-value="500" data-slider-handle="triangle"/>
+                               <input id="ex6" type="text" data-slider-min="500" data-slider-max="5000" data-slider-step="500" data-slider-value="500" data-slider-handle="round"/>
                                <div class="slider-details-holder slider-details-holder_mod row justify-content-between">
                                    <span class="currency currency_mod">500</span>
                                    <span class="currency currency_mod">5000</span>
@@ -126,7 +127,7 @@
                                    <span class="quantity quantity_mod" id="ex7SliderVal">5</span>
                                    <span class="currency currency_mod" id="ex7CurrentSliderValLabel"> днів.</span>
                                </div>
-                               <input class="slider_mod" id="ex7" type="text" data-slider-min="5" data-slider-max="30" data-slider-step="5" data-slider-value="5" data-slider-handle="triangle"/>
+                               <input class="slider_mod" id="ex7" type="text" data-slider-min="5" data-slider-max="30" data-slider-step="5" data-slider-value="5" data-slider-handle="round"/>
                                <div class="slider-details-holder slider-details-holder_mod row justify-content-between">
                                    <span class="currency currency_mod">5</span>
                                    <span class="currency currency_mod">30</span>
@@ -135,39 +136,35 @@
                        </div>
                    </div>
                </div>
-               <div class="right-column col-xs-12 col-md-6 col-lg-5">
-                    <div class="row justify-content-center">
-                        <div class="col-11">
-                            <h3 class="h3-title text-md-left text-sm-center">Деталі вашого кредиту</h3>
-                            <table class="table table-responsive">
-                                <tbody>
-                                    <tr class="table-row">
-                                        <td class="table-cell border-0"><span class="info-details">Сума кредиту:</span></td>
-                                        <td class="table-cell border-0"><span class="quantity">7 500 </span><span class="currency"> грн.</span></td>
-                                    </tr>
-                                    <tr class="table-row">
-                                        <td class="table-cell"><span class="info-details">Сума процентів:</span></td>
-                                        <td class="table-cell"><span class="quantity">1800 </span><span class="currency"> грн.</span></td>
-                                    </tr>
-                                    <tr class="table-row">
-                                        <td class="table-cell"><span class="info-details">Строк кредиту:</span></td>
-                                        <td class="table-cell"><span class="quantity">14 </span><span class="currency"> днів</span></td>
-                                    </tr>
-                                    <tr class="table-row">
-                                        <td class="table-cell"><span class="info-details">Дата повернення:</span></td>
-                                        <td class="table-cell"><span class="quantity">12.08.17 </span></td>
-                                    </tr>
-                                    <tr class="table-row">
-                                        <td class="table-cell"><span class="info-details">Загальна сума до повернення: </span> </td>
-                                        <td class="table-cell"><span class="quantity"> 9 300</span><span class="currency"> грн.</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <button type="button" class="btn btn-big btn-block">Подати заявку на кредит</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+               <div class="col-lg-6 col-sm-12 d-flex right-column-bg">
+                   <div class="right-column col-xs-12 col-md-12 d-flex justify-content-start">
+                       <div class="column-width">
+                           <h3 class="h3-title text-sm-center">Деталі вашого кредиту</h3>
+                           <table class="table table-responsive">
+                               <tbody>
+                               <tr class="table-row">
+                                   <td class="table-cell border-0"><span class="info-details">Сума кредиту:</span></td>
+                                   <td class="table-cell border-0"><span class="quantity">7 500 </span><span class="currency"> грн.</span></td>
+                               </tr>
+                               <tr class="table-row">
+                                   <td class="table-cell"><span class="info-details">Строк кредиту:</span></td>
+                                   <td class="table-cell"><span class="quantity">14 </span><span class="currency"> днів</span></td>
+                               </tr>
+                               <tr class="table-row">
+                                   <td class="table-cell"><span class="info-details">Дата повернення:</span></td>
+                                   <td class="table-cell"><span class="quantity">12.08.17 </span></td>
+                               </tr>
+                               <tr class="table-row">
+                                   <td class="table-cell"><span class="info-details">Загальна сума до повернення: </span> </td>
+                                   <td class="table-cell"><span class="quantity"> 9 300</span><span class="currency"> грн.</span></td>
+                               </tr>
+                               </tbody>
+                           </table>
+                           <button type="button" class="btn btn-big btn-block">Подати заявку на кредит</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
         </div>
     </section>
     <!-- CREDIT SECTION-->
