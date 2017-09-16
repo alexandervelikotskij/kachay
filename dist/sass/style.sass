@@ -37,7 +37,7 @@
 
 //btn-big
 .btn-big
-  background-color: $fourth-color
+  background-color: $twenty-nineth-color
   text-transform: uppercase
   font-family: $open-sans
   font-weight: 400
@@ -51,7 +51,7 @@
     font-size: .9rem
   &:hover
     cursor: pointer
-    background-color: $twenty-ninth-color
+    background-color: $fourth-color
   &_mod
     text-transform: none
     border: 3px solid $fourth-color
@@ -75,7 +75,6 @@
     cursor: pointer
     background-color: $fifth-color
     border: 3px solid $fifth-color
-    opacity: .8
 //btn-save
 
 //btn-main
@@ -88,7 +87,7 @@
   font-family: $open-sans
   font-weight: 400
   line-height: 1
-  padding: 1.2rem 3.5rem
+  padding: 1.2rem 0.2rem
   background: none
   &:hover
     color: $main-text
@@ -324,6 +323,7 @@
       &.slider-horizontal
         background-size: 112px 20px
         background-position: 104px 9px
+        height: 13px
         // Large devices (desktops, 1200px and up)
         @include respond-to(extra-large)
           background-size: 97px 20px
@@ -423,7 +423,7 @@
 .title-section
   background-color: $eighth-color
   border-top: 1px solid $seventeen-color
-  padding: 0.8rem 0.5rem 2.2rem
+  padding: 0.8rem 0.5rem
   .h2-title
     text-transform: uppercase
     color: $main-text
@@ -452,6 +452,10 @@
   padding-top: 3.6rem
   padding-bottom: 1.9rem
 .steps-cards
+  // Large devices (desktops, 992 and up)
+  @include respond-to(large)
+    .h4-title
+      font-size: 0.9rem
   // Medium devices (desktops, 768 and up)
   @include respond-to(medium)
     flex-flow: column wrap
@@ -487,6 +491,9 @@
     border: 2px solid $nineteenth-color
     width: 3.25rem
     height: 3.25rem
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+        align-self: center
     &.active
       background-color: $eighteenth-color
       border: 1px solid $eighteenth-color

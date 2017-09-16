@@ -328,7 +328,8 @@ h5, .h5-title {
 .navbar-expand-lg {
   padding: 0; }
   .navbar-expand-lg .btn-main {
-    display: block; }
+    display: block;
+    min-width: 10rem; }
     @media only screen and (max-width: 991px) {
       .navbar-expand-lg .btn-main {
         margin: auto; } }
@@ -1027,8 +1028,8 @@ h5, .h5-title {
 /* ===============================Enter page Styles ===================================== */
 /* ===============================Register page Styles ===================================== */
 .registration-section {
-  padding-top: 5rem;
-  padding-bottom: 9rem; }
+  padding-top: 2rem;
+  padding-bottom: 5rem; }
 
 /* ===============================Register page Styles ===================================== */
 /* ===============================Register step 2 page Styles ===================================== */
@@ -1037,13 +1038,13 @@ h5, .h5-title {
 /* ===============================Register step 3 page Styles ===================================== */
 /* ===============================Order result page Styles ===================================== */
 .message-holder {
-  padding-bottom: 3.6rem;
+  padding-bottom: 1.2rem;
   text-align: center; }
   .message-holder_mod {
     border-bottom: 1px solid #d0d0d0;
-    margin-bottom: 3rem; }
+    margin-bottom: 1.2rem; }
   .message-holder .img-holder {
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
   .message-holder .card-img {
     width: 160px;
     height: 160px; }
@@ -1052,8 +1053,8 @@ h5, .h5-title {
     text-transform: uppercase;
     margin-bottom: 2rem; }
   .message-holder .sub-text {
-    font-size: 1.4rem;
-    line-height: 3rem;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
     font-weight: 300;
     color: #656565; }
   .message-holder .sub-text-calc {
@@ -1070,6 +1071,41 @@ h5, .h5-title {
 /* ===============================Order result page Styles ===================================== */
 /* ===============================Order sms page Styles ===================================== */
 /* ===============================Order sms page Styles ===================================== */
+/* =============================== MENU PAGE ===================================== */
+.menu {
+  background-color: #f5f6f6; }
+  .menu .col {
+    background-color: #fff;
+    margin: 0 1%;
+    padding: 10px; }
+  .menu h2 {
+    background-color: #424955;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center; }
+  .menu h3 {
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+    line-height: 2rem;
+    margin-bottom: 1rem; }
+  .menu ul {
+    list-style: none;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem; }
+    .menu ul li {
+      margin-bottom: 0.5rem; }
+      .menu ul li .ready {
+        color: #0084b1; }
+      .menu ul li .ready:hover, .menu ul li .ready:focus, .menu ul li .ready:visited {
+        text-decoration: underline;
+        color: #0084b1; }
+      .menu ul li .not-ready {
+        color: #ababab; }
+
+/* =============================== MENU PAGE ===================================== */
 /*COLORS*/
 /*FONTS*/
 /*--------- GENERAL & BASIC STYLES ---------*/
@@ -1334,7 +1370,7 @@ h5, .h5-title {
   margin-top: 3rem; }
 
 .btn-big {
-  background-color: #ffd400;
+  background-color: #ffdb23;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -1349,7 +1385,7 @@ h5, .h5-title {
       font-size: .9rem; } }
   .btn-big:hover {
     cursor: pointer;
-    background-color: #efbf01; }
+    background-color: #ffd400; }
   .btn-big_mod {
     text-transform: none;
     border: 3px solid #ffd400; }
@@ -1371,8 +1407,7 @@ h5, .h5-title {
   .btn-save:hover {
     cursor: pointer;
     background-color: #ffee3b;
-    border: 3px solid #ffee3b;
-    opacity: .8; }
+    border: 3px solid #ffee3b; }
 
 .btn-main {
   -webkit-border-radius: 0;
@@ -1384,7 +1419,7 @@ h5, .h5-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1;
-  padding: 1.2rem 3.5rem;
+  padding: 1.2rem 0.2rem;
   background: none; }
   .btn-main:hover {
     color: #424955;
@@ -1638,7 +1673,8 @@ h5, .h5-title {
   .slider-holder_mod .slider.slider-horizontal {
     -webkit-background-size: 112px 20px;
     background-size: 112px 20px;
-    background-position: 104px 9px; }
+    background-position: 104px 9px;
+    height: 13px; }
     @media only screen and (max-width: 1200px) {
       .slider-holder_mod .slider.slider-horizontal {
         -webkit-background-size: 97px 20px;
@@ -1746,7 +1782,7 @@ h5, .h5-title {
 .title-section {
   background-color: #f5f6f6;
   border-top: 1px solid #cbcaca;
-  padding: 0.8rem 0.5rem 2.2rem; }
+  padding: 0.8rem 0.5rem; }
   .title-section .h2-title {
     text-transform: uppercase;
     color: #424955;
@@ -1784,6 +1820,10 @@ h5, .h5-title {
 .steps-section {
   padding-top: 3.6rem;
   padding-bottom: 1.9rem; }
+
+@media only screen and (max-width: 992px) {
+  .steps-cards .h4-title {
+    font-size: 0.9rem; } }
 
 @media only screen and (max-width: 768px) {
   .steps-cards {
@@ -1829,6 +1869,11 @@ h5, .h5-title {
   border: 2px solid #b7bcc1;
   width: 3.25rem;
   height: 3.25rem; }
+  @media only screen and (max-width: 768px) {
+    .steps-cards .number {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center; } }
   .steps-cards .number.active {
     background-color: #ffd71c;
     border: 1px solid #ffd71c; }
