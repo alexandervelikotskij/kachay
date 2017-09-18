@@ -343,7 +343,8 @@ h5, .h5-title {
     margin: 0 .5rem;
     border-bottom: 1px solid #fff; }
     .navbar-expand-lg .menu-links .nav-item:hover, .navbar-expand-lg .menu-links .nav-item.active, .navbar-expand-lg .menu-links .nav-item:focus {
-      border-bottom: 1px solid #ffd400; }
+      border-bottom: 1px solid #ffd400;
+      font-weight: 600; }
   .navbar-expand-lg .menu-links .nav-link_mod {
     padding: .5rem 0;
     color: #424955;
@@ -981,21 +982,23 @@ h5, .h5-title {
       -ms-flex-align: center;
       align-items: center;
       margin-bottom: 2rem; } }
-  @media only screen and (max-width: 992px) {
-    .info-holder .text-holder {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center; } }
+  .info-holder .text-holder {
+    margin-top: 0.6rem; }
+    @media only screen and (max-width: 992px) {
+      .info-holder .text-holder {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; } }
   .info-holder .card-img {
     width: 196px;
     height: 196px;
@@ -1071,6 +1074,31 @@ h5, .h5-title {
 /* ===============================Order result page Styles ===================================== */
 /* ===============================Order sms page Styles ===================================== */
 /* ===============================Order sms page Styles ===================================== */
+/* ===============================How it work page Styles ===================================== */
+@media only screen and (max-width: 992px) {
+  .steps-section .info-holder .text-holder {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; } }
+
+@media only screen and (max-width: 768px) {
+  .steps-section .info-holder .text-holder {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; } }
+
+/* ===============================How it work page Styles ===================================== */
 /* =============================== MENU PAGE ===================================== */
 .menu {
   background-color: #f5f6f6; }
@@ -1859,16 +1887,7 @@ h5, .h5-title {
         display: none; } }
 
 .steps-cards .number {
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  color: #424955;
-  font-size: 1.5rem;
-  line-height: 1;
-  font-weight: 400;
-  background-color: #fff;
-  border: 2px solid #b7bcc1;
-  width: 3.25rem;
-  height: 3.25rem; }
+  border: 2px solid #b7bcc1; }
   @media only screen and (max-width: 768px) {
     .steps-cards .number {
       -webkit-align-self: center;
@@ -2077,7 +2096,7 @@ h5, .h5-title {
       display: none; } }
 
 .image-upload {
-  text-align: center; }
+  margin-bottom: 1.5rem; }
 
 .remove {
   display: block;
@@ -2236,3 +2255,15 @@ h5, .h5-title {
         text-decoration: none; }
     .colums-holder .left-column .custom-control-indicator {
       top: -0.18rem; }
+
+.number {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #424955;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #fff;
+  border: 2px solid #ffd400;
+  width: 3.25rem;
+  height: 3.25rem; }
