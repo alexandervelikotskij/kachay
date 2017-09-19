@@ -19,7 +19,6 @@
 //credit section
 .credit-section
   padding-top: 3.6rem
-  padding-bottom: 5rem
   background-image: url("../images/range-block-bg.jpg")
   background-repeat: no-repeat
   background-size: cover
@@ -55,7 +54,7 @@
         display: flex
         justify-content: center
     .quantity
-      font-size: 1.1rem
+      font-size: 1.3rem
       color: $main-text
       font-family: $open-sans
       padding-left: 0.5rem
@@ -66,7 +65,7 @@
         padding-left: 0
     .currency
       color: $eleventh-color
-      font-size: 0.9rem
+      font-size: 1rem
       font-family: $open-sans
       font-weight: 300
       padding-left: 0.5rem
@@ -389,6 +388,22 @@
     // Large devices (desktops, 992 and up)
     @include respond-to(large)
       text-align: justify
+  .list
+    letter-spacing: normal
+    margin-bottom: 0.6rem
+    padding: 0
+    list-style: inside
+    .item
+      color: $fourth-color
+      .text
+        color: $eleventh-color
+        font-size: 1.15rem
+        line-height: 1.9rem
+        // Large devices (desktops, 992 and up)
+        @include respond-to(large)
+          text-align: justify
+
+
 
 /* ===============================About page Styles ===================================== */
 
@@ -450,7 +465,7 @@
 
 /* ===============================Order sms page Styles ===================================== */
 /* ===============================How it work page Styles ===================================== */
-.steps-section
+.sum-section
   .info-holder
     .text-holder
       // Large devices (desktops, 992 and up)

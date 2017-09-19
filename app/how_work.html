@@ -5,53 +5,142 @@
         <div class="container">
             <div class="row justify-content-center">
                 <h2 class="h2-title text-center">Як це працює</h2>
+                <ul class="tabs-title nav nav-tabs w-100" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="get" aria-expanded="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="back">Profile</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
     <!--TITLE SECTION-->
-    <!--SUM SECTION-->
-    <div class="steps-section">
-        <div class="container">
-            <div class="row justify-content-center info-holder">
-                <div class="col-md-1 col-sm-12">
-                    <div class="row">
-                        <span class="number mx-auto d-flex justify-content-center align-items-center">1</span>
+    <!--TAB CONTENT-->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="get">
+            <!--SUM SECTION-->
+            <div class="sum-section">
+                <div class="container">
+                    <div class="row justify-content-center info-holder">
+                        <div class="col-md-1 col-sm-12">
+                            <div class="row">
+                                <span class="number mx-auto d-flex justify-content-center align-items-center">1</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 text-holder">
+                            <h4 class="h4-title">Виберіть суму і строк</h4>
+                            <p class="paragraph">Ви самі вибираєте суму і строк, на які хочете позичити гроші. Якщо Ви вже
+                                користувалися нашим сервісом, то на подачу заявки через Особистий Кабінет забере у Вас менше 5
+                                хвилин.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 img-holder">
+                            <img class="card-img" src="images/sum.png" alt="img">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-8 col-sm-12 text-holder">
-                    <h4 class="h4-title">Виберіть суму і строк</h4>
-                    <p class="paragraph">Ви самі вибираєте суму і строк, на які хочете позичити гроші. Якщо Ви вже користувалися нашим сервісом, то на подачу заявки через Особистий Кабінет забере у Вас менше 5 хвилин.</p>
-                </div>
-                <div class="col-md-3 col-sm-12 img-holder">
-                    <img class="card-img" src="images/sum.png" alt="img">
+                    <div class="row justify-content-center info-holder">
+                        <div class="col-md-1 col-sm-12">
+                            <div class="row">
+                                <span class="number mx-auto d-flex justify-content-center align-items-center">2</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 text-holder">
+                            <h4 class="h4-title">Оформіть заявку</h4>
+                            <p class="paragraph">Далі Вам необхідно заповнити Заявку на отримання кредиту. Якщо Ви вже
+                                користувалися нашим сервісом, наша система приймає рішення автоматично, тому Ви отримаєте
+                                рішення за Вашою заявкою протягом 10 хвилин по СМС, e-mail і в Особистому кабінеті.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 img-holder">
+                            <img class="card-img" src="images/note.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center info-holder">
+                        <div class="col-md-1 col-sm-12">
+                            <div class="row">
+                                <span class="number mx-auto d-flex justify-content-center align-items-center">3</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 text-holder">
+                            <h4 class="h4-title">Верифікація карти</h4>
+                            <p class="paragraph">Нам необхідно переконатися, що саме Ви є держателем платіжної картки, тому на
+                                вказаній Вами картці буде заблокована випадкова сума до 1 грн., яку Вам необхідно буде вказати
+                                на спеціальній екранній формі - точну суму з копійками (наприклад: 0.36). Дізнатися про
+                                заблоковану суму можна одним із способів:</p>
+                            <ul class="list">
+                                <li class="item"><span class="text">через SMS від банку, яким випущено Вашу картку (якщо картка підключена до послуги  SMS-банкінгу);</span>
+                                </li>
+                                <li class="item"><span class="text">зателефонувати в службу підтримки банку-емітента картки та дізнатися суму останньої транзакції по картці (телефон знаходиться на зворотній стороні картки).</span>
+                                </li>
+                                <li class="item"><span class="text">скористатися системою Інтернет-банкінгу емітента картки та переглянути виписку за карткою;</span>
+                                </li>
+                            </ul>
+                            <p class="paragraph">
+                                На час перевірки дана сума буде заблокована на вашому рахунку, зняття блокування буде здійснено
+                                автоматично.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 img-holder">
+                            <img class="card-img" src="images/card-accept.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center info-holder">
+                        <div class="col-md-1 col-sm-12">
+                            <div class="row">
+                                <span class="number mx-auto d-flex justify-content-center align-items-center">4</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 text-holder">
+                            <h4 class="h4-title">Прийняття рішення про надання кредиту</h4>
+                            <p class="paragraph">Після первісної успішної ідентифікації клієнта, рішення про надання кредиту
+                                по всіх наступних кредитах приймаються системою автоматично, протягом декількох хвилин.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 img-holder">
+                            <img class="card-img" src="images/human.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center info-holder">
+                        <div class="col-md-1 col-sm-12">
+                            <div class="row">
+                                <span class="number mx-auto d-flex justify-content-center align-items-center">5</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 text-holder">
+                            <h4 class="h4-title">Згода з умовами Кредитного договору</h4>
+                            <p class="paragraph">Після отримання позитивного рішення, Вам необхідно ознайомитися з Паспортом
+                                споживчого кредиту та умовами Кредитного договору. Ваша згода і підтвердження отримання
+                                примірника договору в електронному вигляді проводиться підписанням аналогом власноручного
+                                підпису, що відтворений засобами копіювання і електронним підписом – одноразовим ідентифікатором
+                                (алфавітно-цифровий пароль). Ви можете зробити це в Особистому Кабінеті.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 img-holder">
+                            <img class="card-img" src="images/note2.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center info-holder">
+                        <div class="col-md-1 col-sm-12">
+                            <div class="row">
+                                <span class="number mx-auto d-flex justify-content-center align-items-center">6</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 text-holder">
+                            <h4 class="h4-title">Отримання грошей</h4>
+                            <p class="paragraph">Після підписання Вами Кредитного договору гроші в автоматичному режимі будуть миттєво зараховані на Вашу картку.</p>
+                            <p class="paragraph">В більшості випадків кошти доступні на картці одразу. Звертаємо Вашу увагу на те, що кошти можуть бути зараховані на Ваш рахунок пізніше (залежить від банку-емітента картки і в деяких випадках може займати до 3 робочих днів). Це пов'язано з тим, що у кожного банку свій регламент роботи, на який ми не можемо вплинути. Ми рекомендуємо Вам звернутися у Ваш банк і дізнатися термін зарахування коштів на рахунок.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 img-holder">
+                            <img class="card-img" src="images/card-credit.png" alt="img">
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="row justify-content-center info-holder">
-                <div class="col-md-3 col-sm-12 img-holder">
-                    <img class="card-img" src="images/card-credit.png" alt="img">
-                </div>
-                <div class="col-md-9 col-sm-12 text-holder">
-                    <h4 class="h4-title">Наш кредит</h4>
-                    <p class="paragraph">Ми надаємо кредити в сумі до 5000 гривень на строк до 30 календарних днів. Все, що Вам необхідно для отримання кредиту — це наявність доступу до інтернету і діюча банківська карта будь-якого українського банку.</p>
-                    <p class="paragraph">Після успішної ідентифікації клієнта рішення про надання кредиту по всіх наступних кредитах приймаються системою автоматично, протягом декількох хвилин. У разі позитивного рішення, гроші автоматично перераховуються на Вашу карту. Середній термін, протягом якого гроші з’являться на Вашій карті — 15 хвилин.</p>
-                    <p class="paragraph">Ми постійно вдосконалюємо нашу систему прийняття рішень, тому, навіть у разі відмови,
-                        рекомендуємо повторно звертатися до нас через деякий час і підтримувати особисту інформацію в актуальному стані.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center info-holder">
-                <div class="col-md-3 col-sm-12 img-holder">
-                    <img class="card-img" src="images/garranted.png" alt="img">
-                </div>
-                <div class="col-md-9 col-sm-12 text-holder">
-                    <h4 class="h4-title">Гарантовано</h4>
-                    <p class="paragraph">Онлайн кредити — це швидке надання кредитів на прозорих і чесних умовах. Якщо Ви вчасно і в повному обсязі здійсните оплату зобов'язань за кредитом, ніяких інших платежів у Вас не виникне.</p>
-                    <p class="paragraph">Щодня, протягом наявності заборгованості по кредиту, у Вашому Особистому кабінеті Ви бачите суму до погашення. Тому у Вас є можливість здійснити оплату заборгованості достроково, заплативши відсотки за кредит лише за ту кількість днів, протягом яких Ви фактично користувались кредитом, без будь-яких комісій за дострокову оплату кредиту.</p>
-                    <p class="paragraph">Якщо у Вас виникне необхідність у пролонгації кредиту, ми гарантуємо Вам таку можливість на визначених кредитним договором умовах.</p>
-                    <p class="paragraph">Ми використовуємо найвищі стандарти захисту даних, тому всі Ваші дані повністю конфіденційні і не підлягають розкриттю третім особам без Вашої згоди (крім випадків, передбачених законодавством).</p>
-                </div>
-            </div>
+            <!--SUM SECTION-->
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="back">
+            222
         </div>
     </div>
-    <!--ABOUT SECTION-->
+    <!--TAB CONTENT-->
 </main>
 <!---HOW IT WORKS PAGE-->
