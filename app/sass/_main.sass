@@ -19,6 +19,7 @@
 //credit section
 .credit-section
   padding-top: 3.6rem
+  padding-bottom: 5rem
   background-image: url("../images/range-block-bg.jpg")
   background-repeat: no-repeat
   background-size: cover
@@ -33,7 +34,9 @@
     margin-bottom: 3.2rem
     text-transform: uppercase
   .credit-details
-    overflow: hidden
+    // medium devices (desktops, 768px and up)
+    @include respond-to(medium)
+      overflow: hidden
     .h3-title
       color: $main-text
       font-weight: 400
@@ -48,6 +51,9 @@
       font-size: 1.15rem
       text-transform: uppercase
       margin-bottom: 1.2rem
+      // Large devices (desktops, 1200px and up)
+      @include respond-to(extra-large)
+        text-align: center
       // Small devices (desktops, 576 and up)
       @include respond-to(small)
         text-align: center
@@ -72,32 +78,16 @@
       &_mod
         font-size: 1.15rem
         padding: 0 0.8rem
-    .left-column-bg
-      background-color: $main-color
-    .right-column-bg
-      background-color: $eighth-color
     .left-column
       background-color: $main-color
       padding-top: 3rem
       padding-bottom: 3rem
-      // Large devices (desktops, 1200px and up)
-      @include respond-to(extra-large)
-        padding-left: 0
-        padding-right: 0
     .right-column
       background-color: $eighth-color
       padding-top: 3rem
       padding-bottom: 3rem
-      // Large devices (desktops, 1200px and up)
-      @include respond-to(extra-large)
-        padding-left: 0
-        padding-right: 0
-        text-align: center
     .column-width
       width: 540px
-      // Large devices (desktops, 1200px and up)
-      @include respond-to(extra-large)
-        width: 100%
       // Large devices (desktops, 991px and up)
       @include respond-to(custom-large)
         width: 90%

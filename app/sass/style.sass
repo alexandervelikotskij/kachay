@@ -7,6 +7,26 @@
 
 /* Global Styles ========================================================================= */
 
+//wrapper
+.wrapper
+  height: 100%
+  margin-left: auto
+  margin-right: auto
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+//wrapper
+
+//main
+.main
+  flex: 1 0 auto
+//main
+
+//big-container
+.big-container
+  max-width: 1210px
+//big-container
+
 //h3-title mod
 .h3-title
   &_mod
@@ -54,7 +74,7 @@
     background-color: $fourth-color
   &_mod
     text-transform: none
-    border: 3px solid $fourth-color
+    border: 3px solid $fifth-color
 //btn-big
 
 //btn-save
@@ -321,13 +341,12 @@
   &_mod
     .slider
       &.slider-horizontal
-        background-size: 112px 20px
-        background-position: 104px 9px
-        height: 13px
+        background-size: 19px 163px
+        background-position: 12px 9px
         // Large devices (desktops, 1200px and up)
         @include respond-to(extra-large)
-          background-size: 97px 20px
-          background-position: 90px 6px
+          background-size: 16px 162px
+          background-position: 30px 9px
 
 
 .slider-details-holder

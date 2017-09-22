@@ -2,12 +2,9 @@
 
 /*--------- GENERAL & BASIC STYLES ---------*/
 html
-  position: relative
-  min-height: 100%
 
 body
   margin: 0
-  margin-bottom: 17rem
   font-family: $open-sans
   font-weight: normal
   font-style: normal
@@ -16,15 +13,6 @@ body
   color: $main-text
   background: $main-color
   -webkit-font-smoothing: antialiased
-  // custom-extra-large devices (desktops, 1199 and up)
-  @include respond-to(custom-extra-large)
-    margin-bottom: 19rem
-  // custom-large devices (desktops, 991 and up)
-  @include respond-to(custom-large)
-    margin-bottom: 46rem
-  // extra-small devices (desktops, 320 and up)
-  @include respond-to(extra-small)
-    margin-bottom: 48rem
 
 img
   border-style: none
@@ -121,6 +109,7 @@ h2, .h2-title
   font-size: 2.3rem
   line-height: 2.5rem
   color: $main-color
+  display: block
 
 h3, .h3-title
   font-family: $open-sans
@@ -128,6 +117,7 @@ h3, .h3-title
   font-size: 1.5rem
   line-height: 1.7rem
   color: $main-color
+  display: block
 
 h4, .h4-title
   font-family: $open-sans
@@ -135,6 +125,7 @@ h4, .h4-title
   font-size: 1.56rem
   line-height: 1
   color: $main-text
+  display: block
 
 h5, .h5-title
   color: $main-text
@@ -142,6 +133,7 @@ h5, .h5-title
   line-height: 3.125rem
   font-family: $open-sans
   font-weight: 400
+  display: block
 
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus
   outline: none

@@ -16,6 +16,8 @@
   .btn-main
     display: block
     min-width: 10rem
+    &:hover
+      background-color: $fifth-color
     // Large devices (desktops, 991px and up)
     @include respond-to(custom-large)
       margin: auto
@@ -64,8 +66,8 @@
     &_mod
       .nav-link
         color: $main-text
-        font-size: 1rem
-        line-height: 1.6rem
+        font-size: 0.9rem
+        line-height: 1.5rem
         font-family: $open-sans
         font-weight: 400
         padding: .5rem 3rem .5rem 1rem
@@ -86,15 +88,40 @@
           font-family: $open-sans
           font-weight: 300
       .show
-        border-radius: 0
-        width: 100%
+        top: -6px
+        left: -4px
+        width: 109%
+        padding: 0
+        margin: 0
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3)
+        border: 1px solid $first-color
+        border-radius: 1px
+        // Large devices (desktops, 991px and up)
+        @include respond-to(custom-large)
+          width: 100%
+          left: 0
+        .nav-link
+          padding: 0.8rem 1.2rem .8rem 1.2rem
+          &:before
+            -webkit-transform: rotate(180deg)
+            -moz-transform: rotate(180deg)
+            -o-transform: rotate(180deg)
+            -ms-transform: rotate(180deg)
+            top: 1.4rem
+            right: 1.1rem
+            // Large devices (desktops, 991px and up)
+            @include respond-to(custom-large)
+              display: none
         .dropdown-item
-          padding: .5rem
+          padding: .7rem 1.2rem
           color: $main-text
-          font-size: 0.8rem
-          line-height: 1rem
+          font-size: 0.9rem
           font-family: $open-sans
-          font-weight: 400
+          font-weight: 300
+          text-transform: uppercase
+          &:hover
+            background-color: $fifth-color
+            font-weight: 400
 
   .navbar-toggler
     border: 1px solid $first-color
