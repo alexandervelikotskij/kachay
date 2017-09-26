@@ -75,12 +75,14 @@
   &_mod
     text-transform: none
     border: 3px solid $fifth-color
+    &:hover
+      border: 3px solid $fourth-color
 //btn-big
 
 //btn-save
 .btn-save
   background-color: $main-color
-  border: 3px solid $fourth-color
+  border: 3px solid $fifth-color
   font-family: $open-sans
   font-weight: 400
   font-size: 1.2rem
@@ -93,8 +95,8 @@
     font-size: 1rem
   &:hover
     cursor: pointer
-    background-color: $fifth-color
-    border: 3px solid $fifth-color
+    background-color: $fourth-color
+    border: 3px solid $fourth-color
 //btn-save
 
 //btn-main
@@ -440,6 +442,8 @@
 
 //title-block
 .title-section
+  &_mod
+    padding: 0.8rem 0.5rem 0
   background-color: $eighth-color
   border-top: 1px solid $seventeen-color
   padding: 0.8rem 0.5rem
@@ -471,17 +475,24 @@
   border: none
   display: flex
   justify-content: center
+  .nav-item
+    margin-bottom: 0
   .nav-link
-    padding: .5rem 0
-    color: $main-text
+    margin: 0 0.9rem
+    color: $eleventh-color
     text-transform: uppercase
     font-size: 0.85rem
     line-height: 1
     font-family: $open-sans
     font-weight: 400
+    border: none
+    background-color: $eighth-color
+    padding: .5rem 0 1.6rem
     &:hover, &.active, &:focus
-      border-bottom: 1px solid $fourth-color
+      background-color: $eighth-color
+      border-bottom: 2px solid $fourth-color
       font-weight: 600
+      color: $second-color
 //tabs-title
 
 //steps-block
@@ -714,6 +725,9 @@
 .image-upload-holder
   margin-bottom: 2rem
 
+.pip
+  margin-bottom: 1.5rem
+
 .custom-file
   height: 3.6rem
   padding: 0
@@ -727,9 +741,6 @@
   // Large devices (desktops, 992 and up)
   @include respond-to(large)
     display: none
-
-.image-upload
-  margin-bottom: 1.5rem
 
 .remove
   display: block
