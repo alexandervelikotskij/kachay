@@ -27,6 +27,14 @@
   max-width: 1210px
 //big-container
 
+.wrapper-page
+  padding-top: 5rem
+  padding-bottom: 5rem
+  // Medium devices (desktops, 768px and up)
+  @include respond-to(medium)
+    padding-bottom: 2rem
+    padding-top: 2rem
+
 //h3-title mod
 .h3-title
   &_mod
@@ -38,6 +46,9 @@
     padding-bottom: 4.2rem
     padding-left: 15px
     padding-right: 15px
+    // MEDIUM devices (desktops, 768px and up)
+    @include respond-to(medium)
+      padding-bottom: 2.2rem
     &:after
       content: ""
       background-color: $fourth-color
@@ -47,6 +58,9 @@
       top: 60%
       left: 50%
       margin-left: -51px
+      // MEDIUM devices (desktops, 768px and up)
+      @include respond-to(medium)
+        top: 90%
 
 //h3-title mod
 
@@ -458,6 +472,7 @@
     @include respond-to(small)
       display: flex
       justify-content: center
+      line-height: 3.6rem
   .h4-title
     color: $eleventh-color
     font-size: 1.125rem
@@ -475,6 +490,10 @@
   border: none
   display: flex
   justify-content: center
+  // Medium devices (desktops, 768 and up)
+  @include respond-to(medium)
+    align-items: center
+    flex-direction: column
   .nav-item
     margin-bottom: 0
   .nav-link
@@ -488,6 +507,9 @@
     border: none
     background-color: $eighth-color
     padding: .5rem 0 1.6rem
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      padding: 1rem
     &:hover, &.active, &:focus
       background-color: $eighth-color
       border-bottom: 2px solid $fourth-color

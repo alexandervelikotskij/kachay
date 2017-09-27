@@ -87,8 +87,6 @@ $('input[data-validate="phone"]').mask("+380 (99) 999 99 99");
 $('input[data-validate="phone2"]').mask("+380 (99) 999 99 99");
 $('input[data-validate="phone3"]').mask("+380 (99) 999 99 99");
 
-/*
-var a = $('.collapse.show').prev();
-var b = a.find('.thislink');
-if(b)
-	b.addClass('mod');*/
+//modal message
+$('#messageModal').modal(options);
+//modal message

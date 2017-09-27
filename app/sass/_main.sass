@@ -339,9 +339,13 @@
 
 /* ===============================About page Styles ===================================== */
 .info-holder
-  padding-top: 2rem
-  padding-bottom: 3.2rem
+  padding-top: 3.6rem
+  padding-bottom: 3.6rem
   border-bottom: 1px solid $fourteenth-color
+  // Small devices (desktops, 576 and up)
+  @include respond-to(small)
+    padding-top: 2rem
+    padding-bottom: 2rem
   .img-holder
     // Large devices (desktops, 992 and up)
     @include respond-to(large)
@@ -370,6 +374,9 @@
     font-size: 1.8rem
     line-height: 2rem
     margin-bottom: 2rem
+    // MEDIUM devices (desktops, 768px and up)
+    @include respond-to(medium)
+      text-align: center
   .paragraph
     color: $eleventh-color
     font-size: 1.15rem
@@ -457,6 +464,8 @@
 /* ===============================How it work page Styles ===================================== */
 .sum-section
   .info-holder
+    &:last-child
+      border-bottom: none
     .list
       &_mod
         list-style: none
@@ -472,7 +481,182 @@
 /* ===============================How it work page Styles ===================================== */
 
 
+/* ===============================Conditions page Styles ===================================== */
 
+.options-section
+  padding-bottom: 5rem
+  // Medium devices (desktops, 768px and up)
+  @include respond-to(medium)
+    padding-bottom: 2rem
+  .info-holder
+    padding-top: 2.1rem
+    padding-bottom: 2.1rem
+    // Medium devices (desktops, 768px and up)
+    @include respond-to(medium)
+      padding-bottom: 1rem
+      padding-top: 1rem
+    // small devices (desktops, 576 and up)
+    @include respond-to(small)
+      padding-left: 15px
+      padding-right: 15px
+    .label-holder
+      // Large devices (desktops, 992 and up)
+      @include respond-to(large)
+        justify-content: center
+        margin-bottom: 1.6rem
+        text-align: center
+    .label
+      color: $main-text
+      font-weight: 600
+      font-size: 1.3rem
+    .paragraph
+      font-size: 1.15rem
+      line-height: 1.9rem
+      color: $main-text
+      margin-bottom: 0
+    .text-bold
+      font-weight: 700
+      font-size: 1.15rem
+      line-height: 1.9rem
+      color: $main-text
+    .item
+      margin-bottom: 1.5rem
+    .list-embedded
+      list-style: none
+      padding-left: 1rem
+    .item-embedded
+      position: relative
+      padding-left: 1rem
+      &:before
+        position: absolute
+        top: 14px
+        left: 0
+        content: ''
+        width: 7px
+        height: 2px
+        background-color: $fourth-color
+    .list-numbers
+      list-style: outside
+      list-style-type: none
+      counter-reset: item
+      .item
+        position: relative
+        padding-left: 1.4rem
+        &:before
+          position: absolute
+          content: counter(item) '\2006'
+          counter-increment: item
+          font-weight: 600
+          font-family: $open-sans
+          font-size: 1.15rem
+          left: 0
+          top: 0.25rem
+
+/* ===============================Conditions page Styles ===================================== */
+
+
+/* ===============================Contacts page Styles ===================================== */
+.contacts-section
+  .h3-title
+    text-align: center
+    color: $main-text
+    font-size: 2.15rem
+    line-height: 4.30rem
+    font-weight: 500
+    // small devices (desktops, 576 and up)
+    @include respond-to(small)
+      line-height: 1.2
+  .text
+    font-size: 1.6rem
+    line-height: 1
+    color: $eleventh-color
+  .info-block
+    margin-bottom: 1.6rem
+    // small devices (desktops, 576 and up)
+    @include respond-to(small)
+      margin-top: 1.6rem
+  .list
+    background-color: $main-color
+    flex-direction: column
+    list-style: none
+    .list-link
+      color: $eleventh-color
+      font-size: 1.6rem
+      line-height: 2rem
+  .info-container
+    // small devices (desktops, 576 and up)
+    @include respond-to(small)
+      justify-content: center
+      text-align: center
+      margin-top: 1.6rem
+/* ===============================Contacts page Styles ===================================== */
+
+
+
+
+
+
+
+/* ===============================Message-modal page Styles ===================================== */
+.modal-backdrop
+  background-color: rgba(0, 0, 0, 1)
+.message-modal
+  max-width: 43rem
+  margin: 14.3rem auto
+  .modal-content
+    position: relative
+    border: none
+    border-radius: 0
+    padding: 2.5rem
+  .modal-header
+    text-align: center
+    display: flex
+    justify-content: center
+    border-bottom: 1px solid $twelfth-color
+    padding: 0
+    padding-bottom: 2.3rem
+  .modal-body
+    padding-top: 3.6rem
+  .modal-title
+    font-weight: 300
+    color: $main-text
+    font-size: 1.7rem
+    line-height: 2.6rem
+    text-transform: uppercase
+  .close
+    position: absolute
+    right: 10px
+    top: 10px
+    width: 2.65rem
+    height: 2.65rem
+    border: 1px solid $fourth-color
+    border-radius: 50%
+    text-shadow: none
+    opacity: 1
+    &:hover
+      cursor: pointer
+    &:before
+      position: absolute
+      top: 33%
+      left: 50%
+      content: ''
+      width: 2px
+      height: 14px
+      background-color: $thirtieth-color
+      transform: rotate(-45deg)
+    &:after
+      position: absolute
+      top: 48%
+      left: 34%
+      content: ''
+      width: 14px
+      height: 2px
+      background-color: $thirtieth-color
+      transform: rotate(-45deg)
+    span
+      display: none
+
+/* ===============================Message-modal page Styles ===================================== */
 
 
 
