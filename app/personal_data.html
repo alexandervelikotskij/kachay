@@ -59,234 +59,237 @@
         </div>
     </div>
     <!--ALERT SECTION-->
-    <!--PERSONAL SECTION-->
-    <form id="needs-validation" novalidate>
-        <section class="personal-data">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <span class="h3-title h3-title_mod text-center">Особисті дані</span>
-                    <div class="container">
-                        <div class="form-group row align-items-center">
-                            <label for="validationCustom01" class="col-md-3 col-sm-12 col-form-label">Прізвище</label>
-                            <div class="col-md-6 col-sm-12">
-                                <input type="text" class="is-valid form-control form-control-lg" id="validationCustom01"
-                                       placeholder="Прізвище" value="" required>
-                            </div>
-                            <div class="col-md-1 col-sm-12">
-                                <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top"
-                                        data-content="Цум еу репудиандае тхеопхрастус,
-    при дицат ментитум диспутандо">?
-                                </button>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label for="validationCustom02" class="col-md-3 col-sm-12 col-form-label">Ім’я</label>
-                            <div class="col-md-6 col-sm-12">
-                                <input type="text" class="is-invalid form-control form-control-lg"
-                                       id="validationCustom02" placeholder="Ім’я" value="" required>
-                                <div class="invalid-feedback">
-                                    Яуидам пхаедрум не сит, ин яуо импедит омиттам!
-                                </div>
-                            </div>
-                            <div class="col-md-1 col-sm-12">
-                                <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top"
-                                        data-content="Цум еу репудиандае тхеопхрастус,
-    при дицат ментитум диспутандо">?
-                                </button>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label for="validationCustom03"
-                                   class="col-md-3 col-sm-12 col-form-label">По-батькові</label>
-                            <div class="col-md-6 col-sm-12">
-                                <input type="text" class="form-control form-control-lg" id="validationCustom03"
-                                       placeholder="Введіть ваше по-батькові" value="" required>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label for="datepicker" class="col-md-3 col-sm-12 col-form-label">Дата народження</label>
-                            <div class="col-lg-4 col-md-6 col-sm-12 date">
-                                <input type="text" class="datepicker-img form-control form-control-lg" id="datepicker"
-                                       placeholder="Ваша дата народження" value="" required>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-start">
-                            <label class="col-md-3 col-sm-12 col-form-label">Стать</label>
-                            <div class="custom-controls-stacked col-lg-4 col-md-6 col-sm-12">
-                                <label class="custom-control custom-radio align-items-center">
-                                    <input id="radioStacked3" name="radio-stacked" type="radio"
-                                           class="custom-control-input" checked>
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Чоловіча</span>
-                                </label>
-                                <label class="custom-control custom-radio align-items-center">
-                                    <input id="radioStacked4" name="radio-stacked" type="radio"
-                                           class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Жіноча</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label class="col-md-3 col-sm-12 col-form-label" for="formControlSelect1">Сімейний
-                                стан</label>
-                            <div class="col-md-6 col-sm-12">
-                                <select class="form-control form-control-lg select-mod" id="formControlSelect1">
-                                    <option>Виберіть із списку</option>
-                                    <option>Епудиандае тхеопхрастус,</option>
-                                    <option>Епудиандае тхеопхрастус,</option>
-                                    <option>Епудиандае тхеопхрастус,</option>
-                                    <option>Епудиандае тхеопхрастус,</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label for="validationCustom06" class="col-md-3 col-sm-12 col-form-label">Кількість дітей
-                                віком до 18 років</label>
-                            <div class="col-md-2 col-sm-12">
-                                <input type="number" class="form-control form-control-lg" id="validationCustom06"
-                                       placeholder="0" value="" required>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="wrapper-page">
         <!--PERSONAL SECTION-->
-        <!--PASSPORT SECTION-->
-        <section class="passport-data">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <span class="h3-title h3-title_mod text-center">Паспортні дані</span>
-                    <div class="w-100"></div>
-                    <div class="switch">
-                        <span class="switch-title">Паспорт</span>
-                        <div class="c-switch">
-                            <span class="c-switch-bg"></span>
-                            <input type="checkbox" name="checkbox" class="c-box">
-                            <span class="c-switch-toggle"></span>
-                        </div>
-                        <span class="switch-title switch-title_mod">ID карта</span>
-                    </div>
-                    <div class="container">
-                        <div class="form-group row align-items-center">
-                            <label class="col-md-3 col-sm-12 col-form-label">Паспорт (серія, номер)</label>
-                            <div class="col-md-8 col-lg-4">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-12 custom-form-width">
-                                        <input type="text" class="form-control form-control-lg" placeholder="Серія"
-                                               value="" required>
+        <form action="#" novalidate>
+            <section class="personal-data">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <span class="h3-title h3-title_mod text-center">Особисті дані</span>
+                        <div class="container">
+                            <div class="form-group row align-items-center">
+                                <label for="validationCustom01" class="col-md-3 col-sm-12 col-form-label">Прізвище</label>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="text" class="is-valid form-control form-control-lg" id="validationCustom01"
+                                           placeholder="Прізвище" value="" required>
+                                </div>
+                                <div class="col-md-1 col-sm-12">
+                                    <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top"
+                                            data-content="Цум еу репудиандае тхеопхрастус,
+    при дицат ментитум диспутандо">?
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="validationCustom02" class="col-md-3 col-sm-12 col-form-label">Ім’я</label>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="text" class="is-invalid form-control form-control-lg"
+                                           id="validationCustom02" placeholder="Ім’я" value="" required>
+                                    <div class="invalid-feedback">
+                                        Яуидам пхаедрум не сит, ин яуо импедит омиттам!
                                     </div>
-                                    <div class="col-md-7 col-sm-12 custom-form-width">
-                                        <input type="text" class="form-control form-control-lg" placeholder="Номер"
-                                               value="" required>
+                                </div>
+                                <div class="col-md-1 col-sm-12">
+                                    <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top"
+                                            data-content="Цум еу репудиандае тхеопхрастус,
+    при дицат ментитум диспутандо">?
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="validationCustom03"
+                                       class="col-md-3 col-sm-12 col-form-label">По-батькові</label>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="text" class="form-control form-control-lg" id="validationCustom03"
+                                           placeholder="Введіть ваше по-батькові" value="" required>
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="datepicker" class="col-md-3 col-sm-12 col-form-label">Дата народження</label>
+                                <div class="col-lg-4 col-md-6 col-sm-12 date">
+                                    <input type="text" class="datepicker-img form-control form-control-lg" id="datepicker"
+                                           placeholder="Ваша дата народження" value="" required>
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-start">
+                                <label class="col-md-3 col-sm-12 col-form-label">Стать</label>
+                                <div class="custom-controls-stacked col-lg-4 col-md-6 col-sm-12">
+                                    <label class="custom-control custom-radio align-items-center">
+                                        <input id="radioStacked3" name="radio-stacked" type="radio"
+                                               class="custom-control-input" checked>
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Чоловіча</span>
+                                    </label>
+                                    <label class="custom-control custom-radio align-items-center">
+                                        <input id="radioStacked4" name="radio-stacked" type="radio"
+                                               class="custom-control-input">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Жіноча</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 col-sm-12 col-form-label" for="formControlSelect1">Сімейний
+                                    стан</label>
+                                <div class="col-md-6 col-sm-12">
+                                    <select class="form-control form-control-lg select-mod" id="formControlSelect1">
+                                        <option>Виберіть із списку</option>
+                                        <option>Епудиандае тхеопхрастус,</option>
+                                        <option>Епудиандае тхеопхрастус,</option>
+                                        <option>Епудиандае тхеопхрастус,</option>
+                                        <option>Епудиандае тхеопхрастус,</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="validationCustom06" class="col-md-3 col-sm-12 col-form-label">Кількість дітей
+                                    віком до 18 років</label>
+                                <div class="col-md-2 col-sm-12">
+                                    <input type="number" class="form-control form-control-lg" id="validationCustom06"
+                                           placeholder="0" value="" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--PERSONAL SECTION-->
+            <!--PASSPORT SECTION-->
+            <section class="passport-data">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <span class="h3-title h3-title_mod text-center">Паспортні дані</span>
+                        <div class="w-100"></div>
+                        <div class="switch">
+                            <span class="switch-title">Паспорт</span>
+                            <div class="c-switch">
+                                <span class="c-switch-bg"></span>
+                                <input type="checkbox" name="checkbox" class="c-box">
+                                <span class="c-switch-toggle"></span>
+                            </div>
+                            <span class="switch-title switch-title_mod">ID карта</span>
+                        </div>
+                        <div class="container">
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 col-sm-12 col-form-label">Паспорт (серія, номер)</label>
+                                <div class="col-md-8 col-lg-4">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12 custom-form-width">
+                                            <input type="text" class="form-control form-control-lg" placeholder="Серія"
+                                                   value="" required>
+                                        </div>
+                                        <div class="col-md-7 col-sm-12 custom-form-width">
+                                            <input type="text" class="form-control form-control-lg" placeholder="Номер"
+                                                   value="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 col-sm-12">
+                                    <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top"
+                                            data-content="Цум еу репудиандае тхеопхрастус,
+    при дицат ментитум диспутандо" data-original-title="" title="">?
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="datepicker2" class="col-md-3 col-sm-12 col-form-label">Дата видачі</label>
+                                <div class="col-lg-4 col-md-6 col-sm-12 date">
+                                    <input type="text" class="datepicker-img form-control form-control-lg" id="datepicker2"
+                                           placeholder="Введіть дату видачі" value="" required>
+                                </div>
+                                <div class="col-md-1 col-sm-12">
+                                    <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top"
+                                            data-content="Цум еу репудиандае тхеопхрастус,
+    при дицат ментитум диспутандо" data-original-title="" title="">?
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="validationCustom09" class="col-md-3 col-sm-12 col-form-label">Ким
+                                    виданий</label>
+                                <div class="col-md-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-11 col-sm-12">
+                                            <input type="text" class="form-control form-control-lg" id="validationCustom09"
+                                                   placeholder="Введіть орган, що видав паспорт" value="" required>
+                                        </div>
+                                        <div class="col-md-1 col-sm-12">
+                                            <button type="button" class="btn btn-info" data-toggle="popover"
+                                                    data-placement="top" data-content="Цум еу репудиандае тхеопхрастус,
+    при дицат ментитум диспутандо" data-original-title="" title="">?
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-1 col-sm-12">
-                                <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top"
-                                        data-content="Цум еу репудиандае тхеопхрастус,
+                            <div class="form-group row align-items-center">
+                                <label for="validationCustom10" class="col-md-3 col-sm-12 col-form-label">Номер ІПН</label>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="text" class="form-control form-control-lg" id="validationCustom10"
+                                           placeholder="Введіть  номер ІПН" value="" required>
+                                </div>
+                                <div class="col-md-1 col-sm-12">
+                                    <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top"
+                                            data-content="Цум еу репудиандае тхеопхрастус,
     при дицат ментитум диспутандо" data-original-title="" title="">?
-                                </button>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label for="datepicker2" class="col-md-3 col-sm-12 col-form-label">Дата видачі</label>
-                            <div class="col-lg-4 col-md-6 col-sm-12 date">
-                                <input type="text" class="datepicker-img form-control form-control-lg" id="datepicker2"
-                                       placeholder="Введіть дату видачі" value="" required>
-                            </div>
-                            <div class="col-md-1 col-sm-12">
-                                <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top"
-                                        data-content="Цум еу репудиандае тхеопхрастус,
-    при дицат ментитум диспутандо" data-original-title="" title="">?
-                                </button>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label for="validationCustom09" class="col-md-3 col-sm-12 col-form-label">Ким
-                                виданий</label>
-                            <div class="col-md-9">
-                                <div class="row align-items-center">
-                                    <div class="col-md-11 col-sm-12">
-                                        <input type="text" class="form-control form-control-lg" id="validationCustom09"
-                                               placeholder="Введіть орган, що видав паспорт" value="" required>
-                                    </div>
-                                    <div class="col-md-1 col-sm-12">
-                                        <button type="button" class="btn btn-info" data-toggle="popover"
-                                                data-placement="top" data-content="Цум еу репудиандае тхеопхрастус,
-    при дицат ментитум диспутандо" data-original-title="" title="">?
-                                        </button>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group row align-items-center">
-                            <label for="validationCustom10" class="col-md-3 col-sm-12 col-form-label">Номер ІПН</label>
-                            <div class="col-md-6 col-sm-12">
-                                <input type="text" class="form-control form-control-lg" id="validationCustom10"
-                                       placeholder="Введіть  номер ІПН" value="" required>
+                    </div>
+                </div>
+            </section>
+            <!--PASSPORT SECTION-->
+            <!--CONTACTS SECTION-->
+            <section class="contacts-data">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <span class="h3-title h3-title_mod text-center">Контактні дані</span>
+                        <div class="container">
+                            <div class="form-group row align-items-center phone-form-form-group">
+                                <label for="phone" class="col-md-3 col-sm-12 col-form-label">Мобільний телефон</label>
+                                <div class="col-lg-4 col-md-6 col-sm-12 date">
+                                    <input type="tel" class="form-control form-control-lg" id="phone" data-validate="phone"
+                                           required placeholder="+380 ( __ ) ___-__-__">
+                                </div>
                             </div>
-                            <div class="col-md-1 col-sm-12">
-                                <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top"
-                                        data-content="Цум еу репудиандае тхеопхрастус,
-    при дицат ментитум диспутандо" data-original-title="" title="">?
-                                </button>
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 col-sm-12 col-form-label"></label>
+                                <div class="custom-controls-stacked col-lg-9 col-sm-12">
+                                    <label class="custom-control custom-checkbox align-items-md-end">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">З <a
+                                                class="custom-control-description-link" href="#">Публічною пропозицією на укладення Договору про використання аналогу власноручного підпису для вчинення правочинів</a> ознайомлений та погоджуюся</span>
+                                    </label>
+                                    <label class="custom-control custom-checkbox align-items-md-end">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description"><a class="custom-control-description-link"
+                                                                                    href="#">Дозвіл на перевірку інформації щодо Клієнта в Бюро кредитних історій</a></span>
+                                    </label>
+                                    <label class="custom-control custom-checkbox align-items-md-end">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description"><a class="custom-control-description-link"
+                                                                                    href="#">Дозвіл на перевірку, обробку та передачу  персональних даних</a></span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!--PASSPORT SECTION-->
-        <!--CONTACTS SECTION-->
-        <section class="contacts-data">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <span class="h3-title h3-title_mod text-center">Контактні дані</span>
-                    <div class="container">
-                        <div class="form-group row align-items-center phone-form-form-group">
-                            <label for="phone" class="col-md-3 col-sm-12 col-form-label">Мобільний телефон</label>
-                            <div class="col-lg-4 col-md-6 col-sm-12 date">
-                                <input type="tel" class="form-control form-control-lg" id="phone" data-validate="phone"
-                                       required placeholder="+380 ( __ ) ___-__-__">
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label class="col-md-3 col-sm-12 col-form-label"></label>
-                            <div class="custom-controls-stacked col-lg-9 col-sm-12">
-                                <label class="custom-control custom-checkbox align-items-md-end">
-                                    <input type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">З <a
-                                            class="custom-control-description-link" href="#">Публічною пропозицією на укладення Договору про використання аналогу власноручного підпису для вчинення правочинів</a> ознайомлений та погоджуюся</span>
-                                </label>
-                                <label class="custom-control custom-checkbox align-items-md-end">
-                                    <input type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description"><a class="custom-control-description-link"
-                                                                                href="#">Дозвіл на перевірку інформації щодо Клієнта в Бюро кредитних історій</a></span>
-                                </label>
-                                <label class="custom-control custom-checkbox align-items-md-end">
-                                    <input type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description"><a class="custom-control-description-link"
-                                                                                href="#">Дозвіл на перевірку, обробку та передачу  персональних даних</a></span>
-                                </label>
-                            </div>
-                        </div>
+                    <div class="row justify-content-around no-gutters buttons-group">
+                        <button class="col-lg-4 col-sm-12 mb-3 btn btn-save" type="submit">Зберегти</button>
+                        <button class="col-lg-4 col-sm-12 mb-3 btn btn-big btn-big_mod" type="button" disabled>Подати заявку
+                            на кредит
+                        </button>
                     </div>
                 </div>
-                <div class="row justify-content-around no-gutters buttons-group">
-                    <button class="col-lg-4 col-sm-12 mb-3 btn btn-save" type="submit">Зберегти</button>
-                    <button class="col-lg-4 col-sm-12 mb-3 btn btn-big btn-big_mod" type="button" disabled>Подати заявку
-                        на кредит
-                    </button>
-                </div>
-            </div>
-        </section>
-        <!--CONTACTS SECTION-->
-    </form>
+            </section>
+            <!--CONTACTS SECTION-->
+        </form>
+        <!--PERSONAL SECTION-->
+    </div>
 </main>
 
 

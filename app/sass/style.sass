@@ -28,8 +28,8 @@
 //big-container
 
 .wrapper-page
-  padding-top: 5rem
-  padding-bottom: 5rem
+  padding-top: 3rem
+  padding-bottom: 3rem
   // Medium devices (desktops, 768px and up)
   @include respond-to(medium)
     padding-bottom: 2rem
@@ -67,6 +67,9 @@
 //buttons-group
 .buttons-group
   margin-top: 3rem
+  // MEDIUM devices (desktops, 768px and up)
+  @include respond-to(medium)
+    margin-top: 0
 //buttons-group
 
 //btn-big
@@ -106,7 +109,7 @@
   padding: 1.7rem 0
   // Medium devices (desktops, 768px and up)
   @include respond-to(medium)
-    font-size: 1rem
+    font-size: .9rem
   &:hover
     cursor: pointer
     background-color: $fourth-color
@@ -468,11 +471,15 @@
     line-height: 4.6rem
     font-family: $open-sans
     font-weight: 300
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      font-size: 1.9rem
+      line-height: 3.6rem
     // Small devices (desktops, 576 and up)
     @include respond-to(small)
       display: flex
       justify-content: center
-      line-height: 3.6rem
+      line-height: 2.2rem
   .h4-title
     color: $eleventh-color
     font-size: 1.125rem
@@ -520,7 +527,6 @@
 //steps-block
 .steps-section
   padding-top: 3.6rem
-  padding-bottom: 1.9rem
 .steps-cards
   // Large devices (desktops, 992 and up)
   @include respond-to(large)
@@ -574,7 +580,6 @@
   border: 1px solid $twenty-second-color
   border-radius: 0
   padding: 1.4rem 1rem
-  margin-bottom: 2.9rem
 
 //alert-block
 
@@ -906,15 +911,26 @@
         font-size: 1.125rem
         line-height: 1.6rem
         padding-left: 1rem
+        // Small devices (desktops, 576 and up)
+        @include respond-to(small)
+          font-size: 0.9rem
+          line-height: 1
+          padding-left: 0.8rem
       a
         color: $main-text
         text-decoration: underline
         font-size: 1.125rem
         line-height: 1.6rem
+        // Small devices (desktops, 576 and up)
+        @include respond-to(small)
+          font-size: 0.9rem
+          line-height: 1
         &:hover
           text-decoration: none
     .custom-control-indicator
       top: -0.18rem
+      &:hover, &:focus, &:visited
+        outline: none
 //colums
 
 //number

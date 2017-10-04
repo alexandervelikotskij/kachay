@@ -267,15 +267,20 @@
 /* ===============================Main page Styles ========================================== */
 
 /* ===============================Personal Data page Styles ===================================== */
+.personal-data
+  padding-top: 1.5rem
+  padding-bottom: 1.5rem
 .passport-data
-  padding-bottom: 1.7rem
+  padding-top: 1.5rem
+  padding-bottom: 1.5rem
   .custom-form-width
     // Large devices (desktops, 768 and up)
     @include respond-to(medium)
       margin-bottom: 1rem
 
 .contacts-data
-  padding-bottom: 8rem
+  padding-top: 1.5rem
+  padding-bottom: 1.5rem
   .phone-form-form-group
     margin-bottom: 4.6rem
   .custom-control-description
@@ -289,11 +294,16 @@
 
 /* ===============================Income Data page Styles ===================================== */
 .third-data
-  padding-bottom: 2rem
+  padding-top: 1.5rem
+  padding-bottom: 1.5rem
+
+.social-status
+  padding-top: 1.5rem
+  padding-bottom: 1.5rem
 
 .expenses-data
-  padding-top: 2rem
-  padding-bottom: 6rem
+  padding-top: 1.5rem
+  padding-bottom: 1.5rem
   .currency-info
     font-weight: 300
     font-size: 1.2rem
@@ -314,10 +324,12 @@
 
 /* ===============================Work Place page Styles ===================================== */
 .work-place
-  padding-bottom:  1.6rem
+  padding-top: 1.5rem
+  padding-bottom:  1.5rem
 
 .work-address-data
-  padding-bottom: 6rem
+  padding-top: 1.5rem
+  padding-bottom:  1.5rem
 /* ===============================Work Place page Styles ===================================== */
 
 /* ===============================Documents page Styles ===================================== */
@@ -415,6 +427,10 @@
 .registration-section
   padding-top: 2rem
   padding-bottom: 5rem
+  // Small devices (desktops, 576 and up)
+  @include respond-to(small)
+    padding-top: 1rem
+    padding-bottom: 1rem
 /* ===============================Register page Styles ===================================== */
 
 /* ===============================Register step 2 page Styles ===================================== */
@@ -440,7 +456,7 @@
     text-transform: uppercase
     margin-bottom: 2rem
   .sub-text
-    font-size: 1.1rem
+    font-size: 1.35rem
     line-height: 2.25rem
     font-weight: 300
     color: $eleventh-color
@@ -455,7 +471,11 @@
       font-size: 1rem
       line-height: 1.2rem
       border-bottom: none
-
+  .sub-text-link
+    color: $thirtieth-color
+    text-decoration: underline
+    &:hover
+      text-decoration: none
 /* ===============================Order result page Styles ===================================== */
 
 /* ===============================Order sms page Styles ===================================== */
@@ -597,17 +617,25 @@
 
 
 
-/* ===============================Message-modal page Styles ===================================== */
+/* ===============================Modals Styles ===================================== */
 .modal-backdrop
   background-color: rgba(0, 0, 0, 1)
-.message-modal
-  max-width: 43rem
-  margin: 14.3rem auto
+.main-modal
+  margin: 6rem auto
+  // Medium devices (desktops, 768 and up)
+  @include respond-to(medium)
+    margin: 0 auto
   .modal-content
     position: relative
     border: none
     border-radius: 0
-    padding: 2.5rem
+    padding: 1.9rem
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      padding: 1rem
+    // Small devices (desktops, 576 and up)
+    @include respond-to(small)
+      padding: 2.6rem 1rem 1rem 1rem
   .modal-header
     text-align: center
     display: flex
@@ -615,14 +643,44 @@
     border-bottom: 1px solid $twelfth-color
     padding: 0
     padding-bottom: 2.3rem
+    margin-bottom: 3.6rem
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      margin-bottom: 1rem
+      padding-bottom: 1rem
   .modal-body
-    padding-top: 3.6rem
+    padding: 0
   .modal-title
     font-weight: 300
     color: $main-text
     font-size: 1.7rem
     line-height: 2.6rem
     text-transform: uppercase
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      font-size: 1.5rem
+  .title-h6
+    color: $eleventh-color
+    font-weight: 300
+    font-size: 1.4rem
+    line-height: 2.2rem
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      text-align: center
+      width: 100%
+  .small-text
+    color: $eleventh-color
+    font-weight: 300
+    font-size: 1.125rem
+    line-height: 1.9rem
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      text-align: center
+  .small-text-link
+    color: $thirtieth-color
+    text-decoration: underline
+    &:hover
+      text-decoration: none
   .close
     position: absolute
     right: 10px
@@ -633,12 +691,20 @@
     border-radius: 50%
     text-shadow: none
     opacity: 1
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      right: 6px
     &:hover
       cursor: pointer
+      background-color: $fourth-color
+      &:before
+        background-color: $main-color
+      &:after
+        background-color: $main-color
     &:before
       position: absolute
-      top: 33%
-      left: 50%
+      top: 13px
+      left: 19px
       content: ''
       width: 2px
       height: 14px
@@ -646,17 +712,52 @@
       transform: rotate(-45deg)
     &:after
       position: absolute
-      top: 48%
-      left: 34%
+      top: 19px
+      left: 13px
       content: ''
       width: 14px
       height: 2px
       background-color: $thirtieth-color
       transform: rotate(-45deg)
-    span
-      display: none
+  .modal-footer
+    border: none
+    padding: 0 0 2rem 0
+  .content-box
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      margin-bottom: 2rem
+.captcha-link
+  font-weight: 300
+  color: $eleventh-color
+  font-size: 1rem
+  line-height: 1rem
+  border-bottom: 1px dotted
+  text-decoration: none
+  display: inline-block
+  margin-top: 1rem
+  margin-left: 2rem
+  position: relative
+  &:hover, &:focus, &:visited
+    text-decoration: none
+    color: $eleventh-color
+  &:before
+    position: absolute
+    content: ""
+    background-image: url("../images/refresh.png")
+    width: 18px
+    height: 18px
+    z-index: 1
+    top: 0
+    left: -22%
 
-/* ===============================Message-modal page Styles ===================================== */
+.message-modal
+  max-width: 37.5rem
+.big-message-modal
+  max-width: 50rem
+.pass-recovery-modal
+  max-width: 31.3rem
+
+/* ===============================MOdals Styles ===================================== */
 
 
 
@@ -709,6 +810,10 @@
       .ready:hover, .ready:focus, .ready:visited
         text-decoration: underline
         color: $twenty-eighth-color
+      .ready-green
+        color: forestgreen
+      .ready:hover, .ready:focus, .ready:visited
+        text-decoration: underline
       .not-ready
         color: $twenty-fourth-color
 /* =============================== MENU PAGE ===================================== */
