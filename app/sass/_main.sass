@@ -59,6 +59,37 @@
         text-align: center
         display: flex
         justify-content: center
+    //table
+    .table
+      margin-bottom: 4.2rem
+      // Large devices (desktops, 992px and up)
+      @include respond-to(large)
+        display: flex
+        justify-content: center
+        margin-bottom: 2rem
+      .table-cell
+        border-top: 1px solid $ninth-color
+        padding: 1rem 0 .6rem 0
+        // Large devices (desktops, 991px and up)
+        @include respond-to(custom-large)
+          border: none
+      .table-row
+        // Large devices (desktops, 991px and up)
+        @include respond-to(custom-large)
+          display: flex
+          flex-direction: column
+          align-items: center
+      .info-details
+        text-transform: uppercase
+        color: $tenth-color
+        font-size: 1.15rem
+        line-height: 1.1rem
+        font-family: $open-sans
+        font-weight: 400
+        // Large devices (desktops, 991px and up)
+        @include respond-to(custom-large)
+          font-size: 1.1rem
+    //table
     .quantity
       font-size: 1.3rem
       color: $main-text
@@ -610,6 +641,115 @@
       text-align: center
       margin-top: 1.6rem
 /* ===============================Contacts page Styles ===================================== */
+
+/* ===============================Cards page Styles ===================================== */
+.add-cards
+  .cards-table
+    // Medium devices (desktops, 768px and up)
+    @include respond-to(medium)
+      display: flex
+      flex-direction: column
+    .table-head
+      color: $tenth-color
+      font-size: 0.87rem
+      font-weight: 400
+      text-transform: uppercase
+      border: none
+      padding: 1.25rem 0
+      // Large devices (desktops, 991px and up)
+      @include respond-to(custom-large)
+        border: none
+      // Medium devices (desktops, 768px and up)
+      @include respond-to(medium)
+        display: flex
+        justify-content: space-between
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        padding: 0.5rem 0
+    .table-row
+      border-bottom: 1px solid $ninth-color
+      // Medium devices (desktops, 768px and up)
+      @include respond-to(medium)
+        display: flex
+        justify-content: space-between
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        flex-direction: column
+        align-items: center
+    .table-cell
+      padding: 1.25rem 0
+      border: none
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        padding: 0.5rem 0
+    .info-details
+      color: $main-text
+      font-size: 1.125rem
+      line-height: 2.25rem
+      padding-right: 1rem
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        padding: 0
+        line-height: 1
+    .card-status
+      color: $main-text
+      font-size: 1.125rem
+      line-height: 2.25rem
+      text-transform: none
+      padding-left: 1.87rem
+      position: relative
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        line-height: 1
+    .during
+      position: relative
+      color: $twenty-fifth-color
+      &:before
+        content: ""
+        position: absolute
+        left: 0
+        top: 50%
+        width: 14px
+        height: 16px
+        margin-top: -8px
+        background-image: url("../images/during.png")
+    .verified
+      position: relative
+      color: $thirty-first
+      &:before
+        content: ""
+        position: absolute
+        left: 0
+        top: 50%
+        width: 14px
+        height: 10px
+        margin-top: -5px
+        background-image: url("../images/verified.png")
+    .overdue
+      position: relative
+      color: $twentieth-color
+      &:before
+        content: ""
+        position: absolute
+        left: 0
+        top: 50%
+        width: 10px
+        height: 10px
+        margin-top: -5px
+        background-image: url("../images/overdue.png")
+    .delete
+      background: none
+      &:hover
+        cursor: pointer
+    .custom-control
+      margin-left: 2rem
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        margin-left: 0.3rem
+    .custom-control-indicator
+      top: 0
+
+/* ===============================Cards page Styles ===================================== */
 
 
 

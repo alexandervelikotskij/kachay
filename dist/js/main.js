@@ -82,13 +82,14 @@ $('#datepicker').datepicker();
 $('#datepicker2').datepicker();
 $('#datepicker3').datepicker();
 $('#datepicker4').datepicker();
+$('#datepicker5').datepicker();
+$('#datepicker6').datepicker();
+$('#datepicker7').datepicker();
+$('#datepicker8').datepicker();
+$('#datepicker9').datepicker();
 
 $('input[data-validate="phone"]').mask("+380 (99) 999 99 99");
 $('input[data-validate="phone2"]').mask("+380 (99) 999 99 99");
 $('input[data-validate="phone3"]').mask("+380 (99) 999 99 99");
 
-/*
-var a = $('.collapse.show').prev();
-var b = a.find('.thislink');
-if(b)
-	b.addClass('mod');*/
+
