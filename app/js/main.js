@@ -91,5 +91,7 @@ $('#datepicker9').datepicker();
 $('input[data-validate="phone"]').mask("+380 (99) 999 99 99");
 $('input[data-validate="phone2"]').mask("+380 (99) 999 99 99");
 $('input[data-validate="phone3"]').mask("+380 (99) 999 99 99");
+$('input[data-validate="card-number"]').mask("9999 9999 9999 9999");
+$('input[data-validate="card-date"]').mask("99 / 99");
 
 
