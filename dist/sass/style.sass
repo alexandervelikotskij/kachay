@@ -83,6 +83,9 @@
   color: $eleventh-color
   border-radius: 0
   padding: 1.7rem 0.2rem
+  // Large devices (desktops, 992 and up)
+  @include respond-to(large)
+    font-size: 1rem
   // Medium devices (desktops, 768px and up)
   @include respond-to(medium)
     font-size: .9rem
@@ -107,6 +110,9 @@
   color: $eleventh-color
   border-radius: 0
   padding: 1.7rem 0
+  // Large devices (desktops, 992 and up)
+  @include respond-to(large)
+    font-size: 1rem
   // Medium devices (desktops, 768px and up)
   @include respond-to(medium)
     font-size: .9rem
@@ -114,6 +120,9 @@
     cursor: pointer
     background-color: $fourth-color
     border: 3px solid $fourth-color
+    color: $eleventh-color
+  &:focus, &:visited
+    color: $eleventh-color
 //btn-save
 
 //btn-main
@@ -540,6 +549,7 @@
 
 //alert-block
 .alert-danger
+  margin-top: 1rem
   font-family: $open-sans
   color: $twentieth-color
   font-size: 1.125rem
@@ -915,4 +925,46 @@
   height: 3.25rem
 //number
 
+//custom responsive table
+.custom-responsive-table
+  // Medium devices (desktops, 768px and up)
+  @include respond-to(medium)
+    display: flex
+    flex-direction: column
+  .table-head
+    color: $tenth-color
+    font-size: 0.87rem
+    font-weight: 400
+    text-transform: uppercase
+    border: none
+    padding: 1.25rem 0
+    // Large devices (desktops, 991px and up)
+    @include respond-to(custom-large)
+      border: none
+    // Medium devices (desktops, 768px and up)
+    @include respond-to(medium)
+      display: flex
+      justify-content: space-between
+    // Small devices (desktops, 576 and up)
+    @include respond-to(small)
+      padding: 0.5rem 0
+  .table-row
+    border-bottom: 1px solid $ninth-color
+    // Medium devices (desktops, 768px and up)
+    @include respond-to(medium)
+      display: flex
+      justify-content: space-between
+    // Small devices (desktops, 576 and up)
+    @include respond-to(small)
+      flex-direction: column
+      align-items: center
+  .table-cell
+    vertical-align: middle
+    padding: 1.25rem 0
+    border: none
+    // Small devices (desktops, 576 and up)
+    @include respond-to(small)
+      padding: 0.5rem 0
+
+//custom responsive table
 

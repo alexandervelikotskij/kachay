@@ -177,6 +177,7 @@
 .need-cards
   .card-body
     padding: 3.6rem 1.25rem 1.25rem
+
 .need
   padding-top: 2rem
   padding-bottom: 3rem
@@ -301,6 +302,7 @@
 .personal-data
   padding-top: 1.5rem
   padding-bottom: 1.5rem
+
 .passport-data
   padding-top: 1.5rem
   padding-bottom: 1.5rem
@@ -356,11 +358,11 @@
 /* ===============================Work Place page Styles ===================================== */
 .work-place
   padding-top: 1.5rem
-  padding-bottom:  1.5rem
+  padding-bottom: 1.5rem
 
 .work-address-data
   padding-top: 1.5rem
-  padding-bottom:  1.5rem
+  padding-bottom: 1.5rem
 /* ===============================Work Place page Styles ===================================== */
 
 /* ===============================Documents page Styles ===================================== */
@@ -400,9 +402,9 @@
     margin-top: 0.6rem
     // Large devices (desktops, 992 and up)
     @include respond-to(large)
-     display: flex
-     flex-direction: column
-     align-items: center
+      display: flex
+      flex-direction: column
+      align-items: center
   .card-img
     width: 196px
     height: 196px
@@ -442,8 +444,6 @@
         // Large devices (desktops, 992 and up)
         @include respond-to(large)
           text-align: justify
-
-
 
 /* ===============================About page Styles ===================================== */
 
@@ -644,44 +644,7 @@
 
 /* ===============================Cards page Styles ===================================== */
 .add-cards
-  .cards-table
-    // Medium devices (desktops, 768px and up)
-    @include respond-to(medium)
-      display: flex
-      flex-direction: column
-    .table-head
-      color: $tenth-color
-      font-size: 0.87rem
-      font-weight: 400
-      text-transform: uppercase
-      border: none
-      padding: 1.25rem 0
-      // Large devices (desktops, 991px and up)
-      @include respond-to(custom-large)
-        border: none
-      // Medium devices (desktops, 768px and up)
-      @include respond-to(medium)
-        display: flex
-        justify-content: space-between
-      // Small devices (desktops, 576 and up)
-      @include respond-to(small)
-        padding: 0.5rem 0
-    .table-row
-      border-bottom: 1px solid $ninth-color
-      // Medium devices (desktops, 768px and up)
-      @include respond-to(medium)
-        display: flex
-        justify-content: space-between
-      // Small devices (desktops, 576 and up)
-      @include respond-to(small)
-        flex-direction: column
-        align-items: center
-    .table-cell
-      padding: 1.25rem 0
-      border: none
-      // Small devices (desktops, 576 and up)
-      @include respond-to(small)
-        padding: 0.5rem 0
+  .custom-responsive-table
     .info-details
       color: $main-text
       font-size: 1.125rem
@@ -758,8 +721,136 @@
     font-size: 1rem
     padding: 1rem
     display: inline-block
+
+.popover-cvv
+  position: absolute
+  z-index: 111
+  width: 183px
+  left: 24px!important
+  top: -95px!important
+  border-radius: 0
+  border: 1px solid $eighteenth-color
+  background-color: $eighth-color
+  // Medium devices (desktops, 768px and up)
+  @include respond-to(medium)
+    left: -15.3% !important
+    top: -32% !important
+    &:after
+      bottom: -24px!important
+      transform: rotate(0deg)!important
+      left: 50%!important
+      border-width: 13px!important
+      margin-left: -13px!important
+    &:before
+      margin-left: 43%
+      bottom: -24px!important
+      transform: rotate(0deg)!important
+      left: 50%!important
+  .arrow
+    display: none
+  &:after,
+  &:before
+    content: ''
+    border: solid transparent
+    position: absolute
+    left: -7%
+    margin-left: -12px
+    bottom: 16px
+    width: 0
+    transform: rotate(90deg)
+  &:before
+    border-top-color: $eighteenth-color
+    border-width: 12px
+  &:after
+    border-top-color: $eighth-color
+    border-width: 12px
+    margin-left: -11px
+  .popover-body
+    color: $twenty-third-color
+    font-size: 0.75rem
+    line-height: 1rem
+    font-family: $open-sans
+    font-weight: 300
+    padding: 0.9rem
+  .popover-cvv-text
+    margin-bottom: 0.8rem
+    display: inline-block
 /* ===============================add-card-new page Styles ===================================== */
 
+/* ===============================add-social page Styles ===================================== */
+.add-social
+  .custom-responsive-table
+    .info-details
+      color: $main-text
+      font-size: 1.125rem
+      line-height: 2.25rem
+      // Large devices (desktops, 992px and up)
+      @include respond-to(large)
+        font-size: 1rem
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        font-size: 0.8rem
+        padding: 0
+        line-height: 1
+    .delete
+      background: none
+      &:hover
+        cursor: pointer
+    .btn-info
+      width: 37px
+      height: 37px
+      border: none
+      &:hover
+        cursor: pointer
+      // custom-medium devices (desktops, 767px and up)
+      @include respond-to(custom-medium)
+        margin: 0
+    .social-img
+      padding-left: 1rem
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        padding-left: 0
+    .table-row
+      &:last-child
+        border-bottom: none
+/* ===============================add-social page Styles ===================================== */
+
+/* ===============================RECORDS page Styles ===================================== */
+.records-section
+  .custom-responsive-table
+    tbody
+      .table-row
+        &:nth-of-type(even)
+          background-color: $eighth-color
+    .table-head
+      padding: 1.25rem 1.875rem
+    .table-cell
+      padding: 1.25rem 1.875rem
+      vertical-align: top
+    .info-details
+      color: $main-text
+      font-size: 1.125rem
+      line-height: 2.25rem
+      // Large devices (desktops, 992px and up)
+      @include respond-to(large)
+        font-size: 1rem
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        font-size: 0.8rem
+        padding: 0
+        line-height: 1
+    .item
+      font-size: 1.125rem
+      line-height: 2.25rem
+      color: $fourth-color
+      &:hover
+        color: $twenty-fifth-color
+    .link
+      color: $tenth-color
+      &:hover
+        text-decoration: underline
+        color: $twenty-fifth-color
+/* ===============================RECORDS page Styles ===================================== */
 
 
 
@@ -769,6 +860,7 @@
 /* ===============================Modals Styles ===================================== */
 .modal-backdrop
   background-color: rgba(0, 0, 0, 1)
+
 .main-modal
   margin: 6rem auto
   // Medium devices (desktops, 768 and up)
@@ -875,6 +967,7 @@
     // Medium devices (desktops, 768 and up)
     @include respond-to(medium)
       margin-bottom: 2rem
+
 .captcha-link
   font-weight: 300
   color: $eleventh-color
@@ -901,8 +994,10 @@
 
 .message-modal
   max-width: 37.5rem
+
 .big-message-modal
   max-width: 50rem
+
 .pass-recovery-modal
   max-width: 31.3rem
 
