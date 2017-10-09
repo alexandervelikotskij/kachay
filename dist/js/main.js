@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 });
-
+//popover
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 	$('[data-toggle="popover"]').popover();
@@ -102,11 +102,13 @@ $(function () {
 	);
 });
 
+//language
 $('#datepicker,#datepicker2,#datepicker3,#datepicker4,#datepicker5,#datepicker6,#datepicker7,#datepicker8,#datepicker9').datepicker({
 		language: 'ua'
 	}
 );
 
+//phone forms
 
 $('input[data-validate="phone"]').mask("+380 (99) 999 99 99");
 $('input[data-validate="phone2"]').mask("+380 (99) 999 99 99");
@@ -115,3 +117,10 @@ $('input[data-validate="card-number"]').mask("9999 9999 9999 9999");
 $('input[data-validate="card-date"]').mask("99 / 99");
 
 
+//table+accordion
+
+$(function(){
+	$(".custom-responsive-table .view").on("click", function(){
+		$(this).toggleClass("open").next(".fold").toggleClass("open");
+	});
+});

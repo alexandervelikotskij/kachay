@@ -997,11 +997,10 @@ h5, .h5-title {
 /* ===============================Documents page Styles ===================================== */
 /* ===============================FAQ page Styles ===================================== */
 .general-section {
-  padding-top: 3rem;
   padding-bottom: 4rem; }
 
 .prolongation-section {
-  padding-bottom: 6rem; }
+  padding-bottom: 2rem; }
 
 .loan-section {
   padding-bottom: 4rem; }
@@ -1519,6 +1518,144 @@ h5, .h5-title {
     color: #f27f3f; }
 
 /* ===============================RECORDS page Styles ===================================== */
+/* ===============================CREDITS page Styles ===================================== */
+.credit-state {
+  margin-bottom: 2rem; }
+  .credit-state .custom-responsive-table {
+    margin-bottom: 0; }
+    @media only screen and (max-width: 992px) {
+      .credit-state .custom-responsive-table {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    .credit-state .custom-responsive-table .info-details {
+      color: #424955;
+      font-size: 1.125rem;
+      line-height: 1.875rem; }
+      .credit-state .custom-responsive-table .info-details_mod {
+        text-decoration: underline; }
+      @media only screen and (max-width: 992px) {
+        .credit-state .custom-responsive-table .info-details {
+          font-size: 1rem;
+          line-height: 1; } }
+    .credit-state .custom-responsive-table .prolon {
+      color: #f27f3f; }
+    .credit-state .custom-responsive-table .ext {
+      color: #00a633; }
+    .credit-state .custom-responsive-table .table-head {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem; }
+      @media only screen and (max-width: 992px) {
+        .credit-state .custom-responsive-table .table-head {
+          padding: 0.5rem; } }
+    .credit-state .custom-responsive-table .table-cell {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem; }
+      @media only screen and (max-width: 992px) {
+        .credit-state .custom-responsive-table .table-cell {
+          padding-left: 1.4rem;
+          padding-right: 1.4rem; } }
+      @media only screen and (max-width: 768px) {
+        .credit-state .custom-responsive-table .table-cell {
+          padding: 0.5rem; } }
+      .credit-state .custom-responsive-table .table-cell:hover {
+        cursor: pointer; }
+    .credit-state .custom-responsive-table > tbody > .table-row.view:nth-child(2n) {
+      background-color: #f5f6f6; }
+    .credit-state .custom-responsive-table > tbody > .table-row.view .arrow {
+      position: relative; }
+      .credit-state .custom-responsive-table > tbody > .table-row.view .arrow:before {
+        content: "";
+        background-image: url("../images/check2.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: 1rem 1rem;
+        background-size: 1rem;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border: 1px solid #ffd71c;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        top: 50%;
+        right: 23px;
+        margin-top: -17px; }
+        @media only screen and (max-width: 992px) {
+          .credit-state .custom-responsive-table > tbody > .table-row.view .arrow:before {
+            margin-top: -12px;
+            right: 0;
+            width: 24px;
+            height: 24px; } }
+        @media only screen and (max-width: 768px) {
+          .credit-state .custom-responsive-table > tbody > .table-row.view .arrow:before {
+            display: none; } }
+    .credit-state .custom-responsive-table > tbody > .table-row.view.open {
+      border-bottom: none; }
+      .credit-state .custom-responsive-table > tbody > .table-row.view.open .arrow:before {
+        content: "";
+        border: 1px solid #ffd71c;
+        background: #ffd71c url("../images/check3.png") center center no-repeat;
+        -webkit-background-size: 1rem 1rem;
+        background-size: 1rem;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        top: 20%;
+        right: 23px;
+        margin-top: 3px; }
+        @media only screen and (max-width: 992px) {
+          .credit-state .custom-responsive-table > tbody > .table-row.view.open .arrow:before {
+            margin-top: 6px;
+            right: 0;
+            width: 24px;
+            height: 24px; } }
+        @media only screen and (max-width: 768px) {
+          .credit-state .custom-responsive-table > tbody > .table-row.view.open .arrow:before {
+            display: none; } }
+    .credit-state .custom-responsive-table > tbody > .table-row.fold {
+      display: none; }
+      .credit-state .custom-responsive-table > tbody > .table-row.fold.open {
+        display: table-row;
+        border-bottom: 1px solid #ffdb23; }
+    .credit-state .custom-responsive-table .fold-wrapper {
+      padding: 0 0 0 4rem; }
+      @media only screen and (max-width: 992px) {
+        .credit-state .custom-responsive-table .fold-wrapper {
+          padding: 0; } }
+    .credit-state .custom-responsive-table .fold-content > .custom-responsive-table > tbody .table-row:nth-child(n+8) {
+      background-color: #fffdf3; }
+    .credit-state .custom-responsive-table .fold-content .table-cell {
+      font-weight: normal;
+      color: #424955;
+      font-size: 1.125rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem; }
+      @media only screen and (max-width: 992px) {
+        .credit-state .custom-responsive-table .fold-content .table-cell {
+          padding: 0.7rem;
+          font-size: 0.8rem;
+          line-height: 1; } }
+      .credit-state .custom-responsive-table .fold-content .table-cell_mod {
+        padding-left: 2.5rem; }
+        @media only screen and (max-width: 992px) {
+          .credit-state .custom-responsive-table .fold-content .table-cell_mod {
+            padding: 0.7rem; } }
+    .credit-state .custom-responsive-table .fold-content .table-row:last-child {
+      border-bottom: 0; }
+
+/* ===============================CREDITS page Styles ===================================== */
 /* ===============================Modals Styles ===================================== */
 .modal-backdrop {
   background-color: black; }

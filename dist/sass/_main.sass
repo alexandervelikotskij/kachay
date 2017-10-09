@@ -372,11 +372,10 @@
 
 /* ===============================FAQ page Styles ===================================== */
 .general-section
-  padding-top: 3rem
   padding-bottom: 4rem
 
 .prolongation-section
-  padding-bottom: 6rem
+  padding-bottom: 2rem
 
 .loan-section
   padding-bottom: 4rem
@@ -851,6 +850,142 @@
         text-decoration: underline
         color: $twenty-fifth-color
 /* ===============================RECORDS page Styles ===================================== */
+
+/* ===============================CREDITS page Styles ===================================== */
+.credit-state
+  margin-bottom: 2rem
+  .custom-responsive-table
+    margin-bottom: 0
+    // Large devices (desktops, 992px and up)
+    @include respond-to(large)
+      align-items: center
+      display: flex
+      flex-direction: column
+    .info-details
+      color: $main-text
+      font-size: 1.125rem
+      line-height: 1.875rem
+      &_mod
+        text-decoration: underline
+      // Large devices (desktops, 992px and up)
+      @include respond-to(large)
+        font-size: 1rem
+        line-height: 1
+    .prolon
+      color: $twenty-fifth-color
+    .ext
+      color: $thirty-first
+    .table-head
+      padding-left: 1.875rem
+      padding-right: 1.875rem
+      // Large devices (desktops, 992px and up)
+      @include respond-to(large)
+        padding: 0.5rem
+    .table-cell
+      padding-left: 1.875rem
+      padding-right: 1.875rem
+      // Large devices (desktops, 992px and up)
+      @include respond-to(large)
+        padding-left: 1.4rem
+        padding-right: 1.4rem
+      // Medium devices (desktops, 768 and up)
+      @include respond-to(medium)
+        padding: 0.5rem
+      &:hover
+        cursor: pointer
+    > tbody
+      // view segment
+      > .table-row.view
+        &:nth-child(2n)
+          background-color: $eighth-color
+        .arrow
+          position: relative
+          &:before
+            content: ""
+            background-image: url("../images/check2.png")
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: 1rem
+            position: absolute
+            width: 35px
+            height: 35px
+            border: 1px solid $eighteenth-color
+            border-radius: 50%
+            top: 50%
+            right: 23px
+            margin-top: -17px
+            // Large devices (desktops, 992 and up)
+            @include respond-to(large)
+              margin-top: -12px
+              right: 0
+              width: 24px
+              height: 24px
+            // Medium devices (desktops, 768 and up)
+            @include respond-to(medium)
+              display: none
+        &.open
+          border-bottom: none
+          .arrow
+            &:before
+              content: ""
+              border: 1px solid $eighteenth-color
+              background: $eighteenth-color url("../images/check3.png") center center no-repeat
+              background-size: 1rem
+              position: absolute
+              width: 35px
+              height: 35px
+              border-radius: 50%
+              top: 20%
+              right: 23px
+              margin-top: 3px
+              // Large devices (desktops, 992 and up)
+              @include respond-to(large)
+                margin-top: 6px
+                right: 0
+                width: 24px
+                height: 24px
+              // Medium devices (desktops, 768 and up)
+              @include respond-to(medium)
+                display: none
+      // fold segment
+      > .table-row.fold
+        display: none
+        &.open
+          display: table-row
+          border-bottom: 1px solid $twenty-nineth-color
+
+    // fold content
+    .fold-wrapper
+      padding: 0 0 0 4rem
+      // Large devices (desktops, 992px and up)
+      @include respond-to(large)
+        padding: 0
+    .fold-content
+      > .custom-responsive-table
+        > tbody
+          .table-row:nth-child(n+8)
+            background-color: $thirty-second
+      .table-cell
+        font-weight: normal
+        color: $main-text
+        font-size: 1.125rem
+        padding-left: 1.25rem
+        padding-right: 1.25rem
+        // Large devices (desktops, 992px and up)
+        @include respond-to(large)
+          padding: 0.7rem
+          font-size: 0.8rem
+          line-height: 1
+        &_mod
+          padding-left: 2.5rem
+          // Large devices (desktops, 992px and up)
+          @include respond-to(large)
+            padding: 0.7rem
+      .table-row
+        &:last-child
+          border-bottom: 0
+
+/* ===============================CREDITS page Styles ===================================== */
 
 
 
