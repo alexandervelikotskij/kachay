@@ -16,25 +16,25 @@
         <div class="container">
             <div class="row justify-content-center card-deck steps-cards">
                 <div class="card border-0">
-                    <span class="active number mx-auto d-flex justify-content-center align-items-center">1</span>
+                    <span class="past number mx-auto d-flex justify-content-center align-items-center">1</span>
                     <div class="card-body">
                         <span class="h4-title card-title text-center">Особисті дані</span>
                     </div>
                 </div>
                 <div class="card border-0">
-                    <span class="active number mx-auto d-flex justify-content-center align-items-center">2</span>
+                    <span class="past number mx-auto d-flex justify-content-center align-items-center">2</span>
                     <div class="card-body">
                         <span class="h4-title card-title text-center">Дані про доходи</span>
                     </div>
                 </div>
                 <div class="card border-0">
-                    <span class="active number mx-auto d-flex justify-content-center align-items-center">3</span>
+                    <span class="past number mx-auto d-flex justify-content-center align-items-center">3</span>
                     <div class="card-body">
                         <span class="h4-title card-title text-center">Адреси</span>
                     </div>
                 </div>
                 <div class="card border-0">
-                    <span class="active number mx-auto d-flex justify-content-center align-items-center">4</span>
+                    <span class="past number mx-auto d-flex justify-content-center align-items-center">4</span>
                     <div class="card-body">
                         <span class="h4-title card-title text-center">Місце роботи</span>
                     </div>
@@ -49,115 +49,117 @@
         </div>
     </div>
     <!--STEPS SECTION-->
-    <form id="needs-validation" novalidate>
-        <!--DOCUMENTS SECTION-->
-        <div class="documents">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="container">
-                        <div class="form-group row align-items-start image-upload-holder">
-                            <div class="col-md-3 col-sm-12 col-form-label">Фото з паспортом</div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="col-sm-12">
-                                    <div class="row">
-                                        <div class="image-upload"></div>
+    <div class="wrapper-page">
+        <form id="needs-validation" novalidate>
+            <!--DOCUMENTS SECTION-->
+            <div class="documents">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="container">
+                            <div class="form-group row align-items-start image-upload-holder">
+                                <div class="col-md-3 col-sm-12 col-form-label">Фото з паспортом</div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="image-upload"></div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-file form-control form-control-lg">
+                                        <input type="file" id="file1" class="custom-file-input inputfile"
+                                               accept="image/jpeg,image/png,image/gif">
+                                        <span class="custom-file-control"></span>
+                                        <label class="custom-file-label col-12" for="file1"> Прикріпіть своє фото з
+                                            паспортом в руці, відкритому
+                                            на розвороті з актуальною фотографією</label>
                                     </div>
                                 </div>
-                                <div class="custom-file form-control form-control-lg">
-                                    <input type="file" id="file1" class="custom-file-input inputfile"
-                                           accept="image/jpeg,image/png,image/gif">
-                                    <span class="custom-file-control"></span>
-                                    <label class="custom-file-label col-12" for="file1"> Прикріпіть своє фото з
-                                        паспортом в руці, відкритому
-                                        на розвороті з актуальною фотографією</label>
-                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row align-items-start image-upload-holder">
-                            <div class="col-md-3 col-sm-12 col-form-label">Скан першої сторінки паспорту</div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="col-sm-12">
-                                    <div class="row">
-                                        <div class="image-upload"></div>
+                            <div class="form-group row align-items-start image-upload-holder">
+                                <div class="col-md-3 col-sm-12 col-form-label">Скан першої сторінки паспорту</div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="image-upload"></div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-file form-control form-control-lg">
+                                        <input type="file" id="file2" class="custom-file-input inputfile"
+                                               accept="image/jpeg,image/png,image/gif">
+                                        <span class="custom-file-control"></span>
                                     </div>
                                 </div>
-                                <div class="custom-file form-control form-control-lg">
-                                    <input type="file" id="file2" class="custom-file-input inputfile"
-                                           accept="image/jpeg,image/png,image/gif">
-                                    <span class="custom-file-control"></span>
-                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row align-items-start image-upload-holder">
-                            <div class="col-md-3 col-sm-12 col-form-label">Скан другої сторінки паспорту</div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="col-sm-12">
-                                    <div class="row">
-                                        <div class="image-upload"></div>
+                            <div class="form-group row align-items-start image-upload-holder">
+                                <div class="col-md-3 col-sm-12 col-form-label">Скан другої сторінки паспорту</div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="image-upload"></div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-file form-control form-control-lg">
+                                        <input type="file" id="file3" class="custom-file-input inputfile"
+                                               accept="image/jpeg,image/png,image/gif">
+                                        <span class="custom-file-control"></span>
                                     </div>
                                 </div>
-                                <div class="custom-file form-control form-control-lg">
-                                    <input type="file" id="file3" class="custom-file-input inputfile"
-                                           accept="image/jpeg,image/png,image/gif">
-                                    <span class="custom-file-control"></span>
-                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row align-items-start image-upload-holder">
-                            <div class="col-md-3 col-sm-12 col-form-label">Скан третьої сторінки паспорту</div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="col-sm-12">
-                                    <div class="row">
-                                        <div class="image-upload"></div>
+                            <div class="form-group row align-items-start image-upload-holder">
+                                <div class="col-md-3 col-sm-12 col-form-label">Скан третьої сторінки паспорту</div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="image-upload"></div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-file form-control form-control-lg">
+                                        <input type="file" id="file4" class="custom-file-input inputfile"
+                                               accept="image/jpeg,image/png,image/gif">
+                                        <span class="custom-file-control"></span>
                                     </div>
                                 </div>
-                                <div class="custom-file form-control form-control-lg">
-                                    <input type="file" id="file4" class="custom-file-input inputfile"
-                                           accept="image/jpeg,image/png,image/gif">
-                                    <span class="custom-file-control"></span>
-                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row align-items-start image-upload-holder">
-                            <div class="col-md-3 col-sm-12 col-form-label">Скан ІПН</div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="col-sm-12">
-                                    <div class="row">
-                                        <div class="image-upload"></div>
+                            <div class="form-group row align-items-start image-upload-holder">
+                                <div class="col-md-3 col-sm-12 col-form-label">Скан ІПН</div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="image-upload"></div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-file form-control form-control-lg">
+                                        <input type="file" id="file5" class="custom-file-input inputfile"
+                                               accept="image/jpeg,image/png,image/gif">
+                                        <span class="custom-file-control"></span>
                                     </div>
                                 </div>
-                                <div class="custom-file form-control form-control-lg">
-                                    <input type="file" id="file5" class="custom-file-input inputfile"
-                                           accept="image/jpeg,image/png,image/gif">
-                                    <span class="custom-file-control"></span>
-                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row align-items-start image-upload-holder">
-                            <div class="col-md-3 col-sm-12 col-form-label">Скан додаткового документу</div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="col-sm-12">
-                                    <div class="row">
-                                        <div class="image-upload"></div>
+                            <div class="form-group row align-items-start image-upload-holder">
+                                <div class="col-md-3 col-sm-12 col-form-label">Скан додаткового документу</div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="image-upload"></div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-file form-control form-control-lg">
+                                        <input type="file" id="file6" class="custom-file-input inputfile"
+                                               accept="image/jpeg,image/png,image/gif">
+                                        <span class="custom-file-control"></span>
                                     </div>
                                 </div>
-                                <div class="custom-file form-control form-control-lg">
-                                    <input type="file" id="file6" class="custom-file-input inputfile"
-                                           accept="image/jpeg,image/png,image/gif">
-                                    <span class="custom-file-control"></span>
-                                </div>
                             </div>
-                        </div>
-                        <div class="row no-gutters justify-content-around buttons-group">
-                            <button class="col-lg-4 col-sm-12 mb-3 btn btn-big btn-big_mod" type="button">Підтвердити
-                                заявку
-                            </button>
+                            <div class="row no-gutters justify-content-around buttons-group">
+                                <button class="col-lg-4 col-sm-12 mb-3 btn btn-big btn-big_mod" type="button">Підтвердити
+                                    заявку
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--DOCUMENTS SECTION-->
-    </form>
+            <!--DOCUMENTS SECTION-->
+        </form>
+    </div>
 </main>
 <!--DOCUMENTS PAGE-->

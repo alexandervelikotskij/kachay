@@ -90,79 +90,144 @@
         </nav>
     </header>
     <!-- HEADER -->
-    <!--REGISTER PAGE-->
+    <!--CURRENT LOAN PAGE-->
+
 <main class="main">
     <!--TITLE SECTION-->
     <section class="title-section">
         <div class="container">
             <div class="row justify-content-center">
-                <span class="h2-title text-center">Реєстрація</span>
+                <span class="h2-title text-center">Діючий кредит</span>
                 <div class="w-100"></div>
-                <span class="h4-title text-center">Для початку роботи на сайті Вам необхідно зареєструватись</span>
+                <span class="h4-title text-center">Номер договору 14/123456/002</span>
             </div>
         </div>
     </section>
     <!--TITLE SECTION-->
     <div class="wrapper-page">
-    <!--REGISTRATION SECTION-->
+        <!--CURRENT LOAN SECTION-->
         <div class="container">
-            <div class="row colums-holder justify-content-center">
-                <div class="left-column col-lg-6 col-sm-12">
-                    <form action="#" class="col-lg-10">
-                        <div class="form-group row align-items-center">
-                            <input type="email" class="form-control form-control-lg" placeholder="Email" value=""
-                                   required>
+            <div class="progress-wrapper row">
+                <div class="container">
+                    <div class="row justify-content-between days-info">
+                        <div class="col-3">
+                            <div class="row">
+                                <span class="info-details">Дата надання Кредиту</span>
+                            </div>
+                            <div class="row">
+                                <span class="quantity">11.05.2017</span>
+                            </div>
                         </div>
-                        <div class="form-group row align-items-center">
-                            <input type="password" class="form-control form-control-lg" placeholder="Пароль" value=""
-                                   required>
+                        <div class="col-3">
+                            <div class="row justify-content-center">
+                                <span class="info-details">Кількість днів користування</span>
+                            </div>
+                            <div class="row justify-content-center">
+                                <span class="currency">Пройшло: <span class="quantity quantity_mod">3</span> днів. Залишилось: <span class="quantity quantity_mod">2</span> днів. </span>
+                            </div>
                         </div>
-                        <div class="form-group row align-items-center">
-                            <input type="password" class="form-control form-control-lg" placeholder="Підтвердіть пароль" value=""
-                                   required>
-                        </div>
-                        <div class="row">
-                            <button class="col-12 btn btn-big btn-big_mod" type="button">Зареєструватися</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="right-column col-lg-6 col-sm-12">
-                    <div class="ml-auto col-lg-10">
-                        <div class="form-group row">
-                            <div class="col-12 btn btn-lg fb-login-button">
-                                <img src="images/facebook.png" alt="facebook">
-                                Увійти за допомогою Facebook
+                        <div class="col-3">
+                            <div class="row justify-content-end">
+                                <span class="info-details">Планова дата погашення</span>
+                            </div>
+                            <div class="row justify-content-end">
+                                <span class="quantity">16.05.2017</span>
                             </div>
                         </div>
                     </div>
-                    <div class="ml-auto col-lg-10">
-                        <div class="form-group row">
-                            <div class="col-12 btn btn-lg google-login-button">
-                                <img src="images/googleplus.png" alt="google+">
-                                Увійти за допомогою Google
+                    <div class="row progress progress-days">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20"
+                             aria-valuemin="0"
+                             aria-valuemax="100"></div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="row progress progress-money">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 18%" aria-valuenow="18"
+                             aria-valuemin="0"
+                             aria-valuemax="100"></div>
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 42%" aria-valuenow="30"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="20"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="row justify-content-between money-info">
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <span class="info-details">Сума Кредиту</span>
+                                    </div>
+                                    <div class="row align-items-baseline">
+                                        <span class="quantity quantity_mod">1000</span>
+                                        <span class="currency">грн.</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <span class="info-details">Сума Процентів</span>
+                                    </div>
+                                    <div class="row align-items-baseline">
+                                        <span class="quantity quantity_mod">200</span>
+                                        <span class="currency">грн.</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ml-auto col-lg-10">
-                        <div class="form-group row">
-                            <div class="col-12 btn btn-lg linkedin-login-button">
-                                <img src="images/linkedin.png" alt="LinkedIn">
-                                Увійти за допомогою LinkedIn
+                        <div class="col-3">
+                            <div class="row justify-content-center">
+                                <span class="info-details">Сума до погашення сьогодні</span>
+                            </div>
+                            <div class="row justify-content-center align-items-baseline">
+                                <span class="quantity quantity_mod">1050</span>
+                                <span class="currency">грн.</span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row justify-content-end">
+                                <span class="info-details">Сума до погашення</span>
+                            </div>
+                            <div class="row justify-content-end align-items-baseline">
+                                <span class="quantity quantity_mod">1200 </span>
+                                <span class="currency"> грн.</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center flex-column align-items-center">
-                <span class="small-info">Маєте аккаунт?</span>
-                <button class="col-11 col-sm-4 btn btn-save mb-2 ml-1 mr-1" type="submit">Авторизуватися</button>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <div class="form-group row align-items-center">
+                        <label for="new111" class="col-5 redemption">Сума до погашення</label>
+                        <div class="col-5">
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg text-right" id="new111"
+                                       placeholder="0.00" value="">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="row justify-content-center">
+                                <span class="redemption redemption_mod">грн.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="col-12 btn btn-big btn-big_mod" type="submit">Відправити</button>
+                    </div>
+                </div>
             </div>
         </div>
-    <!--REGISTRATION SECTION-->
+        <!--CURRENT LOAN SECTION-->
     </div>
 </main>
-<!--REGISTER PAGE-->
 
+<!--CURRENT LOAN PAGE-->
     <!-- FOOTER START -->
     <footer class="footer">
         <div class="footer-top">
