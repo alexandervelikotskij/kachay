@@ -1507,7 +1507,7 @@ h5, .h5-title {
       color: #424955;
       font-size: 1.125rem;
       line-height: 1.875rem; }
-      .credit-state .custom-responsive-table .info-details_mod {
+      .credit-state .custom-responsive-table .info-details_mod:hover {
         text-decoration: underline; }
       @media only screen and (max-width: 992px) {
         .credit-state .custom-responsive-table .info-details {
@@ -1622,6 +1622,41 @@ h5, .h5-title {
 
 /* ===============================CREDITS page Styles ===================================== */
 /* ===============================CURRENT LOAN page Styles ===================================== */
+.current-title {
+  position: relative; }
+  .current-title .breadcrumb-custom {
+    color: #656565;
+    font-weight: 300;
+    position: absolute;
+    top: 27%;
+    left: 0;
+    padding: 1rem 1rem 1rem 3rem; }
+    @media only screen and (max-width: 576px) {
+      .current-title .breadcrumb-custom {
+        display: none; } }
+    .current-title .breadcrumb-custom:before {
+      content: "";
+      background-image: url("../images/check2.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: 1rem 1rem;
+      background-size: 1rem;
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background-color: #fff;
+      border: 1px solid #ffd71c;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      top: 50%;
+      left: 0;
+      margin-top: -17px;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg); }
+
 .progress-wrapper {
   padding-bottom: 2rem;
   margin-bottom: 3rem;
@@ -1661,6 +1696,12 @@ h5, .h5-title {
       top: 50%;
       left: -3rem;
       margin-top: -12px; }
+      @media only screen and (max-width: 1200px) {
+        .progress-wrapper .progress-days:before, .progress-wrapper .progress-money:before {
+          left: -1.8rem; } }
+      @media only screen and (max-width: 576px) {
+        .progress-wrapper .progress-days:before, .progress-wrapper .progress-money:before {
+          display: none; } }
   .progress-wrapper .progress-days:before {
     background: url("../images/datepicker.png") center center no-repeat; }
   .progress-wrapper .progress-money:before {
@@ -1672,23 +1713,61 @@ h5, .h5-title {
     font-size: 0.875rem;
     line-height: 3rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 992px) {
+      .progress-wrapper .info-details {
+        line-height: 1.1; } }
+    @media only screen and (max-width: 768px) {
+      .progress-wrapper .info-details {
+        font-size: 1rem;
+        line-height: 1.5rem; } }
   .progress-wrapper .quantity {
     color: #424955;
     font-size: 1.875rem;
     line-height: 3.125rem;
     font-weight: 300; }
+    @media only screen and (max-width: 992px) {
+      .progress-wrapper .quantity {
+        line-height: 1.1;
+        font-size: 1.2rem; } }
+    @media only screen and (max-width: 768px) {
+      .progress-wrapper .quantity {
+        font-size: 1.3rem;
+        line-height: 1.7rem; } }
     .progress-wrapper .quantity_mod {
       padding-right: 5px; }
+    @media only screen and (max-width: 768px) {
+      .progress-wrapper .quantity {
+        padding-right: 0; } }
   .progress-wrapper .currency {
+    text-align: center;
     font-size: 0.875rem;
     line-height: 3rem;
     color: #656565; }
+    @media only screen and (max-width: 992px) {
+      .progress-wrapper .currency {
+        line-height: 1.1;
+        font-size: 0.8rem; } }
+    @media only screen and (max-width: 768px) {
+      .progress-wrapper .currency {
+        font-size: 1rem;
+        line-height: 1.5rem; } }
+  @media only screen and (max-width: 768px) {
+    .progress-wrapper .text-holder {
+      -webkit-box-pack: center !important;
+      -webkit-justify-content: center !important;
+      -ms-flex-pack: center !important;
+      justify-content: center !important; } }
 
 .redemption {
   font-size: 1.125rem;
   line-height: 2.25rem;
   color: #424955;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 0; }
+  @media only screen and (max-width: 768px) {
+    .redemption {
+      font-size: 0.9rem;
+      line-height: 1; } }
   .redemption_mod {
     font-weight: 300; }
 

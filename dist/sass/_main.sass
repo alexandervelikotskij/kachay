@@ -838,7 +838,8 @@
       font-size: 1.125rem
       line-height: 1.875rem
       &_mod
-        text-decoration: underline
+        &:hover
+          text-decoration: underline
       // Large devices (desktops, 992px and up)
       @include respond-to(large)
         font-size: 1rem
@@ -960,6 +961,40 @@
 /* ===============================CREDITS page Styles ===================================== */
 
 /* ===============================CURRENT LOAN page Styles ===================================== */
+.current-title
+  position: relative
+  .breadcrumb-custom
+    color: $eleventh-color
+    font-weight: 300
+    position: absolute
+    top: 27%
+    left: 0
+    padding: 1rem 1rem 1rem 3rem
+    // Small devices (desktops, 576 and up)
+    @include respond-to(small)
+      display: none
+    &:before
+      content: ""
+      background-image: url("../images/check2.png")
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 1rem
+      position: absolute
+      width: 35px
+      height: 35px
+      background-color: $main-color
+      border: 1px solid $eighteenth-color
+      border-radius: 50%
+      top: 50%
+      left: 0
+      margin-top: -17px
+      transform: rotate(90deg)
+      -webkit-transform: rotate(90deg)
+      -moz-transform: rotate(90deg)
+      -o-transform: rotate(90deg)
+      -ms-transform: rotate(90deg)
+
+
 .progress-wrapper
   padding-bottom: 2rem
   margin-bottom: 3rem
@@ -998,6 +1033,12 @@
       top: 50%
       left: -3rem
       margin-top: -12px
+      // Large devices (desktops, 1200px and up)
+      @include respond-to(extra-large)
+        left: -1.8rem
+      // Small devices (desktops, 576 and up)
+      @include respond-to(small)
+        display: none
   .progress-days
     &:before
       background: url("../images/datepicker.png") center center no-repeat
@@ -1011,22 +1052,58 @@
     font-size: 0.875rem
     line-height: 3rem
     text-transform: uppercase
+    // Large devices (desktops, 992px and up)
+    @include respond-to(large)
+      line-height: 1.1
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      font-size: 1rem
+      line-height: 1.5rem
   .quantity
     color: $main-text
     font-size: 1.875rem
     line-height: 3.125rem
     font-weight: 300
+    // Large devices (desktops, 992px and up)
+    @include respond-to(large)
+      line-height: 1.1
+      font-size: 1.2rem
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      font-size: 1.3rem
+      line-height: 1.7rem
     &_mod
       padding-right: 5px
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      padding-right: 0
   .currency
+    text-align: center
     font-size: 0.875rem
     line-height: 3rem
     color: $eleventh-color
+    // Large devices (desktops, 992px and up)
+    @include respond-to(large)
+      line-height: 1.1
+      font-size: 0.8rem
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      font-size: 1rem
+      line-height: 1.5rem
+  .text-holder
+    // Medium devices (desktops, 768 and up)
+    @include respond-to(medium)
+      justify-content: center!important
 .redemption
   font-size: 1.125rem
   line-height: 2.25rem
   color: $main-text
   padding: 0
+  margin-bottom: 0
+  // Medium devices (desktops, 768 and up)
+  @include respond-to(medium)
+    font-size: 0.9rem
+    line-height: 1
   &_mod
     font-weight: 300
 /* ===============================CURRENT LOAN page Styles ===================================== */
