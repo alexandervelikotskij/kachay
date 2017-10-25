@@ -16,17 +16,15 @@
 }(jQuery));
 
 $(document).ready(function () {
+	//add images
 	if (window.File && window.FileList && window.FileReader) {
-		document.body.addEventListener('click', function (event) {
+		$('body').on('click', '.remove_input_control', function (event) {
 			var target = $(event.target);
-			if (event.target.matches('.remove_input_control')) {
-				$(target).parents('.image-upload-holder').find('input').val('').trigger('change');
-				$(target).parents('.image-upload-holder').find('.image-upload').html('');
-			}
+			$(target).parents('.image-upload-holder').find('input').val('').trigger('change');
+			$(target).parents('.image-upload-holder').find('.image-upload').html('');
 		});
 		$(".inputfile").on("change", function (e) {
 			var $this = $(this);
-			console.log($this);
 			var value = $this.val();
 			if (value) {
 				var filename = $this.val().replace(/C:\\fakepath\\/i, '');
@@ -53,6 +51,28 @@ $(document).ready(function () {
 	else {
 		alert('File API не поддерживается данным браузером');
 	}
+	//add images
+
+	//ie explorer flex box fixes
+	// проверка на браузеры /
+	getBrowser();
+	var isMobile = false, browserYou;
+	browserYou = getBrowser();
+	if (browserYou.platform == 'mobile') {
+		isMobile = true;
+		$('html').addClass('mobile');
+	} else {
+		$('html').addClass('desktop');
+	}
+	if ((browserYou.browser == 'ie')) {
+		$('html').addClass('ie');
+	}
+	if ((browserYou.browser == 'ie' &&  browserYou.versionShort < 9) || ((browserYou.browser == 'opera' || browserYou.browser == 'operaWebkit') && browserYou.versionShort < 18) || (browserYou.browser == 'firefox' &&  browserYou.versionShort < 30)) {
+		$('#old-browser').modal('open');
+	}
+	//ie explorer flex box fixes
+
+
 });
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -124,3 +144,78 @@ $(function(){
 		$(this).toggleClass("open").next(".fold").toggleClass("open");
 	});
 });
+
+//ie explorer flex box fixes
+
+/* --------------- getBrowser --------------*/
+function getBrowser() {
+	var ua = navigator.userAgent;
+	var bName = function () {
+		if (ua.search(/Edge/) > -1) return "edge";
+		if (ua.search(/MSIE/) > -1) return "ie";
+		if (ua.search(/Trident/) > -1) return "ie11";
+		if (ua.search(/Firefox/) > -1) return "firefox";
+		if (ua.search(/Opera/) > -1) return "opera";
+		if (ua.search(/OPR/) > -1) return "operaWebkit";
+		if (ua.search(/YaBrowser/) > -1) return "yabrowser";
+		if (ua.search(/Chrome/) > -1) return "chrome";
+		if (ua.search(/Safari/) > -1) return "safari";
+		if (ua.search(/maxHhon/) > -1) return "maxHhon";
+	}();
+
+	var version;
+	switch (bName) {
+		case "edge":
+			version = (ua.split("Edge")[1]).split("/")[1];
+			break;
+		case "ie":
+			version = (ua.split("MSIE ")[1]).split(";")[0];
+			break;
+		case "ie11":
+			bName = "ie";
+			version = (ua.split("; rv:")[1]).split(")")[0];
+			break;
+		case "firefox":
+			version = ua.split("Firefox/")[1];
+			break;
+		case "opera":
+			version = ua.split("Version/")[1];
+			break;
+		case "operaWebkit":
+			bName = "opera";
+			version = ua.split("OPR/")[1];
+			break;
+		case "yabrowser":
+			version = (ua.split("YaBrowser/")[1]).split(" ")[0];
+			break;
+		case "chrome":
+			version = (ua.split("Chrome/")[1]).split(" ")[0];
+			break;
+		case "safari":
+			version = ua.split("Safari/")[1].split("")[0];
+			break;
+		case "maxHhon":
+			version = ua.split("maxHhon/")[1];
+			break;
+	}
+	var platform = 'desktop';
+	if (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) platform = 'mobile';
+	var browsrObj;
+	try {
+		browsrObj = {
+			platform: platform,
+			browser: bName,
+			versionFull: version,
+			versionShort: version.split(".")[0]
+		};
+	} catch (err) {
+		browsrObj = {
+			platform: platform,
+			browser: 'unknown',
+			versionFull: 'unknown',
+			versionShort: 'unknown'
+		};
+	}
+	return browsrObj;
+}
+

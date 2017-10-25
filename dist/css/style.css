@@ -299,7 +299,11 @@ h5, .h5-title {
 
 /* Header Styles ========================================================================= */
 .header {
-  padding: 1.05rem 1rem 1.6rem; }
+  padding: 1.05rem 1rem 1.6rem;
+  height: 6.1rem; }
+  @media only screen and (max-width: 992px) {
+    .header {
+      height: 100%; } }
 
 .navbar-brand {
   margin-right: 0;
@@ -1928,6 +1932,28 @@ h5, .h5-title {
   max-width: 31.3rem; }
 
 /* ===============================MOdals Styles ===================================== */
+/* ==============================INTERNET EXPLORER Styles ===================================== */
+.ie .how-work {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #fff; }
+  .ie .how-work .h2-title {
+    color: #424955;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-weight: 300; }
+  .ie .how-work .h3-title {
+    color: #424955;
+    font-weight: 400;
+    margin-bottom: 1.1rem; }
+  .ie .how-work .how-work-cards .card {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    width: 33%; }
+
+/* ==============================INTERNET EXPLORER Styles ===================================== */
 /* =============================== MENU PAGE ===================================== */
 .menu {
   background-color: #f5f6f6; }
