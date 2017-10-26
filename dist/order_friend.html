@@ -136,7 +136,7 @@
             <div class="d-flex flex-column align-items-center">
                 <div class="col-md-5 col-xs-12">
                     <div class="row">
-                        <button class="col-12 btn btn-save" type="button">Відправити запрошення</button>
+                        <a href="#" class="col-12 btn btn-save">Відправити запрошення</a>
                     </div>
                 </div>
             </div>
@@ -180,7 +180,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-3 col-xs-12 no-gutters">
-                        <button type="button" class="btn btn-main btn-main_mod">Написати нам</button>
+                        <button data-toggle="modal" data-target="#messageModal" type="button" class="btn btn-main btn-main_mod">Написати нам</button>
                     </div>
                 </div>
             </div>
@@ -214,7 +214,7 @@
                 <span class="modal-title">Написати нам</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form action="#" class="col-lg-12">
+            <form action="#" class="col-lg-12" id="needs-validation" novalidate>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-lg-12">
@@ -222,6 +222,9 @@
                                 <input type="email" class="form-control form-control-lg" placeholder="Введіть Ваш Email"
                                        value=""
                                        required>
+                                <div class="invalid-feedback">
+                                    Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                </div>
                             </div>
                             <div class="form-group row align-items-center">
                                 <textarea class="form-control form-control-lg" placeholder="Введіть Ваше повідомлення"
@@ -236,6 +239,9 @@
                                     <div class="col-md-6 col-sm-12 content-box">
                                         <input type="text" class="form-control form-control-lg"
                                                placeholder="Введіть символи" value="" required>
+                                        <div class="invalid-feedback">
+                                            Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +249,7 @@
                     </div>
                 </div>
                 <div class="modal-footer row justify-content-center">
-                    <button class="col-10 btn btn-big btn-big_mod" type="button">Підтвердити</button>
+                    <button class="col-10 btn btn-big btn-big_mod" type="submit">Підтвердити</button>
                 </div>
             </form>
         </div>
@@ -303,7 +309,7 @@
                 </div>
                 <div class="row justify-content-around buttons-group">
                     <button class="col-lg-5 col-sm-12 mb-3 btn btn-save" type="submit" data-toggle="modal" data-target="#messageModal2">Відмова</button>
-                    <button class="col-lg-5 col-sm-12 mb-3 btn btn-big btn-big_mod" type="button">Згода</button>
+                    <a href="index.html" class="col-lg-5 col-sm-12 mb-3 btn btn-big btn-big_mod">Згода</a>
                 </div>
             </form>
         </div>
@@ -330,7 +336,7 @@
                 </div>
                 <div class="row justify-content-around buttons-group">
                     <button class="col-lg-5 col-sm-12 mb-3 btn btn-save" type="submit" data-toggle="modal" data-target="#messageModal2">Відмова</button>
-                    <button class="col-lg-5 col-sm-12 mb-3 btn btn-big btn-big_mod" type="button">Згода</button>
+                    <a href="index.html" class="col-lg-5 col-sm-12 mb-3 btn btn-big btn-big_mod">Згода</a>
                 </div>
             </form>
         </div>

@@ -14,14 +14,20 @@
         <div class="container">
                 <div class="row colums-holder justify-content-center">
                     <div class="left-column col-lg-6 col-sm-12">
-                        <form action="#" class="col-lg-10">
+                        <form action="#" class="col-lg-10" id="needs-validation" novalidate>
                             <div class="form-group row align-items-center">
                                 <input type="email" class="form-control form-control-lg" placeholder="Email" value=""
                                        required>
+                                <div class="invalid-feedback">
+                                    Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                </div>
                             </div>
                             <div class="form-group row align-items-center">
                                 <input type="password" class="form-control form-control-lg" placeholder="Пароль" value=""
                                        required>
+                                <div class="invalid-feedback">
+                                    Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                </div>
                             </div>
                             <div class="form-group row align-items-center">
                                 <div class="custom-controls-stacked w-100">
@@ -34,7 +40,7 @@
                                 </div>
                             </div>
                             <div class="row justify-content-around buttons-group">
-                                <button class="col-12 btn btn-big btn-big_mod" type="button">Авторизуватися</button>
+                                <button class="col-12 btn btn-big btn-big_mod" type="submit">Авторизуватися</button>
                             </div>
                         </form>
                     </div>
@@ -63,9 +69,8 @@
                 </div>
                 <div class="row justify-content-center flex-column align-items-center">
                     <span class="small-info">У вас ще немає облікового запису?</span>
-                    <button class="col-11 col-sm-4 btn btn-save mb-2 ml-1 mr-1" type="submit" data-toggle="modal"
-                            data-target="#messageModal">Зареєструватися
-                    </button>
+                    <a href="register.html" class="col-11 col-sm-4 btn btn-save mb-2 ml-1 mr-1">Зареєструватися
+                    </a>
                 </div>
             </div>
         <!--ENTER SECTION-->

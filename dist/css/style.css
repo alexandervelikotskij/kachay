@@ -1411,6 +1411,66 @@ h5, .h5-title {
 
 /* ===============================add-card-new page Styles ===================================== */
 /* ===============================add-social page Styles ===================================== */
+.add-social .popover-edit {
+  position: absolute;
+  z-index: 111;
+  width: 183px;
+  left: 24px !important;
+  top: -95px !important;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid #ffd71c;
+  background-color: #f5f6f6; }
+  @media only screen and (max-width: 768px) {
+    .add-social .popover-edit {
+      left: -15.3% !important;
+      top: -32% !important; }
+      .add-social .popover-edit:after {
+        bottom: -24px !important;
+        -webkit-transform: rotate(0deg) !important;
+        -ms-transform: rotate(0deg) !important;
+        transform: rotate(0deg) !important;
+        left: 50% !important;
+        border-width: 13px !important;
+        margin-left: -13px !important; }
+      .add-social .popover-edit:before {
+        margin-left: 43%;
+        bottom: -24px !important;
+        -webkit-transform: rotate(0deg) !important;
+        -ms-transform: rotate(0deg) !important;
+        transform: rotate(0deg) !important;
+        left: 50% !important; } }
+  .add-social .popover-edit .arrow {
+    display: none; }
+  .add-social .popover-edit:after, .add-social .popover-edit:before {
+    content: '';
+    border: solid transparent;
+    position: absolute;
+    left: -7%;
+    margin-left: -12px;
+    bottom: 16px;
+    width: 0;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  .add-social .popover-edit:before {
+    border-top-color: #ffd71c;
+    border-width: 12px; }
+  .add-social .popover-edit:after {
+    border-top-color: #f5f6f6;
+    border-width: 12px;
+    margin-left: -11px; }
+  .add-social .popover-edit .popover-body {
+    color: #333;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    padding: 0.9rem; }
+  .add-social .popover-edit .popover-edit-text {
+    margin-bottom: 0.8rem;
+    display: inline-block; }
+
 .add-social .custom-responsive-table .info-details {
   color: #424955;
   font-size: 1.125rem;
@@ -1432,7 +1492,8 @@ h5, .h5-title {
 .add-social .custom-responsive-table .btn-info {
   width: 37px;
   height: 37px;
-  border: none; }
+  border: none;
+  position: relative; }
   .add-social .custom-responsive-table .btn-info:hover {
     cursor: pointer; }
   @media only screen and (max-width: 767px) {
@@ -2307,6 +2368,8 @@ h5, .h5-title {
     border: 3px solid #ffee3b; }
     .btn-big_mod:hover {
       border: 3px solid #ffd400; }
+    .btn-big_mod:visited {
+      color: #656565; }
 
 .btn-save {
   background-color: #fff;

@@ -120,6 +120,14 @@ $(function () {
 			template: '<div class="popover-cvv" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
 		}
 	);
+	$('[data-toggle="popover-reg"]').popover(
+		{
+			html: true,
+			content: '<div><span class="popover-reg-edit">Редагувати</span><div>',
+			template: '<div class="popover-edit" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
+		}
+	);
+
 });
 
 //language

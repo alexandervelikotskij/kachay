@@ -16,21 +16,30 @@
         <div class="container">
             <div class="row colums-holder justify-content-center">
                 <div class="left-column col-lg-6 col-sm-12">
-                    <form action="#" class="col-lg-10">
+                    <form action="#" class="col-lg-10" id="needs-validation" novalidate>
                         <div class="form-group row align-items-center">
                             <input type="email" class="form-control form-control-lg" placeholder="Email" value=""
                                    required>
+                            <div class="invalid-feedback">
+                                Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                            </div>
                         </div>
                         <div class="form-group row align-items-center">
                             <input type="password" class="form-control form-control-lg" placeholder="Пароль" value=""
                                    required>
+                            <div class="invalid-feedback">
+                                Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                            </div>
                         </div>
                         <div class="form-group row align-items-center">
                             <input type="password" class="form-control form-control-lg" placeholder="Підтвердіть пароль" value=""
                                    required>
+                            <div class="invalid-feedback">
+                                Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                            </div>
                         </div>
                         <div class="row">
-                            <button class="col-12 btn btn-big btn-big_mod" type="button">Зареєструватися</button>
+                            <button class="col-12 btn btn-big btn-big_mod" type="submit">Зареєструватися</button>
                         </div>
                     </form>
                 </div>
@@ -63,7 +72,7 @@
             </div>
             <div class="row justify-content-center flex-column align-items-center">
                 <span class="small-info">Маєте аккаунт?</span>
-                <button class="col-11 col-sm-4 btn btn-save mb-2 ml-1 mr-1" type="submit">Авторизуватися</button>
+                <a href="enter.html" class="col-11 col-sm-4 btn btn-save mb-2 ml-1 mr-1">Авторизуватися</a>
             </div>
         </div>
     <!--REGISTRATION SECTION-->

@@ -50,7 +50,7 @@
     </div>
     <!--STEPS SECTION-->
     <div class="wrapper-page">
-        <form action="#" novalidate>
+        <form action="#" id="needs-validation" novalidate>
             <!--THIRD SECTION-->
             <section class="third-data">
                 <div class="container">
@@ -62,6 +62,9 @@
                                 <div class="col-md-6 col-sm-12">
                                     <input type="text" class="form-control form-control-lg" id="validationCustom11"
                                            placeholder="Прізвище" value="" required>
+                                    <div class="invalid-feedback">
+                                        Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                    </div>
                                 </div>
                                 <div class="col-md-1 col-sm-12">
                                     <button type="button" class="btn btn-info" data-trigger="focus" data-toggle="popover" data-placement="top"
@@ -92,6 +95,9 @@
                                 <div class="col-md-6 col-sm-12">
                                     <input type="text" class="form-control form-control-lg" id="validationCustom13"
                                            placeholder="Введіть ваше по-батькові" value="" required>
+                                    <div class="invalid-feedback">
+                                        Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group row align-items-center">
@@ -99,20 +105,24 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 date">
                                     <input type="tel" class="form-control form-control-lg" id="phone2"
                                            data-validate="phone2" required placeholder="+380 ( __ ) ___-__-__">
+                                    <div class="invalid-feedback">
+                                        Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group row align-items-center">
                                 <label class="col-md-3 col-sm-12 col-form-label" for="formControlSelect1">Ступінь відносин з
                                     клієнтом</label>
                                 <div class="col-md-6 col-sm-12">
-                                    <select class="form-control form-control-lg select-mod" id="formControlSelect1">
-                                        <option>Виберіть із списку</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
+                                    <select class="form-control form-control-lg select-mod" id="formControlSelect1" required>
+                                        <option value="">Виберіть із списку</option>
+                                        <option value="1">Епудиандае тхеопхрастус,</option>
+                                        <option value="2">Епудиандае тхеопхрастус,</option>
+                                        <option value="3">Епудиандае тхеопхрастус,</option>
+                                        <option value="4">Епудиандае тхеопхрастус,</option>
                                     </select>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -154,6 +164,9 @@
                                 <div class="col-md-6 col-sm-12">
                                     <input type="text" class="form-control form-control-lg" id="validationCustom14"
                                            placeholder="Введіть дані навчального закладу" value="" required>
+                                    <div class="invalid-feedback">
+                                        Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group row align-items-center">
@@ -162,6 +175,9 @@
                                 <div class="col-md-6 col-sm-12">
                                     <input type="text" class="form-control form-control-lg" id="validationCustom15"
                                            placeholder="Введіть назву навчального закладу" value="" required>
+                                    <div class="invalid-feedback">
+                                        Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group row align-items-center">
@@ -170,6 +186,9 @@
                                 <div class="col-md-6 col-sm-12">
                                     <input type="text" class="form-control form-control-lg" id="validationCustom16"
                                            placeholder="Введіть курс" value="" required>
+                                    <div class="invalid-feedback">
+                                        Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -188,12 +207,12 @@
                                     протягом
                                     останніх п'яти років</label>
                                 <div class="col-md-6 col-sm-12">
-                                    <select class="form-control form-control-lg select-mod" id="formControlSelect5">
-                                        <option>Виберіть із списку</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
+                                    <select class="form-control form-control-lg select-mod" id="formControlSelect5" required>
+                                        <option value="">Виберіть із списку</option>
+                                        <option value="1">Епудиандае тхеопхрастус,</option>
+                                        <option value="2">Епудиандае тхеопхрастус,</option>
+                                        <option value="3">Епудиандае тхеопхрастус,</option>
+                                        <option value="4">Епудиандае тхеопхрастус,</option>
                                     </select>
                                 </div>
                             </div>
@@ -203,6 +222,9 @@
                                 <div class="col-md-4 col-sm-12">
                                     <input type="text" class="form-control form-control-lg" id="validationCustom17"
                                            placeholder="Введіть щомісячний платіж" value="" required>
+                                    <div class="invalid-feedback">
+                                        Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                    </div>
                                 </div>
                                 <div class="col-md-1 col-sm-12">
                                     <span class="currency-info">грн.</span>
@@ -214,6 +236,9 @@
                                 <div class="col-md-4 col-sm-12">
                                     <input type="text" class="form-control form-control-lg" id="validationCustom18"
                                            placeholder="Введіть cуму основного доходу" value="" required>
+                                    <div class="invalid-feedback">
+                                        Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                    </div>
                                 </div>
                                 <div class="col-md-1 col-sm-12">
                                     <span class="currency-info">грн.</span>
@@ -223,12 +248,12 @@
                                 <label class="col-md-3 col-sm-12 col-form-label" for="formControlSelect6">Частота
                                     виплати</label>
                                 <div class="col-md-4 col-sm-12">
-                                    <select class="form-control form-control-lg select-mod" id="formControlSelect6">
-                                        <option>Виберіть із списку</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
-                                        <option>Епудиандае тхеопхрастус,</option>
+                                    <select class="form-control form-control-lg select-mod" id="formControlSelect6" required>
+                                        <option value="">Виберіть із списку</option>
+                                        <option value="1">Епудиандае тхеопхрастус,</option>
+                                        <option value="2">Епудиандае тхеопхрастус,</option>
+                                        <option value="3">Епудиандае тхеопхрастус,</option>
+                                        <option value="4">Епудиандае тхеопхрастус,</option>
                                     </select>
                                 </div>
                             </div>
@@ -238,13 +263,16 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 date">
                                     <input type="text" class="datepicker-img form-control form-control-lg" id="datepicker3"
                                            placeholder="Введіть курс" value="" required>
+                                    <div class="invalid-feedback">
+                                        Яуидам пхаедрум не сит, ин яуо импедит омиттам!
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row no-gutters justify-content-around buttons-group">
                         <button class="col-lg-4 col-sm-12 mb-3 btn btn-save" type="submit">Зберегти</button>
-                        <button class="col-lg-4 col-sm-12 mb-3 btn btn-big btn-big_mod" type="button">Продовжити</button>
+                        <a href="adress_data.html" class="col-lg-4 col-sm-12 mb-3 btn btn-big btn-big_mod">Продовжити</a>
                     </div>
                 </div>
             </section>
